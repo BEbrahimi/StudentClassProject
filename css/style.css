@@ -1,0 +1,159 @@
+/* =============================================
+       BASE
+    ============================================= */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'DM Sans', sans-serif;
+        background: var(--bg-main);
+        color: var(--text-primary);
+        font-size: 16px;
+        line-height: 1.65;
+        overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Sora', sans-serif;
+        font-weight: 700;
+        color: var(--text-primary);
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    #top-header{
+        background-color: var(--primary);
+        padding: 10px 0;
+        font-size: 13px;
+        color: #fff;
+    }
+
+    #top-header a{
+        color: #fff;
+        opacity: .88;
+        transition: opacity var(--transition);
+    }
+    #top-header a:hover{
+        opacity: 1;
+        
+    }
+
+    .top-social a{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .14);
+        font-size: 13px;
+        transition: background var(--transition), transform var(--transition);
+    }
+
+    .top-social a:hover{
+        background: rgba(255, 255, 255, .3);
+        transform: translateY(-2px)
+    }
+
+
+/* navbar style */
+
+#mainNav{
+    background: var(--bg-section);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0;
+    transition: box-shadow var(--transition);
+}
+
+
+#mainNav.scrolled{
+    box-shadow: var(--shadow-md);
+}
+.navbar-brand{
+    font-family: "Sora",sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--primary) !important;
+    letter-spacing: -0.5px;
+}
+
+.navbar-brand span{
+    color: var(--text-primary);
+}
+
+.nav-link{
+     font-family: "Sora",sans-serif;
+    font-weight: 500;
+    font-size: 0.88rem;
+    color: var(--text-secondary) !important;
+    padding: 8px 14px !important;
+    border-radius: 8px;
+    transition: color var(--transition), background var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color:var(--primary)!important;
+    background: rgba(37, 99, 235, 0.07);
+}
+
+.btn-nav-login{
+    font-family: 'Segoe UI',sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    border: 1.5px solid var(--primary);
+    border-radius: 9px;
+    padding: 8px 22px;
+    transition: all var(--transition);
+}
+
+.btn-nav-login:hover{
+    background: var(--primary);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, .3);
+}
+
+
+.btn-nav-register{
+    font-family: 'Segoe UI',sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    border: 1.5px solid var(--primary);
+    border-radius: 9px;
+    padding: 8px 22px;
+    transition: all var(--transition);
+}
+
+.btn-nav-register:hover{
+    background: var(--primary);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, .3);
+}
+
+
+.offcanvas-header{
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.offcanvas-title{
+    font-family: 'Segoe UI' sans-serif;
+    font-weight: 800;
+}
