@@ -1,14 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Page</title>
 
     <!-- css file -->
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/style.css">
-     <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,91 +24,88 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap"
       rel="stylesheet"
     />
-
-</head>
-<body>
-
+  </head>
+  <body>
     <div id="top-header">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-between gap-2"
+        >
+          <!-- contact -->
+          <div class="d-flex flex-wrap align-items-center gap-3">
+            <a href="mailto:techlearn@gmail.com">
+              <i class="bi bi-envelope-fill me-1"></i>
+              info@techlearn.com
+            </a>
 
-                <!-- contact -->
-                <div class="d-flex flex-wrap align-items-center gap-3 ">
-                    <a href="mailto:techlearn@gmail.com">
-                        <i class="bi bi-envelope-fill me-1"></i>
-                        info@techlearn.com
-                    </a>
+            <a href="tel:+174894854">
+              <i class="bi bi-telephone-fill me-1"></i>
+              Call ME
+            </a>
+          </div>
 
-                    <a href="tel:+174894854">
-                        <i class="bi bi-telephone-fill me-1"></i>
-                        Call ME
-                    </a>
-                    
-                </div>
+          <!-- social Icon -->
 
-                <!-- social Icon -->
-
-                <div class="top-social d-flex gap-2">
-                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                    <a href="#" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
-                </div>
-            </div>
+          <div class="top-social d-flex gap-2">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Start Navbar -->
 
     <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-        <div class="container">
-            <a href="#" class="navbar-brand">Tech<span>Learn</span></a>
+      <div class="container">
+        <a href="#" class="navbar-brand">Tech<span>Learn</span></a>
 
-            <!-- Mobile Toggle -->
+        <!-- Mobile Toggle -->
 
-            <button 
-            class="navbar-toggler border-0"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navOffcanvas"
-            aria-controls="navOffcanvas"
-            >
-            <i class="bi bi-list" 
-            style="font-size: 1.6rem; color:var(--primary)"
-            ></i>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#navOffcanvas"
+          aria-controls="navOffcanvas"
+        >
+          <i
+            class="bi bi-list"
+            style="font-size: 1.6rem; color: var(--primary)"
+          ></i>
+        </button>
 
-            </button>
+        <!-- disktop nav -->
 
-            <!-- disktop nav -->
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav align-itmes-center gap-1 me-3">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
 
-            <div class="collapse navbar-collapse justify-content-end">
-                <ul class="navbar-nav align-itmes-center gap-1 me-3">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
-                    </li>
+            <li class="nav-item">
+              <a href="course.html" class="nav-link">Course</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a href="course.html" class="nav-link">Course</a>
-                    </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">About</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a href="" class="nav-link">About</a>
-                    </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Contact</a>
+            </li>
+          </ul>
 
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-
-                <div class="d-flex gap-2">
-                    <a href="#" class="btn btn-nav-login">Login</a>
-                    <a href="#" class="btn btn-nav-register">Register</a>
-                </div>
-
-            </div>
-
-
+          <div class="d-flex gap-2">
+            <a href="#" class="btn btn-nav-login">Login</a>
+            <a href="#" class="btn btn-nav-register">Register</a>
+          </div>
         </div>
+      </div>
     </nav>
 
     <!-- Mobile Menu -->
@@ -122,38 +120,155 @@
         ></button>
       </div>
 
-        <div class="offcanvas-body">
-            <ul class="navbar-nav gap-1 mb-4">
-                    <li class="nav-item">
-                        <a href="" class="nav-link active">Home</a>
-                    </li>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav gap-1 mb-4">
+          <li class="nav-item">
+            <a href="" class="nav-link active">Home</a>
+          </li>
 
-                    <li class="nav-item">
-                        <a href="course.html" class="nav-link">Course</a>
-                    </li>
+          <li class="nav-item">
+            <a href="course.html" class="nav-link">Course</a>
+          </li>
 
-                    <li class="nav-item">
-                        <a href="" class="nav-link">About</a>
-                    </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">About</a>
+          </li>
 
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Contact</a>
-                    </li>
-                </ul>
+          <li class="nav-item">
+            <a href="" class="nav-link">Contact</a>
+          </li>
+        </ul>
 
-                <div class="d-flex gap-2">
-                    <a href="#" class="btn btn-nav-login">Login</a>
-                    <a href="#" class="btn btn-nav-register">Register</a>
-                </div>
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-nav-login">Login</a>
+          <a href="#" class="btn btn-nav-register">Register</a>
         </div>
+      </div>
     </div>
 
+    <!-- Hero Section -->
 
-    index
+    <section id="hero">
+      <div class="container">
+        <div class="row align-item-center g-5">
+          <!-- Left Content -->
+          <div class="col-lg-6">
+            <div class="hero-badge">
+              <i class="bi bi-stars"></i> #1 Online Learning Platform
+            </div>
+            <h1 class="hero-heading">
+              Master Skills &amp; <br />
+              <span class="accent">Accelerate</span> Your<br />
+              Career Growth
+            </h1>
+            <p class="hero-desc">
+              Join over 10,000 learners worldwide. Access expert-led courses in
+              technology, design, and business — learn at your own pace,
+              anytime, anywhere.
+            </p>
 
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#" class="btn btn-hero-primary">
+                <i class="bi bi-grid-fill me-2"></i> Explore Courses
+              </a>
 
+              <a href="#" class="btn btn-hero-outline">
+                <span class="play-icon"
+                  ><i class="bi bi-play-fill me-2"></i
+                ></span>
+                Watch Demo
+              </a>
+            </div>
+          </div>
 
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+          <!-- Right Illustration -->
+          <div class="col-lg-6">
+            <div class="hero-illustration">
+              <div class="hero-float-card card1">
+                <div class="fc-icon green"><i class="bi bi-check-lg"></i></div>
 
+                <div>
+                  <div style="color: var(--text-primary)">
+                    Lesson Completed!
+                  </div>
+
+                  <div
+                    style="
+                      color: var(--text-secndary);
+                      font-size: 0.7rem;
+                      font-weight: 400;
+                    "
+                  >
+                    JavaScript Basic
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-float-card card2">
+                <div class="fc-icon green">
+                  <i class="bi bi-trophy-fill"></i>
+                </div>
+
+                <div>
+                  <div style="color: var(--text-primary)">
+                    Certificate Earned!
+                  </div>
+
+                  <div
+                    style="
+                      color: var(--text-secndary);
+                      font-size: 0.7rem;
+                      font-weight: 400;
+                    "
+                  >
+                    Web Development
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-illo-inner">
+                <i class="bi bi-mortarboard-fill"></i>
+                <p>Interactive Learning Experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="row g-3">
+            <div class="col-sm-4">
+              <div class="stat-card">
+                <div class="stat-num">10K+</div>
+                <div class="stat-label">
+                  <i class="bi bi-people-fill text-primary me-1"></i> Active
+                  Students
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="stat-card">
+                <div class="stat-num">100+</div>
+                <div class="stat-label">
+                  <i class="bi bi-journal-bookmark-fill text-primary me-1"></i
+                  >Expert Courses
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="stat-card">
+                <div class="stat-num">50+</div>
+                <div class="stat-label">
+                  <i class="bi bi-person-badge-fill text-primary me-1"></i>Top
+                  Instructors
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
