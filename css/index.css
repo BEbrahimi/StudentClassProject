@@ -161,7 +161,7 @@
 .hero-illo-inner i {
     font-size: 5rem;
     color: var(--primary);
-    opacity: 0.6;
+    opacity: .7;
 }
 
 .hero-illo-inner p {
@@ -262,4 +262,106 @@
     font-size: 0.82rem;
     color: var(--text-secondary);
     font-weight: 500;
+}
+
+/* =============================================
+       SECTION HEADER SHARED STYLE
+    ============================================= */
+.section-tag {
+    margin-top: 100px;
+    display: inline-block;
+    background: rgba(37, 99, 235, 0.08);
+    color: var(--primary);
+    font-family: "Sora", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(37, 99, 235, 0.15);
+}
+
+.section-title {
+    font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 14px;
+}
+
+.section-sub {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    max-width: 560px;
+}
+
+/* =============================================
+       4. FEATURES SECTION
+    ============================================= */
+#features {
+    background: var(--bg-section);
+}
+
+.feature-card {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 36px 28px;
+    border: 1.5px solid var(--border);
+    text-align: center;
+    transition: all var(--transition);
+    height: 100%;
+}
+
+.feature-card:hover {
+    border-color: rgba(37, 99, 235, 0.3);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-6px);
+}
+
+.feature-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 0 auto 22px;
+    transition: transform var(--transition);
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1) rotate(-4deg);
+}
+
+.fi-blue {
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--primary);
+}
+
+.fi-green {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+}
+
+.fi-yellow {
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--warning);
+}
+
+.fi-red {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+}
+
+.feature-card h5 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
 }
