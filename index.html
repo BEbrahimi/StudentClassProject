@@ -26,6 +26,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <div id="top-header">
       <div class="container">
@@ -802,11 +803,13 @@
       </div>
     </section>
 
-    <!-- footer section -->
-    <section id="footer">
+    <!-- =============================================
+     10. FOOTER
+============================================= -->
+    <footer id="footer">
       <div class="container">
         <div class="row g-5">
-          <!-- col 1: Brand -->
+          <!-- Col 1: Brand -->
           <div class="col-lg-3 col-md-6">
             <div class="footer-brand">Tech<span>Learn</span></div>
             <p class="footer-desc">
@@ -814,26 +817,87 @@
               schedules, and industry-recognized certifications.
             </p>
             <div class="footer-social">
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
             </div>
           </div>
-          <!-- col 2: Quick Link -->
-          <div class="col-lg-2 col-md-6 col-ms-6">
-            <div class="footer-heading">Quick Link</div>
-            <ul class="footer-link">
+
+          <!-- Col 2: Quick Links -->
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-heading">Quick Links</div>
+            <ul class="footer-links">
               <li><a href="#">Home</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Courses</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">Instructors</a></li>
               <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div>
+
+          <!-- Col 3: Popular Courses -->
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-heading">Popular Courses</div>
+            <ul class="footer-links">
+              <li><a href="#">JavaScript Bootcamp</a></li>
+              <li><a href="#">Python & Data Science</a></li>
+              <li><a href="#">UI/UX Design Mastery</a></li>
+              <li><a href="#">AWS Certification</a></li>
+              <li><a href="#">React Native</a></li>
+              <li><a href="#">Ethical Hacking</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Contact -->
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-heading">Contact Us</div>
+            <div class="footer-contact-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span
+                >Kabul Afghanistan, 411021</span
+              >
+            </div>
+            <div class="footer-contact-item">
+              <i class="bi bi-envelope-fill"></i>
+              <span>hello@techlearn.com</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="bi bi-telephone-fill"></i>
+              <span>+9379797545</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="bi bi-clock-fill"></i>
+              <span>Mon–Fri, 9:00 AM – 6:00 PM IST</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div
+          class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2"
+        >
+          <p>&copy; 2024 <a href="#">TechLearn</a>. All rights reserved.</p>
+          <p>
+            <a href="#" class="me-3">Privacy Policy</a>
+            <a href="#" class="me-3">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </p>
         </div>
       </div>
-    </section>
+    </footer>
+
+    <!-- Scroll To Top -->
+    <button id="scrollTop" aria-label="Scroll to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
