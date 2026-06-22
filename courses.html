@@ -171,6 +171,33 @@
     </div>
   </section>
 
+  <div id="filter-bar">
+    <div class="container">
+      <div class="d-flex align-items-center gap-3 filter-scroll">
+        <span class="filter-label d-none d-sm-inline">Filter:</span>
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Web Dev</button>
+        <button class="filter-btn">Data Science</button>
+        <button class="filter-btn">Cloud</button>
+        <button class="filter-btn">Mobile</button>
+        <button class="filter-btn">Security</button>
+        <button class="filter-btn">DevOps</button>
+        <button class="filter-btn">AI &amp; ML</button>
+        <button class="filter-btn">Blockchain</button>
+
+        <div class="ms-auto d-none d-md-flex align-items-center gap-2">
+          <span class="filter-label">Sort:</span>
+          <select class="sort-select">
+            <option value="popular">Most Popular</option>
+              <option value="rating">Highest Rated</option>
+              <option value="newest">Newest</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- courses -->
   <section id="courses" class="section-pad">
     <div class="container">
