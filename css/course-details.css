@@ -1,0 +1,85 @@
+#course-hero{
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #1e3a5f 100%);
+    padding: 60px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-cat-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(37, 99, 235, 0.25);
+    color: #93c5fd;
+    font-family: "Sora", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 50px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(37, 99, 235, 0.35);
+}
+
+#course-hero h1{
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.hero-desc {
+  color: #94a3b8;
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 22px;
+  max-width: 620px;
+}
+
+.hero-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.stars-hero{
+    color: var(--warning);
+    font-size: 0.9rem;
+}
+.rating-num{
+    font-family: "Sora", sans-serif;
+  font-weight: 800;
+  color: var(--warning);
+  font-size: 1rem;
+}
+
+.rating-count{
+    color:#94a3b8;
+    font-size: 0.85rem;
+}
+
+.hbp-best{
+    background: #f59e0b;
+    color: #fff;
+}
+
+.hero-badge-pill{
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: "Sora",sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 11px;
+    border-radius: 20px;
+}
+
+.hbp-new{
+    background: #10b981;
+  color: #fff;
+}
