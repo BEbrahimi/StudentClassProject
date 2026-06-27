@@ -141,19 +141,17 @@
 
           <h1>The Complete JavaScript Developer Bootcamp</h1>
           <p class="hero-desc">
-             Master JavaScript from zero to advanced — ES6+, DOM Manipulation,
-              Async JS, APIs, Node.js basics, and 10 real-world projects. The
-              most comprehensive JS course on the platform.
+            Master JavaScript from zero to advanced — ES6+, DOM Manipulation,
+            Async JS, APIs, Node.js basics, and 10 real-world projects. The
+            most comprehensive JS course on the platform.
           </p>
 
           <!-- Badges -->
-           <div class="d-flex gap-2 flex-wrap mg-3">
+          <div class="d-flex gap-2 flex-wrap mg-3">
             <span class="hero-badge-pill hbp-best">
               <i class="bi bi-trophy-fill me-1"></i>Bestseller
             </span>
-            <span
-                class="hero-badge-pill"
-                style="
+            <span class="hero-badge-pill" style="
                   background: rgba(99, 102, 241, 0.2);
                   color: #a5b4fc;
                   font-family: &quot;Sora&quot;, sans-serif;
@@ -161,13 +159,10 @@
                   font-weight: 700;
                   padding: 4px 11px;
                   border-radius: 20px;
-                "
-              >
-                <i class="bi bi-patch-check-fill me-1"></i>Certificate Included
-              </span>
-              <span
-                class="hero-badge-pill"
-                style="
+                ">
+              <i class="bi bi-patch-check-fill me-1"></i>Certificate Included
+            </span>
+            <span class="hero-badge-pill" style="
                   background: rgba(16, 185, 129, 0.2);
                   color: #6ee7b7;
                   font-family: &quot;Sora&quot;, sans-serif;
@@ -175,65 +170,138 @@
                   font-weight: 700;
                   padding: 4px 11px;
                   border-radius: 20px;
-                "
-              >
-                <i class="bi bi-arrow-repeat me-1"></i>Lifetime Access
-              </span>
-           </div>
+                ">
+              <i class="bi bi-arrow-repeat me-1"></i>Lifetime Access
+            </span>
+          </div>
 
-           <div class="hero-rating">
-              <span class="rating-num">4.8</span>
-              <span class="stars-hero">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-half"></i>
-              </span>
-              <span class="rating-count"
-                >(3,240 ratings) · 12,840 students enrolled</span
-              >
-            </div>
+          <div class="hero-rating">
+            <span class="rating-num">4.8</span>
+            <span class="stars-hero">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+            </span>
+            <span class="rating-count">(3,240 ratings) · 12,840 students enrolled</span>
+          </div>
 
-            <!-- Meta -->
-            <div class="hero-meta">
-              <span
-                ><i class="bi bi-person-fill"></i> Created by
-                <a href="#instructor" style="color: #60a5fa; font-weight: 600"
-                  >Bashir Ebrahimi</a
-                ></span
-              >
-              <span><i class="bi bi-translate"></i> English</span>
-              <span><i class="bi bi-globe"></i> Subtitles: EN, HI, ES, FR</span>
-            </div>
-            <div class="hero-meta">
-              <span><i class="bi bi-clock"></i> 42 total hours</span>
-              <span><i class="bi bi-journal-text"></i> 180 lessons</span>
-              <span><i class="bi bi-bar-chart"></i> Intermediate</span>
-              <span
-                ><i class="bi bi-arrow-repeat"></i> Last updated May 2024</span
-              >
-            </div>
-           <!-- Actions -->
-            <div class="hero-actions">
-              <button class="btn-share">
-                <i class="bi bi-share"></i> Share
-              </button>
-              <button
-                class="btn-wish-hero"
-                id="heroWishBtn"
-                onclick="toggleHeroWish()"
-              >
-                <i class="bi bi-heart" id="heroHeartIcon"></i> Add to Wishlist
-              </button>
-              <button class="btn-share">
-                <i class="bi bi-gift"></i> Gift Course
-              </button>
-            </div> 
+          <!-- Meta -->
+          <div class="hero-meta">
+            <span><i class="bi bi-person-fill"></i> Created by
+              <a href="#instructor" style="color: #60a5fa; font-weight: 600">Bashir Ebrahimi</a></span>
+            <span><i class="bi bi-translate"></i> English</span>
+            <span><i class="bi bi-globe"></i> Subtitles: EN, HI, ES, FR</span>
+          </div>
+          <div class="hero-meta">
+            <span><i class="bi bi-clock"></i> 42 total hours</span>
+            <span><i class="bi bi-journal-text"></i> 180 lessons</span>
+            <span><i class="bi bi-bar-chart"></i> Intermediate</span>
+            <span><i class="bi bi-arrow-repeat"></i> Last updated May 2024</span>
+          </div>
+          <!-- Actions -->
+          <div class="hero-actions">
+            <button class="btn-share">
+              <i class="bi bi-share"></i> Share
+            </button>
+            <button class="btn-wish-hero" id="heroWishBtn" onclick="toggleHeroWish()">
+              <i class="bi bi-heart" id="heroHeartIcon"></i> Add to Wishlist
+            </button>
+            <button class="btn-share">
+              <i class="bi bi-gift"></i> Gift Course
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  
+  <!-- sticky course nav -->
+  <div class="course-nav">
+    <div class="container">
+      <div class="d-flex overflow-auto" style="scrollbar-width: none;">
+        <a href="#overview" class="nav-link1 active" onclick="setActiveTab(This)">Overview</a>
+        <a href="#" class="nav-link1" onclick="setActiveTab(This)">Curriculum</a>
+        <a href="#" class="nav-link1" onclick="setActiveTab(This)">Instructor</a>
+        <a href="#" class="nav-link1" onclick="setActiveTab(This)">Reviews</a>
+        <a href="#" class="nav-link1" onclick="setActiveTab(This)">Related Courses</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="container" style="padding-top: 48px; padding-bottom: 80px;">
+    <div class="row g-5">
+      <!-- Left Content -->
+      <div class="col-lg-8">
+        <section id="overview">
+          <div class="detail-section pt-0">
+            <div class="section-tag1">Learning Outcomes</div>
+            <h2 class="section-title1">What You'll Learn</h2>
+            <div class="divider1"></div>
+
+            <div class="learn-grid">
+              <div class="row g-2">
+                <div class="col-md-6">
+                  <div class="learn-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>
+                      Master JavaScript fundamentals: variables, functions,
+                      loops, arrays, objects
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="learn-item">
+                    <i class="bi bi-check-circle-fill"></i><span>Work confidently with the DOM: selectors, events,
+                      dynamic UI rendering</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="learn-item">
+                    <i class="bi bi-check-circle-fill"></i><span>Handle async code: callbacks, Promises, async/await,
+                      Fetch API</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="learn-item">
+                    <i class="bi bi-check-circle-fill"></i><span>Consume REST APIs and display live JSON data in your
+                      applications</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="learn-item">
+                    <i class="bi bi-check-circle-fill"></i><span>Build 10 real-world projects including a weather app
+                      and task manager</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="learn-item">
+                    <i class="bi bi-check-circle-fill"></i><span>Debug JavaScript code like a professional using browser
+                      DevTools</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="learn-item">
+                    <i class="bi bi-check-circle-fill"></i><span>Introduction to Node.js, npm, and server-side
+                      JavaScript fundamentals</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="learn-item">
+                    <i class="bi bi-check-circle-fill"></i><span>Object-Oriented Programming: classes, inheritance,
+                      prototypes, encapsulation</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                </div>
+              </div>
+
+            </div>
+
+        </section>
+      </div>
+    </div>
+  </section>
+
+
 
   <!-- =============================================
      10. FOOTER
