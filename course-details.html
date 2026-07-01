@@ -220,7 +220,7 @@
       <div class="d-flex overflow-auto" style="scrollbar-width: none;">
         <a href="#overview" class="nav-link1 active" onclick="setActiveTab(This)">Overview</a>
         <a href="#curriculum" class="nav-link1" onclick="setActiveTab(This)">Curriculum</a>
-        <a href="#" class="nav-link1" onclick="setActiveTab(This)">Instructor</a>
+        <a href="#instructor" class="nav-link1" onclick="setActiveTab(This)">Instructor</a>
         <a href="#" class="nav-link1" onclick="setActiveTab(This)">Reviews</a>
         <a href="#" class="nav-link1" onclick="setActiveTab(This)">Related Courses</a>
       </div>
@@ -526,666 +526,743 @@
         </section>
 
         <!-- curriculum  -->
-         <section id="curriculum">
-            <div class="detail-section">
-              <div class="section-tag">Course Content</div>
-              <h2 class="section-title">Curriculum</h2>
-              <div class="divider"></div>
+        <section id="curriculum">
+          <div class="detail-section1">
+            <div class="section-tag1">Course Content</div>
+            <h2 class="section-title1">Curriculum</h2>
+            <div class="divider1"></div>
 
-              <div class="curriculum-stats">
-                <span><i class="bi bi-collection"></i> 12 sections</span>
-                <span><i class="bi bi-journal-text"></i> 180 lessons</span>
-                <span><i class="bi bi-clock"></i> 42 total hours</span>
-                <span><i class="bi bi-eye"></i> 18 free preview lessons</span>
-              </div>
-
-              <div class="accordion" id="curriculumAccordion">
-                <!-- Section 1 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#sec1"
-                    >
-                      <div class="d-flex align-items-center w-100">
-                        <span>Section 1: Introduction &amp; Setup</span>
-                        <span class="section-meta">5 lessons · 1h 20m</span>
-                      </div>
-                    </button>
-                  </h2>
-                  <div
-                    id="sec1"
-                    class="accordion-collapse collapse show"
-                    data-bs-parent="#curriculumAccordion"
-                  >
-                    <div class="accordion-body p-0">
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Welcome to the Course<span
-                            >What we'll build &amp; how to get the most out of
-                            it</span
-                          >
-                        </div>
-                        <span class="lesson-preview">Preview</span
-                        ><span class="lesson-duration ms-2">5:30</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Setting Up VS Code<span
-                            >Install and configure your development
-                            environment</span
-                          >
-                        </div>
-                        <span class="lesson-preview">Preview</span
-                        ><span class="lesson-duration ms-2">12:15</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          How the Browser Runs JavaScript<span
-                            >The JavaScript engine, V8, and the event loop
-                            overview</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">18:40</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-read">
-                          <i class="bi bi-file-text-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          JavaScript in 2024: The Landscape<span
-                            >Reading article</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">8 min read</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-quiz">
-                          <i class="bi bi-patch-question-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Section 1 Quiz<span>5 questions</span>
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">~5 min</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Section 2 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#sec2"
-                    >
-                      <div class="d-flex align-items-center w-100">
-                        <span>Section 2: JavaScript Fundamentals</span>
-                        <span class="section-meta">18 lessons · 4h 45m</span>
-                      </div>
-                    </button>
-                  </h2>
-                  <div
-                    id="sec2"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#curriculumAccordion"
-                  >
-                    <div class="accordion-body p-0">
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Variables: var, let &amp; const<span
-                            >Scope, hoisting, and best practices</span
-                          >
-                        </div>
-                        <span class="lesson-preview">Preview</span
-                        ><span class="lesson-duration ms-2">22:00</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Data Types &amp; Type Coercion<span
-                            >Strings, Numbers, Booleans, null, undefined,
-                            Symbol</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">28:15</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-code">
-                          <i class="bi bi-code-slash"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Exercise: Data Type Practice<span
-                            >Coding exercise with auto-hints</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">Exercise</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Operators &amp; Expressions<span
-                            >Arithmetic, comparison, logical, ternary</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">31:20</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Control Flow: if / else / switch<span
-                            >Making decisions in your code</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">25:10</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Loops: for, while, do-while, forEach<span
-                            >Iteration patterns and best use cases</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">35:50</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-quiz">
-                          <i class="bi bi-patch-question-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Section 2 Quiz<span>10 questions</span>
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">~10 min</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Section 3 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#sec3"
-                    >
-                      <div class="d-flex align-items-center w-100">
-                        <span>Section 3: Functions &amp; Scope</span>
-                        <span class="section-meta">14 lessons · 3h 30m</span>
-                      </div>
-                    </button>
-                  </h2>
-                  <div
-                    id="sec3"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#curriculumAccordion"
-                  >
-                    <div class="accordion-body p-0">
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Function Declarations vs Expressions<span
-                            >Hoisting, naming, and when to use each</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">20:30</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Arrow Functions &amp; this<span
-                            >ES6 syntax, lexical this, and common pitfalls</span
-                          >
-                        </div>
-                        <span class="lesson-preview">Preview</span
-                        ><span class="lesson-duration ms-2">26:45</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Closures Deep Dive<span
-                            >Factory functions, data privacy, real-world
-                            patterns</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">34:10</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-code">
-                          <i class="bi bi-code-slash"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Exercise: Build a Counter with Closures<span
-                            >Coding exercise</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">Exercise</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Section 4 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#sec4"
-                    >
-                      <div class="d-flex align-items-center w-100">
-                        <span>Section 4: Arrays &amp; Objects</span>
-                        <span class="section-meta">16 lessons · 4h 10m</span>
-                      </div>
-                    </button>
-                  </h2>
-                  <div
-                    id="sec4"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#curriculumAccordion"
-                  >
-                    <div class="accordion-body p-0">
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Array Methods: map, filter, reduce, find<span
-                            >Functional programming patterns with arrays</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">42:20</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Destructuring &amp; Spread/Rest<span
-                            >Modern ES6+ syntax for cleaner code</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">28:55</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-code">
-                          <i class="bi bi-code-slash"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Exercise: Data Transformation Pipeline<span
-                            >Coding exercise using map/filter/reduce</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">Exercise</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Section 5 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#sec5"
-                    >
-                      <div class="d-flex align-items-center w-100">
-                        <span>Section 5: DOM Manipulation</span>
-                        <span class="section-meta">20 lessons · 5h 00m</span>
-                      </div>
-                    </button>
-                  </h2>
-                  <div
-                    id="sec5"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#curriculumAccordion"
-                  >
-                    <div class="accordion-body p-0">
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Selecting &amp; Traversing the DOM<span
-                            >querySelector, getElementById, children,
-                            parentNode</span
-                          >
-                        </div>
-                        <span class="lesson-preview">Preview</span
-                        ><span class="lesson-duration ms-2">30:00</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Manipulating CSS Classes &amp; Styles<span
-                            >classList API, inline styles, dynamic theming</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">22:15</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Event Listeners &amp; Event Delegation<span
-                            >click, input, submit, bubbling, capturing</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">38:40</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-dl">
-                          <i class="bi bi-download"></i>
-                        </div>
-                        <div class="lesson-title">
-                          DOM Cheat Sheet<span>Downloadable PDF reference</span>
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">PDF</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- More sections collapsed -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#sec6"
-                    >
-                      <div class="d-flex align-items-center w-100">
-                        <span>Section 6: Asynchronous JavaScript</span
-                        ><span class="section-meta">18 lessons · 4h 30m</span>
-                      </div>
-                    </button>
-                  </h2>
-                  <div
-                    id="sec6"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#curriculumAccordion"
-                  >
-                    <div class="accordion-body p-0">
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          The Event Loop &amp; Call Stack<span
-                            >Deep understanding of JS concurrency model</span
-                          >
-                        </div>
-                        <span class="lesson-preview">Preview</span
-                        ><span class="lesson-duration ms-2">35:00</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Promises: Creating &amp; Chaining<span
-                            >.then(), .catch(), .finally(), Promise.all()</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">42:20</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          async / await in Practice<span
-                            >Converting promise chains to clean async code</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">38:10</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#sec7"
-                    >
-                      <div class="d-flex align-items-center w-100">
-                        <span>Section 7: Fetch API &amp; REST APIs</span
-                        ><span class="section-meta">12 lessons · 3h 00m</span>
-                      </div>
-                    </button>
-                  </h2>
-                  <div
-                    id="sec7"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#curriculumAccordion"
-                  >
-                    <div class="accordion-body p-0">
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          What is a REST API?<span
-                            >HTTP methods, status codes, JSON payloads</span
-                          >
-                        </div>
-                        <span class="lesson-preview">Preview</span
-                        ><span class="lesson-duration ms-2">18:00</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Using Fetch API: GET, POST, PUT, DELETE<span
-                            >All HTTP verbs with real APIs</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">44:30</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#sec8"
-                    >
-                      <div class="d-flex align-items-center w-100">
-                        <span>Section 8: OOP with ES6 Classes</span
-                        ><span class="section-meta">14 lessons · 3h 40m</span>
-                      </div>
-                    </button>
-                  </h2>
-                  <div
-                    id="sec8"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#curriculumAccordion"
-                  >
-                    <div class="accordion-body p-0">
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Classes, Constructors &amp; Methods<span
-                            >OOP fundamentals in modern JavaScript</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">32:10</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#sec9"
-                    >
-                      <div class="d-flex align-items-center w-100">
-                        <span>Section 9–12: Projects &amp; Node.js Intro</span
-                        ><span class="section-meta">63 lessons · 16h 05m</span>
-                      </div>
-                    </button>
-                  </h2>
-                  <div
-                    id="sec9"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#curriculumAccordion"
-                  >
-                    <div class="accordion-body p-0">
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-code">
-                          <i class="bi bi-code-slash"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Project 1: Weather App<span
-                            >Fetch API + OpenWeather API</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">1h 20m</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-code">
-                          <i class="bi bi-code-slash"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Project 2: Task Manager with localStorage<span
-                            >CRUD operations + data persistence</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">1h 45m</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-code">
-                          <i class="bi bi-code-slash"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Project 3–10: Budget Tracker, Quiz App &amp; More<span
-                            >8 projects across remaining sections</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">10h+</span>
-                      </div>
-                      <div class="lesson-row">
-                        <div class="lesson-icon li-video">
-                          <i class="bi bi-play-fill"></i>
-                        </div>
-                        <div class="lesson-title">
-                          Introduction to Node.js<span
-                            >What is Node, npm, modules, and your first
-                            server</span
-                          >
-                        </div>
-                        <span class="lesson-lock"
-                          ><i class="bi bi-lock-fill"></i></span
-                        ><span class="lesson-duration ms-2">2h 10m</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /accordion -->
+            <div class="curriculum-stats">
+              <span><i class="bi bi-collection"></i> 12 sections</span>
+              <span><i class="bi bi-journal-text"></i> 180 lessons</span>
+              <span><i class="bi bi-clock"></i> 42 total hours</span>
+              <span><i class="bi bi-eye"></i> 18 free preview lessons</span>
             </div>
-          </section>
 
+            <div class="accordion" id="curriculumAccordion">
+              <!-- Section 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sec1">
+                    <div class="d-flex align-items-center w-100">
+                      <span>Section 1: Introduction &amp; Setup</span>
+                      <span class="section-meta">5 lessons · 1h 20m</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="sec1" class="accordion-collapse collapse show" data-bs-parent="#curriculumAccordion">
+                  <div class="accordion-body p-0">
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Welcome to the Course<span>What we'll build &amp; how to get the most out of
+                          it</span>
+                      </div>
+                      <span class="lesson-preview">Preview</span><span class="lesson-duration ms-2">5:30</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Setting Up VS Code<span>Install and configure your development
+                          environment</span>
+                      </div>
+                      <span class="lesson-preview">Preview</span><span class="lesson-duration ms-2">12:15</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        How the Browser Runs JavaScript<span>The JavaScript engine, V8, and the event loop
+                          overview</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">18:40</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-read">
+                        <i class="bi bi-file-text-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        JavaScript in 2024: The Landscape<span>Reading article</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">8 min read</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-quiz">
+                        <i class="bi bi-patch-question-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Section 1 Quiz<span>5 questions</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">~5 min</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec2">
+                    <div class="d-flex align-items-center w-100">
+                      <span>Section 2: JavaScript Fundamentals</span>
+                      <span class="section-meta">18 lessons · 4h 45m</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="sec2" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                  <div class="accordion-body p-0">
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Variables: var, let &amp; const<span>Scope, hoisting, and best practices</span>
+                      </div>
+                      <span class="lesson-preview">Preview</span><span class="lesson-duration ms-2">22:00</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Data Types &amp; Type Coercion<span>Strings, Numbers, Booleans, null, undefined,
+                          Symbol</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">28:15</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-code">
+                        <i class="bi bi-code-slash"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Exercise: Data Type Practice<span>Coding exercise with auto-hints</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">Exercise</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Operators &amp; Expressions<span>Arithmetic, comparison, logical, ternary</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">31:20</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Control Flow: if / else / switch<span>Making decisions in your code</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">25:10</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Loops: for, while, do-while, forEach<span>Iteration patterns and best use cases</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">35:50</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-quiz">
+                        <i class="bi bi-patch-question-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Section 2 Quiz<span>10 questions</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">~10 min</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec3">
+                    <div class="d-flex align-items-center w-100">
+                      <span>Section 3: Functions &amp; Scope</span>
+                      <span class="section-meta">14 lessons · 3h 30m</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="sec3" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                  <div class="accordion-body p-0">
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Function Declarations vs Expressions<span>Hoisting, naming, and when to use each</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">20:30</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Arrow Functions &amp; this<span>ES6 syntax, lexical this, and common pitfalls</span>
+                      </div>
+                      <span class="lesson-preview">Preview</span><span class="lesson-duration ms-2">26:45</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Closures Deep Dive<span>Factory functions, data privacy, real-world
+                          patterns</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">34:10</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-code">
+                        <i class="bi bi-code-slash"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Exercise: Build a Counter with Closures<span>Coding exercise</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">Exercise</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec4">
+                    <div class="d-flex align-items-center w-100">
+                      <span>Section 4: Arrays &amp; Objects</span>
+                      <span class="section-meta">16 lessons · 4h 10m</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="sec4" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                  <div class="accordion-body p-0">
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Array Methods: map, filter, reduce, find<span>Functional programming patterns with arrays</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">42:20</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Destructuring &amp; Spread/Rest<span>Modern ES6+ syntax for cleaner code</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">28:55</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-code">
+                        <i class="bi bi-code-slash"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Exercise: Data Transformation Pipeline<span>Coding exercise using map/filter/reduce</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">Exercise</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec5">
+                    <div class="d-flex align-items-center w-100">
+                      <span>Section 5: DOM Manipulation</span>
+                      <span class="section-meta">20 lessons · 5h 00m</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="sec5" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                  <div class="accordion-body p-0">
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Selecting &amp; Traversing the DOM<span>querySelector, getElementById, children,
+                          parentNode</span>
+                      </div>
+                      <span class="lesson-preview">Preview</span><span class="lesson-duration ms-2">30:00</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Manipulating CSS Classes &amp; Styles<span>classList API, inline styles, dynamic theming</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">22:15</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Event Listeners &amp; Event Delegation<span>click, input, submit, bubbling, capturing</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">38:40</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-dl">
+                        <i class="bi bi-download"></i>
+                      </div>
+                      <div class="lesson-title">
+                        DOM Cheat Sheet<span>Downloadable PDF reference</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">PDF</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- More sections collapsed -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec6">
+                    <div class="d-flex align-items-center w-100">
+                      <span>Section 6: Asynchronous JavaScript</span><span class="section-meta">18 lessons · 4h
+                        30m</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="sec6" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                  <div class="accordion-body p-0">
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        The Event Loop &amp; Call Stack<span>Deep understanding of JS concurrency model</span>
+                      </div>
+                      <span class="lesson-preview">Preview</span><span class="lesson-duration ms-2">35:00</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Promises: Creating &amp; Chaining<span>.then(), .catch(), .finally(), Promise.all()</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">42:20</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        async / await in Practice<span>Converting promise chains to clean async code</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">38:10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec7">
+                    <div class="d-flex align-items-center w-100">
+                      <span>Section 7: Fetch API &amp; REST APIs</span><span class="section-meta">12 lessons · 3h
+                        00m</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="sec7" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                  <div class="accordion-body p-0">
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        What is a REST API?<span>HTTP methods, status codes, JSON payloads</span>
+                      </div>
+                      <span class="lesson-preview">Preview</span><span class="lesson-duration ms-2">18:00</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Using Fetch API: GET, POST, PUT, DELETE<span>All HTTP verbs with real APIs</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">44:30</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec8">
+                    <div class="d-flex align-items-center w-100">
+                      <span>Section 8: OOP with ES6 Classes</span><span class="section-meta">14 lessons · 3h 40m</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="sec8" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                  <div class="accordion-body p-0">
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Classes, Constructors &amp; Methods<span>OOP fundamentals in modern JavaScript</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">32:10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec9">
+                    <div class="d-flex align-items-center w-100">
+                      <span>Section 9–12: Projects &amp; Node.js Intro</span><span class="section-meta">63 lessons · 16h
+                        05m</span>
+                    </div>
+                  </button>
+                </h2>
+                <div id="sec9" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                  <div class="accordion-body p-0">
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-code">
+                        <i class="bi bi-code-slash"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Project 1: Weather App<span>Fetch API + OpenWeather API</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">1h 20m</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-code">
+                        <i class="bi bi-code-slash"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Project 2: Task Manager with localStorage<span>CRUD operations + data persistence</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">1h 45m</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-code">
+                        <i class="bi bi-code-slash"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Project 3–10: Budget Tracker, Quiz App &amp; More<span>8 projects across remaining
+                          sections</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">10h+</span>
+                    </div>
+                    <div class="lesson-row">
+                      <div class="lesson-icon li-video">
+                        <i class="bi bi-play-fill"></i>
+                      </div>
+                      <div class="lesson-title">
+                        Introduction to Node.js<span>What is Node, npm, modules, and your first
+                          server</span>
+                      </div>
+                      <span class="lesson-lock"><i class="bi bi-lock-fill"></i></span><span
+                        class="lesson-duration ms-2">2h 10m</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /accordion -->
+          </div>
+        </section>
+
+        <section id="instructor">
+          <div class="detail-section1">
+            <div class="section-tag1">Meet Your Teacher</div>
+            <h2 class="section-title1">Your Instructor</h2>
+            <div class="divider1"></div>
+
+            <div class="instructor-card">
+              <div class="d-flex align-items-start gap-4 flex-wrap">
+                <div class="inst-avatar">BE</div>
+                <div class="flex-1">
+                  <div class="inst-name">Bashir Ebrahimi</div>
+                    <div class="inst-title">
+                      Senior Software Engineer &amp; Full-Stack Developer
+                    </div>
+
+                    <div class="inst-stats">
+                      <span
+                        ><i
+                          class="bi bi-star-fill"
+                          style="color: var(--warning)"
+                        ></i>
+                        4.9 Instructor Rating</span
+                      >
+                      <span
+                        ><i class="bi bi-people-fill"></i> 24,800 Students</span
+                      >
+                      <span><i class="bi bi-journal-text"></i> 8 Courses</span>
+                      <span
+                        ><i class="bi bi-award-fill"></i> Top Rated
+                        Instructor</span
+                      >
+                      <span
+                        ><i class="bi bi-briefcase-fill"></i> 12 Years
+                        Experience</span
+                      >
+                    </div>
+                    <p class="inst-bio">
+                      Bashir Ebrahimi is a Senior Software Engineer with over 12
+                      years of industry experience at companies including
+                      Google, Stripe, and multiple funded startups. He has been
+                      teaching programming online since 2016, and has helped
+                      over 24,000 students land their first developer jobs or
+                      level up in their careers.
+                    </p>
+                    <p class="inst-bio mt-2" style="margin-bottom: 0">
+                      He specializes in JavaScript, React, Node.js, and modern
+                      web development practices. His teaching philosophy is
+                      "learn by building real things" — every course he creates
+                      is packed with projects, challenges, and practical
+                      examples drawn from his real professional work.
+                    </p>
+
+                    <div class="inst-socials">
+                      <a href="#" title="LinkedIn"
+                        ><i class="bi bi-linkedin"></i
+                      ></a>
+                      <a href="#" title="Twitter"
+                        ><i class="bi bi-twitter-x"></i
+                      ></a>
+                      <a href="#" title="GitHub"
+                        ><i class="bi bi-github"></i
+                      ></a>
+                      <a href="#" title="Website"
+                        ><i class="bi bi-globe2"></i
+                      ></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+           
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Right Content -->
+
+      <div class="col-lg-4 enroll-col">
+        <div class="enroll-card">
+          <div class="enroll-thumb">
+            <i class="bi bi-code-slash thumb-icon"></i>
+            <div class="play-btn">
+              <i class="bi bi-play-fill" style="margin-left: 3px"></i>
+            </div>
+            <span class="preview-label">
+              <i class="bi bi-play-circle me-1"></i> Preview This course
+            </span>
+          </div>
+
+          <!-- body -->
+          
+          <div class="enroll-body">
+            <div class="d-flex align-items-center flex-wrap gap-1 mb-1">
+              <span class="enroll-price">$49.99</span>
+              <span class="enroll-price-original">$99.99</span>
+              <span class="enroll-discount">50% OFF</span>
+            </div>
+
+            <div class="countdown-row">
+              <p>
+                <i class="bi bi-clock me-1"></i>
+                <span id="timer">2 days 08:45:12</span> left at this price
+              </p>
+              <span>Limited time offer - save 50% today</span>
+            </div>
+
+            <!-- CTA Buttons -->
+              <a href="#" class="btn btn-enroll-main">
+                <i class="bi bi-lightning-charge-fill me-2"></i>Enroll Now
+              </a>
+              <a href="#" class="btn btn-try-free">
+                <i class="bi bi-play-circle me-2"></i>Try Free Preview
+              </a>
+
+              <!-- Guarantee -->
+              <div class="guarantee-row">
+                <i class="bi bi-shield-check-fill"></i>30-Day Money-Back
+                Guarantee
+              </div>
+
+              <hr style="border-color: var(--border); margin: 18px 0" />
+
+              <!-- Includes -->
+              <div
+                style="
+                  font-family: &quot;Sora&quot;, sans-serif;
+                  font-size: 0.8rem;
+                  font-weight: 700;
+                  color: var(--text-primary);
+                  margin-bottom: 12px;
+                "
+              >
+                This course includes:
+              </div>
+              <ul class="includes-list">
+                <li>
+                  <i class="bi bi-camera-video-fill"></i
+                  ><span>42 hours of HD on-demand video</span>
+                </li>
+                <li>
+                  <i class="bi bi-journal-text"></i
+                  ><span>180 lessons across 12 sections</span>
+                </li>
+                <li>
+                  <i class="bi bi-code-square"></i
+                  ><span>38 coding exercises with auto-hints</span>
+                </li>
+                <li>
+                  <i class="bi bi-patch-question-fill"></i
+                  ><span>12 section quizzes</span>
+                </li>
+                <li>
+                  <i class="bi bi-folder-fill"></i
+                  ><span>10 real-world projects</span>
+                </li>
+                <li>
+                  <i class="bi bi-download"></i
+                  ><span>42 downloadable resources &amp; cheat sheets</span>
+                </li>
+                <li>
+                  <i class="bi bi-phone"></i
+                  ><span>Full mobile + desktop access</span>
+                </li>
+                <li>
+                  <i class="bi bi-globe2"></i
+                  ><span>Captions in EN, HI, ES, FR</span>
+                </li>
+                <li>
+                  <i class="bi bi-infinity"></i
+                  ><span>Lifetime access + free future updates</span>
+                </li>
+                <li>
+                  <i class="bi bi-patch-check-fill"></i
+                  ><span>Certificate of completion</span>
+                </li>
+                <li>
+                  <i class="bi bi-people-fill"></i
+                  ><span>Private Discord community access</span>
+                </li>
+                <li>
+                  <i class="bi bi-chat-dots-fill"></i
+                  ><span>24/7 Q&amp;A &amp; mentor support</span>
+                </li>
+              </ul>
+
+              <hr style="border-color: var(--border); margin: 18px 0;"/>
+
+              <!-- Share / Gift -->
+              <div class="d-flex gap-2">
+                <button
+                  class="btn-share w-50"
+                  style="
+                    border: 1.5px solid var(--border);
+                    background: none;
+                    border-radius: 9px;
+                    padding: 9px;
+                    font-family: &quot;Sora&quot;, sans-serif;
+                    font-size: 0.78rem;
+                    font-weight: 600;
+                    color: var(--text-secondary);
+                    cursor: pointer;
+                    transition: all var(--transition);
+                  "
+                  onmouseover="
+                    this.style.borderColor = 'var(--primary)';
+                    this.style.color = 'var(--primary)';
+                  "
+                  onmouseout="
+                    this.style.borderColor = 'var(--border)';
+                    this.style.color = 'var(--text-secondary)';
+                  "
+                >
+                  <i class="bi bi-share me-1"></i> Share
+                </button>
+                <button
+                  class="btn-share w-50"
+                  style="
+                    border: 1.5px solid var(--border);
+                    background: none;
+                    border-radius: 9px;
+                    padding: 9px;
+                    font-family: &quot;Sora&quot;, sans-serif;
+                    font-size: 0.78rem;
+                    font-weight: 600;
+                    color: var(--text-secondary);
+                    cursor: pointer;
+                    transition: all var(--transition);
+                  "
+                  onmouseover="
+                    this.style.borderColor = 'var(--primary)';
+                    this.style.color = 'var(--primary)';
+                  "
+                  onmouseout="
+                    this.style.borderColor = 'var(--border)';
+                    this.style.color = 'var(--text-secondary)';
+                  "
+                >
+                  <i class="bi bi-gift me-1"></i> Gift
+                </button>
+              </div>
+          </div>
+        </div>
       </div>
   </section>
   </div>

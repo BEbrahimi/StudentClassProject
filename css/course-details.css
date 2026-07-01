@@ -489,3 +489,285 @@ background: var(--bg-section);
   color: var(--text-light);
   font-size: 0.85rem;
 }
+
+/* Teacher */
+.instructor-card {
+  background: var(--bg-section);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: all var(--transition);
+}
+.instructor-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(37, 99, 235, 0.2);
+}
+
+.inst-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), #7c3aed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Sora", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+}
+
+.inst-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+.inst-title {
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.inst-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+
+.inst-stats span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.inst-stats i {
+  color: var(--primary);
+}
+
+.inst-bio {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.inst-socials a {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  border: 1.5px solid var(--border);
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-right: 8px;
+  margin-top: 14px;
+  transition: all var(--transition);
+}
+.inst-socials a:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+
+/* right enroll course */
+
+.enroll-card{
+  background: #fff;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  position: sticky;
+  top:90px;
+}
+
+.enroll-thumb{
+  height: 200px;
+  background: linear-gradient(135deg, #dbeafe, #ede9fe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: filter var(--transition);
+}
+
+.enroll-thumb:hover{
+  filter: brightness(0.92);
+}
+
+.enroll-thumb i.thumb-icon {
+  font-size: 4rem;
+  color: var(--primary);
+  opacity: 0.5;
+  position: relative;
+  z-index: 1;
+}
+
+.play-btn {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.4rem;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+  z-index: 2;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.enroll-thumb:hover .play-btn {
+  transform: scale(1.1);
+  box-shadow: 0 10px 28px rgba(37, 99, 235, 0.6);
+}
+
+.preview-label {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Sora", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 4px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.enroll-body{
+  padding: 22px;
+}
+
+.enroll-price {
+  font-family: "Sora", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+}
+.enroll-price-original {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+.enroll-discount {
+  font-family: "Sora", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+  padding: 4px 10px;
+  border-radius: 7px;
+  margin-left: 8px;
+}
+
+.countdown-row {
+  background: rgba(245, 158, 11, 0.08);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin: 14px 0;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+.countdown-row p {
+  font-family: "Sora", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #d97706;
+  margin: 0;
+}
+.countdown-row span {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+.btn-enroll-main {
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  background: var(--primary) !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  width: 100%;
+  transition: all var(--transition);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
+}
+.btn-enroll-main:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
+  color: #fff;
+}
+.btn-try-free {
+  font-family: "Sora", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  background: transparent;
+  color: var(--primary);
+  border: 1.5px solid var(--primary) !important;
+  border-radius: 12px;
+  padding: 12px;
+  width: 100%;
+  transition: all var(--transition);
+  margin-top: 10px;
+}
+.btn-try-free:hover {
+  background: rgba(37, 99, 235, 0.06);
+  transform: translateY(-1px);
+  color: var(--primary);
+}
+
+.includes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.includes-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+.includes-list li:last-child {
+  border-bottom: none;
+}
+.includes-list i {
+  color: var(--primary);
+  font-size: 0.9rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.guarantee-row {
+  text-align: center;
+  padding: 14px 0 0;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+.guarantee-row i {
+  color: var(--success);
+  font-size: 1.1rem;
+  vertical-align: middle;
+  margin-right: 5px;
+}
