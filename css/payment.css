@@ -1,0 +1,110 @@
+:root {
+      --primary:       #2563EB;
+      --primary-hover: #1D4ED8;
+      --secondary:     #3B82F6;
+      --success:       #10B981;
+      --warning:       #F59E0B;
+      --danger:        #EF4444;
+
+      --bg-main:       #F8FAFC;
+      --bg-section:    #FFFFFF;
+      --bg-card:       #FFFFFF;
+
+      --text-primary:  #1E293B;
+      --text-secondary:#64748B;
+      --text-light:    #94A3B8;
+
+      --footer-bg:     #0F172A;
+      --footer-text:   #CBD5E1;
+      --footer-link:   #60A5FA;
+
+      --border:        #E2E8F0;
+
+      --shadow-sm:  0 1px 3px rgba(37,99,235,.08), 0 1px 2px rgba(0,0,0,.06);
+      --shadow-md:  0 4px 16px rgba(37,99,235,.12), 0 2px 6px rgba(0,0,0,.06);
+      --shadow-lg:  0 10px 40px rgba(37,99,235,.16), 0 4px 12px rgba(0,0,0,.08);
+      --radius:     14px;
+      --transition: .28s cubic-bezier(.4,0,.2,1);
+    }
+
+.breadcrumb-bar{
+    background: var(--bg-section);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 0;
+}
+
+.breadcrumb-item a{
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.checkout-steps{
+    background: var(--bg-section);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+}
+
+.step-track{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cstep{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    position: relative;
+}
+
+.cstep-circle{
+        width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Sora', sans-serif;
+    font-size: .78rem;
+    font-weight: 700;
+    border: 2px solid var(--border);
+    background: #fff;
+    color: var(--text-light);
+    position: relative;
+    transition: all var(--transition);
+    z-index: 1;
+}
+
+.cstep:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: calc(50% + 20px);
+    width: calc(100% - 40px);
+    height: 2px;
+    background: var(--border);
+    border-radius: 99px;
+    transition: background var(--transition);
+}
+
+.cstep.done:not(:last-child)::after,
+.cstep.active:not(:last-child)::after{
+    background: var(--primary);
+}
+
+.cstep.active .cstep-circle{
+    border-color: var(--primary);
+    background: var(--primary);
+    color: #fff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, .15);
+}
+
+.cstep.done .cstep-circle{
+    border-color: var(--success);
+    background: var(--success);
+    color: #fff;
+}
