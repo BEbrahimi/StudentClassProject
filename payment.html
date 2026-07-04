@@ -1,81 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Payment Page</title>
-
-  <!-- css file -->
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="css/payment.css" />
-  
-
-
-  <!-- Bootstrap 5 -->
+  <title>Checkout – TechLearn</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
-  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap"
     rel="stylesheet" />
+    <link rel="stylesheet" href="css/payment.css">
+ 
 </head>
 
 <body>
+
   <div id="top-header">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
-        <!-- contact -->
-        <div class="d-flex flex-wrap align-items-center gap-3">
-          <a href="mailto:techlearn@gmail.com">
-            <i class="bi bi-envelope-fill me-1"></i>
-            info@techlearn.com
-          </a>
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-between gap-2"
+        >
+          <!-- contact -->
+          <div class="d-flex flex-wrap align-items-center gap-3">
+            <a href="mailto:techlearn@gmail.com">
+              <i class="bi bi-envelope-fill me-1"></i>
+              info@techlearn.com
+            </a>
 
-          <a href="tel:+174894854">
-            <i class="bi bi-telephone-fill me-1"></i>
-            Call ME
-          </a>
-        </div>
+            <a href="tel:+174894854">
+              <i class="bi bi-telephone-fill me-1"></i>
+              Call ME
+            </a>
+          </div>
 
-        <!-- social Icon -->
+          <!-- social Icon -->
 
-        <div class="top-social d-flex gap-2">
-          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-          <a href="#" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+          <div class="top-social d-flex gap-2">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Start Navbar -->
+    <!-- Start Navbar -->
 
-  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-    <div class="container">
-      <a href="#" class="navbar-brand">Tech<span>Learn</span></a>
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+      <div class="container">
+        <a href="#" class="navbar-brand">Tech<span>Learn</span></a>
 
-      <!-- Mobile Toggle -->
+        <!-- Mobile Toggle -->
 
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navOffcanvas"
-        aria-controls="navOffcanvas">
-        <i class="bi bi-list" style="font-size: 1.6rem; color: var(--primary)"></i>
-      </button>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#navOffcanvas"
+          aria-controls="navOffcanvas"
+        >
+          <i
+            class="bi bi-list"
+            style="font-size: 1.6rem; color: var(--primary)"
+          ></i>
+        </button>
 
-      <!-- disktop nav -->
+        <!-- disktop nav -->
 
-      <div class="collapse navbar-collapse justify-content-end">
-        <ul class="navbar-nav align-itmes-center gap-1 me-3">
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav align-itmes-center gap-1 me-3">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="courses.html" class="nav-link">Course</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex gap-2">
+            <a href="#" class="btn btn-nav-login">Login</a>
+            <a href="#" class="btn btn-nav-register">Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">TechLearn</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="navbar-nav gap-1 mb-4">
           <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="" class="nav-link active">Home</a>
           </li>
 
           <li class="nav-item">
-            <a href="courses.html" class="nav-link active">Course</a>
+            <a href="course.html" class="nav-link">Course</a>
           </li>
 
           <li class="nav-item">
@@ -93,57 +135,22 @@
         </div>
       </div>
     </div>
-  </nav>
 
-  <!-- Mobile Menu -->
-
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title">TechLearn</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-    </div>
-
-    <div class="offcanvas-body">
-      <ul class="navbar-nav gap-1 mb-4">
-        <li class="nav-item">
-          <a href="" class="nav-link active">Home</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="courses.html" class="nav-link">Course</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="" class="nav-link">About</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="" class="nav-link">Contact</a>
-        </li>
-      </ul>
-
-      <div class="d-flex gap-2">
-        <a href="#" class="btn btn-nav-login">Login</a>
-        <a href="#" class="btn btn-nav-register">Register</a>
-      </div>
-    </div>
-  </div>
-
+  <!-- BREADCRUMB -->
   <div class="breadcrumb-bar">
     <div class="container">
-      <ol class="breadcrumb mb-0" style="
-        font-size: .82rem;
-        font-family: 'Sora',sans-serif;
-        font-weight: 500;">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item"><a href="courses.html">Course</a></li>
-        <li class="breadcrumb-item"><a href="course-details.html">Course Details</a></li>
-        <li class="breadcrumb-item active">Checkout</li>
-      </ol>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0" style="font-size:.82rem;font-family:'Sora',sans-serif;font-weight:500">
+          <li class="breadcrumb-item"><a href="techlearn.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="techlearn-courses.html">Courses</a></li>
+          <li class="breadcrumb-item"><a href="techlearn-course-detail.html">JavaScript Bootcamp</a></li>
+          <li class="breadcrumb-item active">Checkout</li>
+        </ol>
+      </nav>
     </div>
   </div>
 
-  <!-- checkout -->
+  <!-- CHECKOUT PROGRESS STEPS -->
   <div class="checkout-steps">
     <div class="container">
       <div class="step-track">
@@ -151,12 +158,10 @@
           <div class="cstep-circle"><i class="bi bi-check-lg"></i></div>
           <div class="cstep-label">Cart</div>
         </div>
-
         <div class="cstep active" id="csi-2">
           <div class="cstep-circle">2</div>
           <div class="cstep-label">Payment</div>
         </div>
-
         <div class="cstep" id="csi-3">
           <div class="cstep-circle">3</div>
           <div class="cstep-label">Confirm</div>
@@ -165,98 +170,683 @@
     </div>
   </div>
 
+  <!-- MAIN CHECKOUT -->
+  <section class="checkout-main">
+    <div class="container">
+      <div class="row g-4">
 
+        <!-- ════ LEFT: PAYMENT FORM ════ -->
+        <div class="col-lg-8">
 
+          <!-- ── 1. Contact Info ── -->
+          <div class="chk-card">
+            <div class="chk-card-title"><span class="num">1</span> Contact Information</div>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="field-group mb-0">
+                  <label class="field-label">First Name <span class="required-star">*</span></label>
+                  <div class="field-wrap">
+                    <i class="bi bi-person-fill field-icon"></i>
+                    <input type="text" class="form-input" id="cFirstName" placeholder="John" value="Bashir" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="field-group mb-0">
+                  <label class="field-label">Last Name <span class="required-star">*</span></label>
+                  <div class="field-wrap">
+                    <i class="bi bi-person-fill field-icon"></i>
+                    <input type="text" class="form-input" id="cLastName" placeholder="Doe" value="Ebrahimi" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="field-group mb-0">
+                  <label class="field-label">Email Address <span class="required-star">*</span></label>
+                  <div class="field-wrap">
+                    <i class="bi bi-envelope-fill field-icon"></i>
+                    <input type="email" class="form-input" id="cEmail" placeholder="you@example.com"
+                      value="bashir@gmail.com" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="field-group mb-0">
+                  <label class="field-label">Phone Number</label>
+                  <div class="field-wrap">
+                    <i class="bi bi-telephone-fill field-icon"></i>
+                    <input type="tel" class="form-input" placeholder="+91 98765 43210" value="+91 98765 43210" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <!-- ── 2. Payment Method ── -->
+          <div class="chk-card">
+            <div class="chk-card-title"><span class="num">2</span> Payment Method</div>
 
+            <div class="pay-tabs">
+              <div class="pay-tab active" onclick="setPayTab(this,'tab-card')"><i class="bi bi-credit-card-fill"></i>
+                Card</div>
+              <div class="pay-tab" onclick="setPayTab(this,'tab-upi')"><i class="bi bi-phone-fill"></i> UPI</div>
+              <div class="pay-tab" onclick="setPayTab(this,'tab-wallet')"><i class="bi bi-wallet2"></i> Wallet</div>
+              <div class="pay-tab" onclick="setPayTab(this,'tab-netbank')"><i class="bi bi-bank2"></i> Net Banking</div>
+              <div class="pay-tab" onclick="setPayTab(this,'tab-emi')"><i class="bi bi-calendar-check"></i> EMI</div>
+            </div>
 
+            <!-- Credit / Debit Card -->
+            <div class="pay-panel active" id="tab-card">
+              <div class="field-group">
+                <label class="field-label">Card Number <span class="required-star">*</span></label>
+                <div class="field-wrap card-input-wrap">
+                  <i class="bi bi-credit-card-fill field-icon"></i>
+                  <input type="text" class="form-input" id="cardNumber" placeholder="1234  5678  9012  3456"
+                    maxlength="19" oninput="formatCard(this)" />
+                  <span class="card-brand-icon" id="cardBrandIcon"><i class="bi bi-credit-card"></i></span>
+                </div>
+                <div class="field-feedback" id="cn-fb"></div>
+              </div>
+              <div class="field-group">
+                <label class="field-label">Cardholder Name <span class="required-star">*</span></label>
+                <div class="field-wrap">
+                  <i class="bi bi-person-badge-fill field-icon"></i>
+                  <input type="text" class="form-input" placeholder="As printed on card" id="cardName" />
+                </div>
+              </div>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <div class="field-group mb-0">
+                    <label class="field-label">Expiry Date <span class="required-star">*</span></label>
+                    <div class="field-wrap">
+                      <i class="bi bi-calendar3 field-icon"></i>
+                      <input type="text" class="form-input" id="expiry" placeholder="MM / YY" maxlength="7"
+                        oninput="formatExpiry(this)" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="field-group mb-0">
+                    <label class="field-label">CVV / CVC <span class="required-star">*</span></label>
+                    <div class="field-wrap">
+                      <i class="bi bi-shield-lock-fill field-icon"></i>
+                      <input type="password" class="form-input" id="cvv" placeholder="• • •" maxlength="4" />
+                      <button type="button" class="btn-pwd-toggle" onclick="toggleField('cvv','cvvEye')"
+                        style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--text-light);cursor:pointer"
+                        tabindex="-1">
+                        <i class="bi bi-eye-fill" id="cvvEye"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-8 mt-3" style="gap:12px">
+                <input type="checkbox" id="saveCard" style="accent-color:var(--primary);width:16px;height:16px"
+                  checked />
+                <label for="saveCard"
+                  style="font-size:.82rem;color:var(--text-secondary);cursor:pointer;font-family:'Sora',sans-serif;font-weight:500">Save
+                  card for faster future payments</label>
+              </div>
+              <div class="accepted-cards mt-3">
+                <span
+                  style="font-size:.72rem;color:var(--text-light);font-family:'Sora',sans-serif;font-weight:600">Accepted:</span>
+                <div class="card-pill visa">VISA</div>
+                <div class="card-pill mc">MC</div>
+                <div class="card-pill amex">AMEX</div>
+                <div class="card-pill rupay">RuPay</div>
+                <div class="card-pill" style="color:#F7931A">BTC</div>
+              </div>
+            </div>
 
-  <!-- =============================================
-     10. FOOTER
-============================================= -->
+            <!-- UPI -->
+            <div class="pay-panel" id="tab-upi">
+              <div
+                style="background:rgba(37,99,235,.04);border:1.5px solid rgba(37,99,235,.12);border-radius:12px;padding:16px;margin-bottom:20px">
+                <div
+                  style="font-family:'Sora',sans-serif;font-size:.82rem;font-weight:700;color:var(--primary);margin-bottom:6px">
+                  <i class="bi bi-info-circle me-1"></i>Pay using any UPI app</div>
+                <div style="font-size:.8rem;color:var(--text-secondary)">Google Pay, PhonePe, Paytm, BHIM, or any other
+                  UPI-enabled app.</div>
+              </div>
+              <div class="field-group">
+                <label class="field-label">UPI ID <span class="required-star">*</span></label>
+                <div class="d-flex gap-2">
+                  <div class="field-wrap" style="flex:1">
+                    <i class="bi bi-at field-icon"></i>
+                    <input type="text" class="form-input" id="upiId" placeholder="yourname@upi" />
+                  </div>
+                  <button class="upi-verify-btn" onclick="verifyUPI()"><i
+                      class="bi bi-check-circle me-1"></i>Verify</button>
+                </div>
+                <div class="field-feedback" id="upi-fb"></div>
+              </div>
+              <div style="font-size:.8rem;color:var(--text-secondary);margin-top:6px">Examples: <code>rahul@gpay</code>,
+                <code>name@paytm</code>, <code>user@ybl</code></div>
+              <!-- UPI QR option -->
+              <div style="border-top:1px dashed var(--border);margin:20px 0 16px;padding-top:16px">
+                <div
+                  style="font-family:'Sora',sans-serif;font-size:.85rem;font-weight:700;margin-bottom:12px;color:var(--text-primary)">
+                  Or scan QR code</div>
+                <div
+                  style="width:140px;height:140px;background:linear-gradient(135deg,#EFF6FF,#DBEAFE);border-radius:12px;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:3rem;color:var(--primary);opacity:.5">
+                  <i class="bi bi-qr-code"></i>
+                </div>
+                <div style="font-size:.75rem;color:var(--text-light);margin-top:8px">Valid for 10 minutes · <a href="#"
+                    style="color:var(--primary)">Refresh QR</a></div>
+              </div>
+            </div>
+
+            <!-- Wallet -->
+            <div class="pay-panel" id="tab-wallet">
+              <div
+                style="font-family:'Sora',sans-serif;font-size:.82rem;font-weight:600;color:var(--text-secondary);margin-bottom:14px">
+                Select your preferred wallet:</div>
+              <div class="wallet-grid">
+                <div class="wallet-card selected" onclick="selectWallet(this)">
+                  <div class="wicon">💳</div>
+                  <div class="wname">Paytm</div>
+                </div>
+                <div class="wallet-card" onclick="selectWallet(this)">
+                  <div class="wicon">📱</div>
+                  <div class="wname">PhonePe</div>
+                </div>
+                <div class="wallet-card" onclick="selectWallet(this)">
+                  <div class="wicon">🔵</div>
+                  <div class="wname">Amazon Pay</div>
+                </div>
+                <div class="wallet-card" onclick="selectWallet(this)">
+                  <div class="wicon">🟠</div>
+                  <div class="wname">Freecharge</div>
+                </div>
+                <div class="wallet-card" onclick="selectWallet(this)">
+                  <div class="wicon">🟡</div>
+                  <div class="wname">Mobikwik</div>
+                </div>
+                <div class="wallet-card" onclick="selectWallet(this)">
+                  <div class="wicon">🟢</div>
+                  <div class="wname">JioMoney</div>
+                </div>
+              </div>
+              <div
+                style="background:rgba(245,158,11,.06);border:1px solid rgba(245,158,11,.2);border-radius:11px;padding:12px 14px;margin-top:16px;font-size:.8rem;color:var(--text-secondary)">
+                <i class="bi bi-info-circle-fill me-1" style="color:var(--warning)"></i>You'll be redirected to your
+                wallet app to complete payment.
+              </div>
+            </div>
+
+            <!-- Net Banking -->
+            <div class="pay-panel" id="tab-netbank">
+              <div
+                style="font-family:'Sora',sans-serif;font-size:.82rem;font-weight:600;color:var(--text-secondary);margin-bottom:14px">
+                Popular Banks:</div>
+              <div class="bank-grid" id="bankGrid">
+                <div class="bank-card selected" onclick="selectBank(this)"><input type="radio" name="bank"
+                    checked /><span>SBI</span></div>
+                <div class="bank-card" onclick="selectBank(this)"><input type="radio" name="bank" /><span>HDFC
+                    Bank</span></div>
+                <div class="bank-card" onclick="selectBank(this)"><input type="radio" name="bank" /><span>ICICI
+                    Bank</span></div>
+                <div class="bank-card" onclick="selectBank(this)"><input type="radio" name="bank" /><span>Axis
+                    Bank</span></div>
+                <div class="bank-card" onclick="selectBank(this)"><input type="radio" name="bank" /><span>Kotak
+                    Bank</span></div>
+                <div class="bank-card" onclick="selectBank(this)"><input type="radio" name="bank" /><span>Yes
+                    Bank</span></div>
+                <div class="bank-card" onclick="selectBank(this)"><input type="radio" name="bank" /><span>PNB</span>
+                </div>
+                <div class="bank-card" onclick="selectBank(this)"><input type="radio" name="bank" /><span>Bank of
+                    Baroda</span></div>
+              </div>
+              <div class="field-group mt-3">
+                <label class="field-label">Other Bank</label>
+                <div class="field-wrap">
+                  <i class="bi bi-bank2 field-icon"></i>
+                  <select class="form-input">
+                    <option value="">Select bank</option>
+                    <option>Canara Bank</option>
+                    <option>Federal Bank</option>
+                    <option>IndusInd Bank</option>
+                    <option>Indian Bank</option>
+                    <option>Union Bank</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- EMI -->
+            <div class="pay-panel" id="tab-emi">
+              <div
+                style="background:rgba(16,185,129,.06);border:1px solid rgba(16,185,129,.2);border-radius:12px;padding:14px;margin-bottom:18px">
+                <div style="font-family:'Sora',sans-serif;font-size:.85rem;font-weight:700;color:var(--success)"><i
+                    class="bi bi-check-circle-fill me-1"></i>0% Interest EMI Available</div>
+                <div style="font-size:.78rem;color:var(--text-secondary);margin-top:4px">Split your payment into easy
+                  monthly installments with no extra cost.</div>
+              </div>
+              <div class="field-group">
+                <label class="field-label">Select Bank for EMI</label>
+                <div class="field-wrap">
+                  <i class="bi bi-bank2 field-icon"></i>
+                  <select class="form-input">
+                    <option>HDFC Credit Card</option>
+                    <option>ICICI Credit Card</option>
+                    <option>SBI Credit Card</option>
+                    <option>Axis Bank Credit Card</option>
+                    <option>Kotak Credit Card</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field-label mb-2">Choose EMI Tenure:</div>
+              <div class="emi-grid">
+                <div class="emi-card selected" onclick="selectEMI(this)">
+                  <div class="emi-amount">₹1,399</div>
+                  <div class="emi-tenure">3 Months</div>
+                  <div class="emi-total">Total ₹4,197</div>
+                </div>
+                <div class="emi-card" onclick="selectEMI(this)">
+                  <div class="emi-amount">₹719</div>
+                  <div class="emi-tenure">6 Months</div>
+                  <div class="emi-total">Total ₹4,314</div>
+                </div>
+                <div class="emi-card" onclick="selectEMI(this)">
+                  <div class="emi-amount">₹369</div>
+                  <div class="emi-tenure">12 Months</div>
+                  <div class="emi-total">Total ₹4,428</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── 3. Billing Address ── -->
+          <div class="chk-card">
+            <div class="chk-card-title"><span class="num">3</span> Billing Address</div>
+            <div class="same-check">
+              <input type="checkbox" id="sameAddr" checked onchange="toggleBilling(this)" />
+              <label for="sameAddr">Same as account address</label>
+            </div>
+            <div id="billingFields" style="display:none">
+              <div class="row g-3">
+                <div class="col-12">
+                  <div class="field-group mb-0">
+                    <label class="field-label">Address Line 1 <span class="required-star">*</span></label>
+                    <div class="field-wrap">
+                      <i class="bi bi-geo-alt-fill field-icon"></i>
+                      <input type="text" class="form-input" placeholder="Street address, flat, house no." />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="field-group mb-0">
+                    <label class="field-label">Address Line 2</label>
+                    <div class="field-wrap">
+                      <i class="bi bi-geo-alt field-icon"></i>
+                      <input type="text" class="form-input" placeholder="Area, landmark (optional)" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="field-group mb-0">
+                    <label class="field-label">City <span class="required-star">*</span></label>
+                    <div class="field-wrap">
+                      <i class="bi bi-buildings field-icon"></i>
+                      <input type="text" class="form-input" placeholder="Mumbai" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="field-group mb-0">
+                    <label class="field-label">State <span class="required-star">*</span></label>
+                    <div class="field-wrap">
+                      <i class="bi bi-map field-icon"></i>
+                      <input type="text" class="form-input" placeholder="Maharashtra" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="field-group mb-0">
+                    <label class="field-label">PIN Code <span class="required-star">*</span></label>
+                    <div class="field-wrap">
+                      <i class="bi bi-hash field-icon"></i>
+                      <input type="text" class="form-input" placeholder="400001" maxlength="6" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="field-group mb-0">
+                    <label class="field-label">Country <span class="required-star">*</span></label>
+                    <div class="field-wrap">
+                      <i class="bi bi-globe2 field-icon"></i>
+                      <select class="form-input">
+                        <option selected>India</option>
+                        <option>United States</option>
+                        <option>United Kingdom</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="field-group mb-0">
+                    <label class="field-label">GST Number <span
+                        style="color:var(--text-light);font-weight:400">(optional)</span></label>
+                    <div class="field-wrap">
+                      <i class="bi bi-receipt field-icon"></i>
+                      <input type="text" class="form-input" placeholder="For GST invoice" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── 4. Additional Options ── -->
+          <div class="chk-card">
+            <div class="chk-card-title"><span class="num">4</span> Additional Options</div>
+
+            <div style="display:flex;flex-wrap:wrap;gap:14px">
+              <div
+                style="background:var(--bg-main);border:1.5px solid var(--border);border-radius:12px;padding:14px 16px;flex:1;min-width:200px;display:flex;align-items:flex-start;gap:10px">
+                <input type="checkbox" id="giftOpt"
+                  style="accent-color:var(--primary);width:16px;height:16px;margin-top:2px;flex-shrink:0"
+                  onchange="toggleGift(this)" />
+                <div>
+                  <label for="giftOpt"
+                    style="font-family:'Sora',sans-serif;font-size:.85rem;font-weight:700;cursor:pointer;display:block;margin-bottom:3px"><i
+                      class="bi bi-gift-fill me-1" style="color:var(--primary)"></i>Gift this course</label>
+                  <div style="font-size:.75rem;color:var(--text-secondary)">Send this course as a gift to someone
+                    special</div>
+                </div>
+              </div>
+              <div
+                style="background:var(--bg-main);border:1.5px solid var(--border);border-radius:12px;padding:14px 16px;flex:1;min-width:200px;display:flex;align-items:flex-start;gap:10px">
+                <input type="checkbox" id="invoiceOpt"
+                  style="accent-color:var(--primary);width:16px;height:16px;margin-top:2px;flex-shrink:0" />
+                <div>
+                  <label for="invoiceOpt"
+                    style="font-family:'Sora',sans-serif;font-size:.85rem;font-weight:700;cursor:pointer;display:block;margin-bottom:3px"><i
+                      class="bi bi-receipt-cutoff me-1" style="color:var(--primary)"></i>Tax Invoice</label>
+                  <div style="font-size:.75rem;color:var(--text-secondary)">Receive a GST/tax invoice for this purchase
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gift fields -->
+            <div id="giftFields"
+              style="display:none;margin-top:16px;padding:16px;background:rgba(37,99,235,.03);border:1.5px dashed rgba(37,99,235,.2);border-radius:12px">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label class="field-label">Recipient Name</label>
+                  <div class="field-wrap"><i class="bi bi-person-fill field-icon"></i><input type="text"
+                      class="form-input" placeholder="Friend's name" /></div>
+                </div>
+                <div class="col-sm-6">
+                  <label class="field-label">Recipient Email</label>
+                  <div class="field-wrap"><i class="bi bi-envelope-fill field-icon"></i><input type="email"
+                      class="form-input" placeholder="friend@email.com" /></div>
+                </div>
+                <div class="col-12">
+                  <label class="field-label">Gift Message <span
+                      style="color:var(--text-light);font-weight:400">(optional)</span></label>
+                  <div class="field-wrap"><textarea class="form-input"
+                      style="padding-top:13px;padding-left:42px;resize:vertical;min-height:70px"
+                      placeholder="Happy learning! 🎓"></textarea><i class="bi bi-chat-left-text-fill field-icon"
+                      style="top:16px;transform:none"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /left col -->
+
+        <!-- ════ RIGHT: ORDER SUMMARY ════ -->
+        <div class="col-lg-4">
+          <div class="order-card">
+            <div class="order-header">
+              <h5><i class="bi bi-bag-check-fill me-2"></i>Order Summary</h5>
+            </div>
+            <div class="order-body">
+
+              <!-- Course item -->
+              <div class="order-course">
+                <div class="order-thumb"><i class="bi bi-code-slash" style="color:var(--primary)"></i></div>
+                <div>
+                  <div class="order-course-title">The Complete JavaScript Developer Bootcamp</div>
+                  <div class="order-course-by"><i class="bi bi-person-fill me-1"></i>Alex Johnson</div>
+                  <div class="order-course-rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    <span>4.8 (3,240 reviews)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Promo -->
+              <div class="promo-row">
+                <input type="text" class="promo-input" id="checkoutPromo" placeholder="Promo / Gift code" />
+                <button class="promo-btn" onclick="applyPromo()">Apply</button>
+              </div>
+              <div class="promo-success" id="promoSuccess">
+                <i class="bi bi-check-circle-fill" style="color:var(--success)"></i>
+                <span>Code <strong>LEARN50</strong> applied — 50% off!</span>
+              </div>
+
+              <!-- Price breakdown -->
+              <div class="price-row"><span>Original Price</span><span
+                  style="text-decoration:line-through;color:var(--text-light)">₹8,299</span></div>
+              <div class="price-row" style="color:var(--success)"><span><i class="bi bi-tag-fill me-1"></i>Discount
+                  (50%)</span><span>– ₹4,150</span></div>
+              <div class="price-row" id="promoRow" style="display:none;color:var(--primary)"><span><i
+                    class="bi bi-gift-fill me-1"></i>Promo Code</span><span>– ₹500</span></div>
+              <div class="price-row"><span>Platform Fee</span><span>₹0</span></div>
+              <div class="price-row"><span>Taxes (18% GST)</span><span id="gstAmt">₹746</span></div>
+              <div class="price-row total"><span>Total Payable</span><span id="totalAmt">₹4,895</span></div>
+
+              <div class="mt-3 d-flex justify-content-center">
+                <span class="saving-badge"><i class="bi bi-piggy-bank-fill"></i>You save ₹4,150 today!</span>
+              </div>
+
+              <!-- PAY BUTTON -->
+              <button class="btn-pay" id="payBtn" onclick="processPayment()">
+                <div class="spinner" id="paySpinner"></div>
+                <span class="btn-text"><i class="bi bi-lock-fill me-1"></i>Pay Securely · ₹4,895</span>
+              </button>
+
+              <!-- Security strip -->
+              <div class="security-strip">
+                <div class="sec-item"><i class="bi bi-shield-lock-fill"></i>SSL Encrypted</div>
+                <div class="sec-item"><i class="bi bi-check-circle-fill"></i>PCI DSS Safe</div>
+                <div class="sec-item"><i class="bi bi-arrow-counterclockwise"></i>30-Day Refund</div>
+              </div>
+
+              <!-- Includes -->
+              <ul class="order-includes">
+                <li><i class="bi bi-camera-video-fill"></i>42 hours HD video</li>
+                <li><i class="bi bi-journal-text"></i>180 lessons · 10 projects</li>
+                <li><i class="bi bi-infinity"></i>Lifetime access + updates</li>
+                <li><i class="bi bi-patch-check-fill"></i>Certificate of completion</li>
+                <li><i class="bi bi-phone"></i>Mobile + desktop access</li>
+                <li><i class="bi bi-download"></i>42 downloadable resources</li>
+              </ul>
+
+            </div>
+          </div>
+        </div><!-- /right col -->
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section>
+
+  <!-- SUCCESS OVERLAY -->
+  <div id="successOverlay">
+    <div class="success-box">
+      <div class="s-icon"><i class="bi bi-check-lg"></i></div>
+      <h3 class="s-title">Payment Successful! 🎉</h3>
+      <p class="s-desc">
+        Your enrollment is confirmed. A receipt has been sent to<br>
+        <strong>rahul.kumar@email.com</strong>
+      </p>
+      <div class="s-ref">Order ID: TL-2024-<span id="orderId"></span></div>
+      <a href="techlearn-course-detail.html" class="btn btn-s-go">
+        <i class="bi bi-play-circle-fill me-2"></i>Start Learning Now
+      </a>
+      <div style="margin-top:14px;font-size:.78rem;color:var(--text-light)">Redirecting in <span
+          id="sCountdown">5</span>s…</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
   <footer id="footer">
     <div class="container">
       <div class="row g-5">
-        <!-- Col 1: Brand -->
         <div class="col-lg-3 col-md-6">
           <div class="footer-brand">Tech<span>Learn</span></div>
-          <p class="footer-desc">
-            Empowering learners worldwide with expert-led courses, flexible
-            schedules, and industry-recognized certifications.
-          </p>
+          <p class="footer-desc">Empowering learners worldwide with expert-led courses and industry-recognized
+            certifications.</p>
           <div class="footer-social">
-            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i
+                class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
-
-        <!-- Col 2: Quick Links -->
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="footer-heading">Quick Links</div>
           <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Instructors</a></li>
+            <li><a href="techlearn.html">Home</a></li>
+            <li><a href="techlearn-courses.html">Courses</a></li>
+            <li><a href="techlearn-about.html">About Us</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
-
-        <!-- Col 3: Popular Courses -->
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="footer-heading">Popular Courses</div>
           <ul class="footer-links">
             <li><a href="#">JavaScript Bootcamp</a></li>
-            <li><a href="#">Python & Data Science</a></li>
+            <li><a href="#">Python &amp; Data Science</a></li>
             <li><a href="#">UI/UX Design Mastery</a></li>
             <li><a href="#">AWS Certification</a></li>
-            <li><a href="#">React Native</a></li>
-            <li><a href="#">Ethical Hacking</a></li>
           </ul>
         </div>
-
-        <!-- Col 4: Contact -->
         <div class="col-lg-4 col-md-6">
           <div class="footer-heading">Contact Us</div>
-          <div class="footer-contact-item">
-            <i class="bi bi-geo-alt-fill"></i>
-            <span>Kabul Afghanistan, 411021</span>
-          </div>
-          <div class="footer-contact-item">
-            <i class="bi bi-envelope-fill"></i>
-            <span>hello@techlearn.com</span>
-          </div>
-          <div class="footer-contact-item">
-            <i class="bi bi-telephone-fill"></i>
-            <span>+9379797545</span>
-          </div>
-          <div class="footer-contact-item">
-            <i class="bi bi-clock-fill"></i>
-            <span>Mon–Fri, 9:00 AM – 6:00 PM IST</span>
+          <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>Level 12, Tech Tower, Cyber City,
+              Gurugram, India – 122002</span></div>
+          <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><span>hello@techlearn.io</span></div>
+          <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>+1 (234) 567-890</span></div>
+          <div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Mon–Fri, 9:00 AM – 6:00 PM IST</span>
           </div>
         </div>
       </div>
-
-      <!-- Bottom Footer -->
       <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
         <p>&copy; 2024 <a href="#">TechLearn</a>. All rights reserved.</p>
-        <p>
-          <a href="#" class="me-3">Privacy Policy</a>
-          <a href="#" class="me-3">Terms of Service</a>
-          <a href="#">Cookie Policy</a>
-        </p>
+        <p><a href="#" class="me-3">Privacy Policy</a><a href="#" class="me-3">Terms of Service</a><a href="#">Cookie
+            Policy</a></p>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll To Top -->
-  <button id="scrollTop" aria-label="Scroll to top">
-    <i class="bi bi-arrow-up"></i>
-  </button>
+  <button id="scrollTop" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+  <div class="toast-wrap">
+    <div class="toast-msg" id="toastMsg"><i class="bi bi-check-circle-fill toast-icon s" id="toastIcon"></i><span
+        id="toastText"></span></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    /* Nav scroll */
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', scrollY > 20); document.getElementById('scrollTop').classList.toggle('visible', scrollY > 300) });
+    document.getElementById('scrollTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    /* Payment tabs */
+    function setPayTab(btn, panelId) {
+      document.querySelectorAll('.pay-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.pay-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(panelId).classList.add('active');
+    }
+
+    /* Card formatting */
+    function formatCard(inp) {
+      let v = inp.value.replace(/\D/g, '').substring(0, 16);
+      inp.value = v.replace(/(.{4})/g, '$1 ').trim();
+      const brand = document.getElementById('cardBrandIcon');
+      if (v.startsWith('4')) brand.innerHTML = '<span style="font-family:Sora,sans-serif;font-weight:800;color:#1A1F71;font-size:.85rem">VISA</span>';
+      else if (v.startsWith('5')) brand.innerHTML = '<span style="font-family:Sora,sans-serif;font-weight:800;color:#EB001B;font-size:.85rem">MC</span>';
+      else if (v.startsWith('3')) brand.innerHTML = '<span style="font-family:Sora,sans-serif;font-weight:800;color:#007BC1;font-size:.85rem">AMEX</span>';
+      else brand.innerHTML = '<i class="bi bi-credit-card"></i>';
+    }
+
+    function formatExpiry(inp) {
+      let v = inp.value.replace(/\D/g, '').substring(0, 4);
+      if (v.length >= 2) v = v.substring(0, 2) + ' / ' + v.substring(2);
+      inp.value = v;
+    }
+
+    /* Toggle CVV visibility */
+    function toggleField(id, iconId) {
+      const i = document.getElementById(id), ic = document.getElementById(iconId);
+      i.type = i.type === 'password' ? 'text' : 'password';
+      ic.classList.toggle('bi-eye-fill'); ic.classList.toggle('bi-eye-slash-fill');
+    }
+
+    /* UPI Verify */
+    function verifyUPI() {
+      const val = document.getElementById('upiId').value.trim();
+      const fb = document.getElementById('upi-fb');
+      if (!val) { fb.className = 'field-feedback show invalid'; fb.innerHTML = '<i class="bi bi-x-circle-fill"></i>Please enter your UPI ID'; return }
+      if (val.includes('@')) { fb.className = 'field-feedback show valid'; fb.innerHTML = '<i class="bi bi-check-circle-fill"></i>UPI ID verified successfully!'; showToast('UPI ID verified!', 'success') }
+      else { fb.className = 'field-feedback show invalid'; fb.innerHTML = '<i class="bi bi-x-circle-fill"></i>Invalid UPI ID format (e.g., name@upi)' }
+    }
+
+    /* Wallet / Bank / EMI selection */
+    function selectWallet(el) { document.querySelectorAll('.wallet-card').forEach(c => c.classList.remove('selected')); el.classList.add('selected') }
+    function selectBank(el) { document.querySelectorAll('.bank-card').forEach(c => c.classList.remove('selected')); el.classList.add('selected'); el.querySelector('input').checked = true }
+    function selectEMI(el) { document.querySelectorAll('.emi-card').forEach(c => c.classList.remove('selected')); el.classList.add('selected') }
+
+    /* Billing toggle */
+    function toggleBilling(cb) { document.getElementById('billingFields').style.display = cb.checked ? 'none' : 'block' }
+
+    /* Gift toggle */
+    function toggleGift(cb) { document.getElementById('giftFields').style.display = cb.checked ? 'block' : 'none' }
+
+    /* Promo code */
+    function applyPromo() {
+      const code = document.getElementById('checkoutPromo').value.trim().toUpperCase();
+      const ps = document.getElementById('promoSuccess');
+      const pr = document.getElementById('promoRow');
+      if (code === 'LEARN50') {
+        ps.classList.add('show'); pr.style.display = 'flex';
+        document.getElementById('totalAmt').textContent = '₹4,395';
+        document.getElementById('payBtn').querySelector('.btn-text').innerHTML = '<i class="bi bi-lock-fill me-1"></i>Pay Securely · ₹4,395';
+        showToast('Promo LEARN50 applied — extra ₹500 off!', 'success');
+      } else {
+        ps.classList.remove('show'); pr.style.display = 'none';
+        showToast('Invalid promo code', 'error');
+      }
+    }
+
+    /* Process Payment */
+    function processPayment() {
+      const btn = document.getElementById('payBtn');
+      btn.classList.add('loading'); btn.disabled = true;
+      setTimeout(() => {
+        btn.classList.remove('loading'); btn.disabled = false;
+        document.getElementById('orderId').textContent = Math.floor(100000 + Math.random() * 900000);
+        document.getElementById('successOverlay').style.display = 'flex';
+        let s = 5;
+        const ci = setInterval(() => { s--; document.getElementById('sCountdown').textContent = s; if (s <= 0) { clearInterval(ci); document.getElementById('successOverlay').style.display = 'none' } }, 1000);
+      }, 2200);
+    }
+
+    /* Toast */
+    function showToast(msg, type) {
+      const t = document.getElementById('toastMsg'), ic = document.getElementById('toastIcon');
+      document.getElementById('toastText').textContent = msg;
+      if (type === 'error') { t.classList.add('error'); ic.className = 'bi bi-x-circle-fill toast-icon e' }
+      else { t.classList.remove('error'); ic.className = 'bi bi-check-circle-fill toast-icon s' }
+      t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 3500);
+    }
+  </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
