@@ -142,7 +142,7 @@
 
 .btn-nav-register:hover{
     background: var(--primary);
-    color: #fff;
+    color: #fff !important;
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(37, 99, 235, .3);
 }
