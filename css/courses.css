@@ -684,9 +684,9 @@
     font-family: 'Sora', sans-serif;
     font-size: .78rem;
     font-weight: 700;
-    background: rgba(16, 185, 129, .1);
-    color: var(--success);
-    border: 1.5px solid rgba(16, 185, 129, .25);
+    background: rgba(16, 185, 129, .1) !important;
+    color: var(--success) !important;
+    border: 1.5px solid rgba(16, 185, 129, .25) !important;
     padding: 7px 16px;
     border-radius: 8px;
     transition: all var(--transition);
@@ -695,8 +695,8 @@
 }
 
 .btn-free:hover {
-    background: var(--success);
-    color: #fff;
+    background: var(--success) !important;
+    color: #fff !important;
     transform: translateY(-1px);
 }
 

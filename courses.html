@@ -160,23 +160,26 @@
     </div>
   </section>
 
+    <!-- =============================================
+     FILTER BAR
+============================================= -->
   <div id="filter-bar">
     <div class="container">
-      <div class="d-flex align-items-center gap-3 filter-scroll">
+      <div class="d-flex align-items-center gap-2 filter-scroll">
         <span class="filter-label d-none d-sm-inline">Filter:</span>
-        <button class="filter-btn active">All</button>
-        <button class="filter-btn">Web Dev</button>
-        <button class="filter-btn">Data Science</button>
-        <button class="filter-btn">Cloud</button>
-        <button class="filter-btn">Mobile</button>
-        <button class="filter-btn">Security</button>
-        <button class="filter-btn">DevOps</button>
-        <button class="filter-btn">AI &amp; ML</button>
-        <button class="filter-btn">Blockchain</button>
-
+        <button class="filter-btn active" onclick="setCategory(this,'all')">All</button>
+        <button class="filter-btn" onclick="setCategory(this,'Web Development')">Web Dev</button>
+        <button class="filter-btn" onclick="setCategory(this,'Data Science')">Data Science</button>
+        <button class="filter-btn" onclick="setCategory(this,'UI/UX Design')">UI/UX</button>
+        <button class="filter-btn" onclick="setCategory(this,'Cloud Computing')">Cloud</button>
+        <button class="filter-btn" onclick="setCategory(this,'Mobile Dev')">Mobile</button>
+        <button class="filter-btn" onclick="setCategory(this,'Cybersecurity')">Security</button>
+        <button class="filter-btn" onclick="setCategory(this,'DevOps')">DevOps</button>
+        <button class="filter-btn" onclick="setCategory(this,'AI & ML')">AI &amp; ML</button>
+        <button class="filter-btn" onclick="setCategory(this,'Blockchain')">Blockchain</button>
         <div class="ms-auto d-none d-md-flex align-items-center gap-2">
           <span class="filter-label">Sort:</span>
-          <select class="sort-select">
+          <select class="sort-select" id="sortSelect" onchange="filterCourses()">
             <option value="popular">Most Popular</option>
             <option value="rating">Highest Rated</option>
             <option value="newest">Newest</option>
@@ -187,7 +190,7 @@
       </div>
     </div>
   </div>
-  <!-- courses -->
+ 
   <!-- =============================================
      MAIN CONTENT  (full-width, no sidebar)
 ============================================= -->
@@ -287,7 +290,7 @@
                   <span class="course-price-original">$129.99</span>
                   <span class="discount-badge">-46%</span>
                 </div>
-                <a href="#" class="btn btn-enroll">Enroll Now</a>
+                <a href="course-details.html" class="btn btn-enroll">Enroll Now</a>
               </div>
             </div>
           </div>
@@ -1196,4 +1199,159 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+
+ <script>
+    /* ── Navbar scroll shadow ── */
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+      document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 300);
+    });
+    document.getElementById('scrollTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    /* ── Wishlist toggle ── */
+    document.querySelectorAll('.btn-wish').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        const icon = btn.querySelector('i');
+        icon.classList.toggle('bi-heart');
+        icon.classList.toggle('bi-heart-fill');
+      });
+    });
+
+    /* ── Category filter ── */
+    let activeCategory = 'all';
+    let currentPage = 1;
+    const PAGE_SIZE = 8;
+
+    function setCategory(btn, cat) {
+      activeCategory = cat;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentPage = 1;
+      filterCourses();
+    }
+
+    /* ── Main filter + sort function ── */
+    function filterCourses(resetPage) {
+      if (resetPage !== false) currentPage = 1;
+
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const sortVal = document.getElementById('sortSelect') ? document.getElementById('sortSelect').value : 'popular';
+      const cards = Array.from(document.querySelectorAll('#courseGrid > [data-category]'));
+
+      // Filter
+      let matched = cards.filter(card => {
+        const cat = card.dataset.category;
+        const title = card.querySelector('.course-title').textContent.toLowerCase();
+        const inst = card.querySelector('.course-instructor').textContent.toLowerCase();
+        const matchCat = activeCategory === 'all' || cat === activeCategory;
+        const matchQ = !query || title.includes(query) || inst.includes(query) || cat.toLowerCase().includes(query);
+        return matchCat && matchQ;
+      });
+
+      // Sort
+      matched.sort((a, b) => {
+        if (sortVal === 'rating') return parseFloat(b.dataset.rating) - parseFloat(a.dataset.rating);
+        if (sortVal === 'price-low') return parseFloat(a.dataset.price) - parseFloat(b.dataset.price);
+        if (sortVal === 'price-high') return parseFloat(b.dataset.price) - parseFloat(a.dataset.price);
+        if (sortVal === 'popular') return parseInt(b.dataset.students) - parseInt(a.dataset.students);
+        return 0; // newest – keep DOM order
+      });
+
+      // Re-order all cards in DOM to match sort, hide everything first
+      const grid = document.getElementById('courseGrid');
+      cards.forEach(c => { c.style.display = 'none'; });
+      matched.forEach(c => grid.appendChild(c));
+
+      // Pagination math
+      const totalItems = matched.length;
+      const totalPages = Math.max(1, Math.ceil(totalItems / PAGE_SIZE));
+      if (currentPage > totalPages) currentPage = totalPages;
+      const startIdx = (currentPage - 1) * PAGE_SIZE;
+      const endIdx = startIdx + PAGE_SIZE;
+
+      matched.forEach((c, i) => {
+        c.style.display = (i >= startIdx && i < endIdx) ? '' : 'none';
+      });
+
+      // Results count
+      const cnt = document.getElementById('resultsCount');
+      const showingFrom = totalItems === 0 ? 0 : startIdx + 1;
+      const showingTo = Math.min(endIdx, totalItems);
+      cnt.innerHTML = totalItems === 0
+        ? `Showing <span style="color:var(--primary)">0</span> courses`
+        : `Showing <span style="color:var(--primary)">${showingFrom}–${showingTo}</span> of <span style="color:var(--primary)">${totalItems}</span> courses`;
+
+      // Empty state
+      const empty = document.getElementById('emptyState');
+      const pageWrap = document.getElementById('paginationWrap');
+      if (totalItems === 0) {
+        empty.classList.remove('d-none');
+        pageWrap.classList.add('d-none');
+      } else {
+        empty.classList.add('d-none');
+        pageWrap.classList.remove('d-none');
+        renderPagination(totalPages);
+      }
+    }
+
+    /* ── Build pagination controls ── */
+    function renderPagination(totalPages) {
+      const list = document.getElementById('paginationList');
+      let html = '';
+
+      // Prev
+      html += `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+      <a class="page-link" href="#" onclick="goToPage(event,${currentPage - 1})"><i class="bi bi-chevron-left"></i></a>
+    </li>`;
+
+      // Page numbers with smart truncation
+      const pages = [];
+      if (totalPages <= 7) {
+        for (let i = 1; i <= totalPages; i++) pages.push(i);
+      } else {
+        pages.push(1);
+        if (currentPage > 3) pages.push('…');
+        for (let i = Math.max(2, currentPage - 1); i <= Math.min(totalPages - 1, currentPage + 1); i++) pages.push(i);
+        if (currentPage < totalPages - 2) pages.push('…');
+        pages.push(totalPages);
+      }
+
+      pages.forEach(p => {
+        if (p === '…') {
+          html += `<li class="page-item disabled"><span class="page-link" style="border:none;background:none">…</span></li>`;
+        } else {
+          html += `<li class="page-item ${p === currentPage ? 'active' : ''}">
+          <a class="page-link" href="#" onclick="goToPage(event,${p})">${p}</a>
+        </li>`;
+        }
+      });
+
+      // Next
+      html += `<li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
+      <a class="page-link" href="#" onclick="goToPage(event,${currentPage + 1})"><i class="bi bi-chevron-right"></i></a>
+    </li>`;
+
+      list.innerHTML = html;
+    }
+
+    function goToPage(e, page) {
+      e.preventDefault();
+      if (page < 1) return;
+      currentPage = page;
+      filterCourses(false);
+      document.getElementById('filter-bar').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Live search on Enter or input
+    document.getElementById('searchInput').addEventListener('keydown', e => {
+      if (e.key === 'Enter') filterCourses();
+    });
+
+    // initial render
+    filterCourses();
+  </script>
 </html>
