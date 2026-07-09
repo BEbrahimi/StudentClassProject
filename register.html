@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register – TechLearn</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+
+  <!-- ══ TOP HEADER ══ -->
+  <div id="top-header">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+        <div class="d-flex flex-wrap align-items-center gap-3">
+          <a href="mailto:hello@techlearn.io"><i class="bi bi-envelope-fill me-1"></i>hello@techlearn.io</a>
+          <a href="tel:+11234567890"><i class="bi bi-telephone-fill me-1"></i>+1 (234) 567-890</a>
+        </div>
+        <div class="top-social d-flex gap-2">
+          <a href="https://www.facebook.com/bashir.hussain.9693" target="_blank" aria-label="Facebook"><i
+              class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/tech_learn1/" target="_blank" aria-label="Instagram"><i
+              class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/b-ebrahimi/" target="_blank" aria-label="LinkedIn"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://www.youtube.com/@Techlearn7" target="_blank" aria-label="Youtube"><i
+              class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav id="mainNav" class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Tech<span>Learn</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navOffcanvas">
+        <i class="bi bi-list" style="font-size:1.6rem;color:var(--primary)"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav align-items-center gap-1 me-3">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="courses.html">Courses</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="#footer">Contact</a></li>
+        </ul>
+        <a href="login.html" class="btn btn-nav-login">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">TechLearn</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav gap-1 mb-4">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="courses.html">Courses</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="#footer">Contact</a></li>
+      </ul>
+      <a href="login.html" class="btn btn-nav-login w-100 text-center">Login</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+     MAIN AUTH WRAPPER
+══════════════════════════════════════ -->
+  <div class="auth-wrapper">
+
+    <!-- ── LEFT PANEL ── -->
+    <div class="auth-left">
+      <div class="orb-a"></div>
+      <div class="orb-b"></div>
+      <div class="auth-left-content">
+        <div class="left-logo">Tech<span>Learn</span></div>
+
+        <h2 class="left-heading">
+          Start Your<br>
+          <span class="accent">Free Learning</span><br>
+          Journey Today
+        </h2>
+        <p class="left-desc">Join 10,000+ learners already building in-demand skills. Zero risk — your first 7 days are
+          completely free.</p>
+
+        <div class="benefit-card">
+          <div class="bc-icon bci-blue"><i class="bi bi-infinity"></i></div>
+          <div>
+            <div class="bc-title">Lifetime Access to All Content</div>
+            <div class="bc-desc">Pay once, access forever — including all future course updates at no cost.</div>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <div class="bc-icon bci-green"><i class="bi bi-patch-check-fill"></i></div>
+          <div>
+            <div class="bc-title">Industry-Recognized Certificates</div>
+            <div class="bc-desc">Earn verifiable credentials respected by top companies worldwide.</div>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <div class="bc-icon bci-yellow"><i class="bi bi-people-fill"></i></div>
+          <div>
+            <div class="bc-title">Private Community &amp; Mentorship</div>
+            <div class="bc-desc">Access our Discord, live Q&amp;A sessions, and 1-on-1 mentor support.</div>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <div class="bc-icon bci-purple"><i class="bi bi-shield-check-fill"></i></div>
+          <div>
+            <div class="bc-title">30-Day Money-Back Guarantee</div>
+            <div class="bc-desc">Not satisfied? Get a full refund — no questions, no hassle.</div>
+          </div>
+        </div>
+
+        <!-- Testimonial snippet -->
+        <div class="left-testimonial">
+          <div class="lt-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="lt-quote">"I signed up on a Monday. By Friday I had already completed 3 modules and built my first
+            API. TechLearn is genuinely different."</p>
+          <div class="d-flex align-items-center gap-10" style="gap:10px">
+            <div class="lt-avatar">RK</div>
+            <div>
+              <div class="lt-name">Rahul Kumar</div>
+              <div class="lt-role">Frontend Developer at Flipkart</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── RIGHT PANEL (multi-step form) ── -->
+    <div class="auth-right">
+      <div class="auth-form-box">
+
+        <!-- Success screen -->
+        <div id="successScreen">
+          <div class="success-icon"><i class="bi bi-check-lg"></i></div>
+          <h2 class="success-title">Welcome to TechLearn! 🎉</h2>
+          <p class="success-desc">
+            Your account has been created successfully.<br>
+            We've sent a verification email to <strong id="successEmail"></strong>.<br>
+            Check your inbox and start learning!
+          </p>
+          <a href="techlearn.html" class="btn btn-goto">
+            <i class="bi bi-rocket-takeoff-fill me-2"></i>Go to Dashboard
+          </a>
+          <div style="margin-top:16px;font-size:.82rem;color:var(--text-light)">Redirecting automatically in <span
+              id="countdown">5</span>s…</div>
+        </div>
+
+        <!-- Multi-step form -->
+        <div id="formWrap">
+          <div class="form-tag"><i class="bi bi-person-plus-fill"></i> Free Account — No Credit Card</div>
+          <h1 class="form-title">Create Account</h1>
+          <p class="form-subtitle">
+            Already have an account? <a href="techlearn-login.html" style="color:var(--primary);font-weight:700">Sign in
+              →</a>
+          </p>
+
+          <!-- Social sign-up -->
+          <div class="row g-2 mb-2">
+            <div class="col-6">
+              <button class="social-btn" onclick="socialReg('Google')">
+                <svg width="18" height="18" viewBox="0 0 48 48">
+                  <path fill="#4285F4"
+                    d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z" />
+                  <path fill="#34A853"
+                    d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.16C6.51 42.62 14.62 48 24 48z" />
+                  <path fill="#FBBC05"
+                    d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.16C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z" />
+                  <path fill="#EA4335"
+                    d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.16C12.43 13.72 17.74 9.5 24 9.5z" />
+                </svg>
+                Google
+              </button>
+            </div>
+            <div class="col-6">
+              <button class="social-btn" onclick="socialReg('GitHub')">
+                <i class="bi bi-github" style="font-size:1rem;color:#24292F"></i> GitHub
+              </button>
+            </div>
+            <div class="col-6">
+              <button class="social-btn" onclick="socialReg('LinkedIn')">
+                <i class="bi bi-linkedin" style="font-size:1rem;color:#0A66C2"></i> LinkedIn
+              </button>
+            </div>
+            <div class="col-6">
+              <button class="social-btn" onclick="socialReg('Microsoft')">
+                <svg width="18" height="18" viewBox="0 0 21 21">
+                  <rect x="1" y="1" width="9" height="9" fill="#f25022" />
+                  <rect x="11" y="1" width="9" height="9" fill="#7fba00" />
+                  <rect x="1" y="11" width="9" height="9" fill="#00a4ef" />
+                  <rect x="11" y="11" width="9" height="9" fill="#ffb900" />
+                </svg>
+                Microsoft
+              </button>
+            </div>
+          </div>
+
+          <div class="or-divider">or register with email</div>
+
+          <!-- Step Indicator -->
+          <div class="step-bar" id="stepBar">
+            <div class="step-item active" id="si-1">
+              <div class="step-circle" id="sc-1">1</div>
+              <div class="step-label">Account</div>
+            </div>
+            <div class="step-item" id="si-2">
+              <div class="step-circle" id="sc-2">2</div>
+              <div class="step-label">Profile</div>
+            </div>
+            <div class="step-item" id="si-3">
+              <div class="step-circle" id="sc-3">3</div>
+              <div class="step-label">Interests</div>
+            </div>
+            <div class="step-item" id="si-4">
+              <div class="step-circle" id="sc-4">4</div>
+              <div class="step-label">Plan</div>
+            </div>
+          </div>
+
+          <!-- ════════ STEP 1 – Account Info ════════ -->
+          <div class="step-panel active" id="step1">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="field-group mb-0">
+                  <label class="field-label">First Name <span class="required-star">*</span></label>
+                  <div class="field-wrap">
+                    <i class="bi bi-person-fill field-icon"></i>
+                    <input type="text" id="firstName" class="form-input" placeholder="John"
+                      oninput="validateRequired(this,'fn-fb','First name')" />
+                  </div>
+                  <div class="field-feedback" id="fn-fb"></div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="field-group mb-0">
+                  <label class="field-label">Last Name <span class="required-star">*</span></label>
+                  <div class="field-wrap">
+                    <i class="bi bi-person-fill field-icon"></i>
+                    <input type="text" id="lastName" class="form-input" placeholder="Doe"
+                      oninput="validateRequired(this,'ln-fb','Last name')" />
+                  </div>
+                  <div class="field-feedback" id="ln-fb"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field-group" style="margin-top:16px">
+              <label class="field-label">Email Address <span class="required-star">*</span></label>
+              <div class="field-wrap">
+                <i class="bi bi-envelope-fill field-icon"></i>
+                <input type="email" id="regEmail" class="form-input" placeholder="you@example.com"
+                  oninput="validateEmail(this,'em-fb')" autocomplete="email" />
+              </div>
+              <div class="field-feedback" id="em-fb"></div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label">Username <span class="required-star">*</span></label>
+              <div class="field-wrap">
+                <i class="bi bi-at field-icon"></i>
+                <input type="text" id="username" class="form-input" placeholder="johndoe"
+                  oninput="validateUsername(this)" />
+                <i class="bi bi-check-circle-fill field-icon-right" id="unCheck"
+                  style="color:var(--success);display:none"></i>
+              </div>
+              <div class="field-feedback" id="un-fb"></div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label">Password <span class="required-star">*</span></label>
+              <div class="field-wrap">
+                <i class="bi bi-lock-fill field-icon"></i>
+                <input type="password" id="regPwd" class="form-input" placeholder="Create a strong password"
+                  oninput="evalPassword(this)" autocomplete="new-password" />
+                <button type="button" class="btn-pwd-toggle" onclick="togglePwd('regPwd','rpEye')" tabindex="-1">
+                  <i class="bi bi-eye-fill" id="rpEye"></i>
+                </button>
+              </div>
+              <!-- Strength meter -->
+              <div class="pwd-strength str-0" id="pwdStrength">
+                <div class="strength-bars">
+                  <div class="strength-bar"></div>
+                  <div class="strength-bar"></div>
+                  <div class="strength-bar"></div>
+                  <div class="strength-bar"></div>
+                </div>
+                <span class="strength-label" id="strLabel">Enter a password</span>
+              </div>
+              <ul class="pwd-rules" id="pwdRules">
+                <li id="r-len"><i class="bi bi-circle"></i> 8+ characters</li>
+                <li id="r-upper"><i class="bi bi-circle"></i> Uppercase letter</li>
+                <li id="r-num"><i class="bi bi-circle"></i> Number</li>
+                <li id="r-sym"><i class="bi bi-circle"></i> Symbol</li>
+              </ul>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label">Confirm Password <span class="required-star">*</span></label>
+              <div class="field-wrap">
+                <i class="bi bi-lock-fill field-icon"></i>
+                <input type="password" id="confirmPwd" class="form-input" placeholder="Repeat your password"
+                  oninput="validateConfirm(this)" autocomplete="new-password" />
+                <button type="button" class="btn-pwd-toggle" onclick="togglePwd('confirmPwd','cpEye')" tabindex="-1">
+                  <i class="bi bi-eye-fill" id="cpEye"></i>
+                </button>
+              </div>
+              <div class="field-feedback" id="cp-fb"></div>
+            </div>
+
+            <div class="d-flex justify-content-end">
+              <button class="btn-next" onclick="goStep(2)">
+                Continue <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- ════════ STEP 2 – Profile ════════ -->
+          <div class="step-panel" id="step2">
+
+            <!-- Avatar picker -->
+            <div class="field-group">
+              <label class="field-label">Profile Photo</label>
+              <div class="avatar-picker">
+                <div class="avatar-preview" id="avatarPreview">JD</div>
+                <div>
+                  <button class="btn-pick-avatar" onclick="document.getElementById('avatarFile').click()">
+                    <i class="bi bi-upload me-1"></i> Upload Photo
+                  </button>
+                  <input type="file" id="avatarFile" accept="image/*" style="display:none"
+                    onchange="previewAvatar(this)" />
+                  <div class="avatar-hint">JPG, PNG or GIF · Max 5 MB</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label">Date of Birth</label>
+              <div class="field-wrap">
+                <i class="bi bi-calendar3 field-icon"></i>
+                <input type="date" id="dob" class="form-input" />
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label">Gender</label>
+              <div class="field-wrap">
+                <i class="bi bi-gender-ambiguous field-icon"></i>
+                <select id="gender" class="form-input form-select-input">
+                  <option value="">Select gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Non-binary</option>
+                  <option>Prefer not to say</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label">Phone Number</label>
+              <div class="phone-wrap">
+                <select class="country-code" id="countryCode">
+                  <option value="+91">🇮🇳 +91</option>
+                  <option value="+1" selected>🇺🇸 +1</option>
+                  <option value="+44">🇬🇧 +44</option>
+                  <option value="+61">🇦🇺 +61</option>
+                  <option value="+49">🇩🇪 +49</option>
+                  <option value="+33">🇫🇷 +33</option>
+                  <option value="+81">🇯🇵 +81</option>
+                  <option value="+86">🇨🇳 +86</option>
+                  <option value="+971">🇦🇪 +971</option>
+                </select>
+                <div class="field-wrap" style="flex:1">
+                  <i class="bi bi-telephone-fill field-icon"></i>
+                  <input type="tel" id="phone" class="form-input phone-input" placeholder="(555) 000-0000"
+                    oninput="validatePhone(this)" />
+                </div>
+              </div>
+              <div class="field-feedback" id="ph-fb"></div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label">Country / Region</label>
+              <div class="field-wrap">
+                <i class="bi bi-globe2 field-icon"></i>
+                <select id="country" class="form-input form-select-input">
+                  <option value="">Select country</option>
+                  <option>India</option>
+                  <option selected>United States</option>
+                  <option>United Kingdom</option>
+                  <option>Canada</option>
+                  <option>Australia</option>
+                  <option>Germany</option>
+                  <option>France</option>
+                  <option>Japan</option>
+                  <option>Singapore</option>
+                  <option>UAE</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label">Current Role / Occupation</label>
+              <div class="field-wrap">
+                <i class="bi bi-briefcase-fill field-icon"></i>
+                <select id="occupation" class="form-input form-select-input">
+                  <option value="">Select your role</option>
+                  <option>Student</option>
+                  <option>Software Developer</option>
+                  <option>Designer</option>
+                  <option>Data Scientist</option>
+                  <option>Product Manager</option>
+                  <option>Entrepreneur</option>
+                  <option>Job Seeker</option>
+                  <option>Other Professional</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label">Experience Level</label>
+              <div class="field-wrap">
+                <i class="bi bi-bar-chart-fill field-icon"></i>
+                <select id="expLevel" class="form-input form-select-input">
+                  <option value="">Select level</option>
+                  <option>Complete Beginner</option>
+                  <option>Some Experience (1–2 years)</option>
+                  <option>Intermediate (2–5 years)</option>
+                  <option>Senior / Expert (5+ years)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label">How did you hear about us?</label>
+              <div class="field-wrap">
+                <i class="bi bi-megaphone-fill field-icon"></i>
+                <select id="referral" class="form-input form-select-input">
+                  <option value="">Select source</option>
+                  <option>Google / Search</option>
+                  <option>YouTube</option>
+                  <option>Instagram</option>
+                  <option>LinkedIn</option>
+                  <option>Friend / Colleague</option>
+                  <option>Podcast</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label">Short Bio <span
+                  style="color:var(--text-light);font-weight:400">(optional)</span></label>
+              <div class="field-wrap">
+                <textarea id="bio" class="form-input"
+                  style="padding-top:13px;padding-left:42px;resize:vertical;min-height:80px"
+                  placeholder="Tell us a bit about yourself…" maxlength="200"></textarea>
+                <i class="bi bi-chat-left-text-fill field-icon" style="top:16px;transform:none"></i>
+              </div>
+              <div style="font-size:.72rem;color:var(--text-light);margin-top:4px;text-align:right"><span
+                  id="bioCount">0</span>/200</div>
+            </div>
+
+            <div class="d-flex justify-content-between gap-3">
+              <button class="btn-prev" onclick="goStep(1)"><i class="bi bi-arrow-left"></i> Back</button>
+              <button class="btn-next" onclick="goStep(3)">Continue <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- ════════ STEP 3 – Interests & Goal ════════ -->
+          <div class="step-panel" id="step3">
+
+            <div class="field-group">
+              <label class="field-label">Learning Interests <span style="color:var(--text-light);font-weight:400">(pick
+                  all that apply)</span></label>
+              <div class="interest-grid" id="interestGrid">
+                <span class="interest-tag selected" onclick="toggleInterest(this)"><i class="bi bi-code-slash"></i>Web
+                  Dev</span>
+                <span class="interest-tag" onclick="toggleInterest(this)"><i class="bi bi-graph-up-arrow"></i>Data
+                  Science</span>
+                <span class="interest-tag" onclick="toggleInterest(this)"><i class="bi bi-palette-fill"></i>UI/UX
+                  Design</span>
+                <span class="interest-tag" onclick="toggleInterest(this)"><i class="bi bi-cloud-fill"></i>Cloud /
+                  DevOps</span>
+                <span class="interest-tag" onclick="toggleInterest(this)"><i class="bi bi-phone-fill"></i>Mobile
+                  Dev</span>
+                <span class="interest-tag" onclick="toggleInterest(this)"><i
+                    class="bi bi-shield-check"></i>Cybersecurity</span>
+                <span class="interest-tag" onclick="toggleInterest(this)"><i class="bi bi-robot"></i>AI &amp; ML</span>
+                <span class="interest-tag" onclick="toggleInterest(this)"><i
+                    class="bi bi-currency-bitcoin"></i>Blockchain</span>
+                <span class="interest-tag" onclick="toggleInterest(this)"><i
+                    class="bi bi-briefcase-fill"></i>Business</span>
+                <span class="interest-tag" onclick="toggleInterest(this)"><i class="bi bi-camera-video-fill"></i>Content
+                  Creation</span>
+                <span class="interest-tag" onclick="toggleInterest(this)"><i class="bi bi-bar-chart-line"></i>Digital
+                  Marketing</span>
+                <span class="interest-tag" onclick="toggleInterest(this)"><i class="bi bi-controller"></i>Game
+                  Dev</span>
+              </div>
+            </div>
+
+            <div class="field-group" style="margin-top:24px">
+              <label class="field-label">Your Primary Learning Goal <span class="required-star">*</span></label>
+
+              <div class="goal-card selected" id="goal-1" onclick="selectGoal('goal-1')">
+                <input type="radio" name="goal" value="career" checked />
+                <div class="goal-icon gi-blue"><i class="bi bi-briefcase-fill"></i></div>
+                <div class="goal-info">
+                  <strong>Switch to a Tech Career</strong>
+                  <span>I want to land my first job as a developer, designer, or data professional</span>
+                </div>
+              </div>
+
+              <div class="goal-card" id="goal-2" onclick="selectGoal('goal-2')">
+                <input type="radio" name="goal" value="upskill" />
+                <div class="goal-icon gi-green"><i class="bi bi-arrow-up-circle-fill"></i></div>
+                <div class="goal-info">
+                  <strong>Upskill in My Current Role</strong>
+                  <span>I want to deepen expertise and grow faster at my current company</span>
+                </div>
+              </div>
+
+              <div class="goal-card" id="goal-3" onclick="selectGoal('goal-3')">
+                <input type="radio" name="goal" value="freelance" />
+                <div class="goal-icon gi-yellow"><i class="bi bi-laptop-fill"></i></div>
+                <div class="goal-info">
+                  <strong>Start Freelancing</strong>
+                  <span>I want to build skills to get paid clients and work independently</span>
+                </div>
+              </div>
+
+              <div class="goal-card" id="goal-4" onclick="selectGoal('goal-4')">
+                <input type="radio" name="goal" value="curiosity" />
+                <div class="goal-icon gi-purple"><i class="bi bi-lightbulb-fill"></i></div>
+                <div class="goal-info">
+                  <strong>Just Curious / Learning for Fun</strong>
+                  <span>I enjoy learning new things without any specific career pressure</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label">Weekly Study Availability</label>
+              <div class="field-wrap">
+                <i class="bi bi-clock-fill field-icon"></i>
+                <select id="studyTime" class="form-input form-select-input">
+                  <option value="">Select hours per week</option>
+                  <option>1–3 hours / week</option>
+                  <option>4–7 hours / week</option>
+                  <option>8–14 hours / week</option>
+                  <option>15+ hours / week</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between gap-3">
+              <button class="btn-prev" onclick="goStep(2)"><i class="bi bi-arrow-left"></i> Back</button>
+              <button class="btn-next" onclick="goStep(4)">Continue <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- ════════ STEP 4 – Plan & Submit ════════ -->
+          <div class="step-panel" id="step4">
+
+            <div class="field-group">
+              <label class="field-label mb-3">Choose Your Plan</label>
+              <div class="row g-3">
+
+                <!-- Free plan -->
+                <div class="col-12 col-sm-4">
+                  <div class="plan-card" id="plan-free" onclick="selectPlan('free')">
+                    <div class="plan-check"><i class="bi bi-check-lg"></i></div>
+                    <div class="plan-name">Free</div>
+                    <div class="plan-price">$0 <small>/ forever</small></div>
+                    <ul class="plan-features">
+                      <li><i class="bi bi-check-circle-fill"></i>2 free courses</li>
+                      <li><i class="bi bi-check-circle-fill"></i>Community access</li>
+                      <li><i class="bi bi-x-circle" style="color:var(--text-light)"></i>No certificate</li>
+                      <li><i class="bi bi-x-circle" style="color:var(--text-light)"></i>No downloads</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Pro plan -->
+                <div class="col-12 col-sm-4">
+                  <div class="plan-card selected" id="plan-pro" onclick="selectPlan('pro')" style="margin-top:10px">
+                    <span class="plan-badge">Most Popular</span>
+                    <div class="plan-check"><i class="bi bi-check-lg"></i></div>
+                    <div class="plan-name" style="color:var(--primary)">Pro</div>
+                    <div class="plan-price">$19 <small>/ month</small></div>
+                    <ul class="plan-features">
+                      <li><i class="bi bi-check-circle-fill"></i>All 100+ courses</li>
+                      <li><i class="bi bi-check-circle-fill"></i>HD video + downloads</li>
+                      <li><i class="bi bi-check-circle-fill"></i>Certificates</li>
+                      <li><i class="bi bi-check-circle-fill"></i>Mentor Q&amp;A</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Team plan -->
+                <div class="col-12 col-sm-4">
+                  <div class="plan-card" id="plan-team" onclick="selectPlan('team')">
+                    <div class="plan-check"><i class="bi bi-check-lg"></i></div>
+                    <div class="plan-name">Team</div>
+                    <div class="plan-price">$49 <small>/ month</small></div>
+                    <ul class="plan-features">
+                      <li><i class="bi bi-check-circle-fill"></i>Everything in Pro</li>
+                      <li><i class="bi bi-check-circle-fill"></i>Up to 10 seats</li>
+                      <li><i class="bi bi-check-circle-fill"></i>Admin dashboard</li>
+                      <li><i class="bi bi-check-circle-fill"></i>Priority support</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div style="text-align:center;font-size:.75rem;color:var(--text-light);margin-top:10px">
+                <i class="bi bi-shield-check-fill" style="color:var(--success)"></i> 7-day free trial on all paid plans
+                · Cancel anytime
+              </div>
+            </div>
+
+            <!-- Promo code -->
+            <div class="field-group">
+              <label class="field-label">Promo Code <span
+                  style="color:var(--text-light);font-weight:400">(optional)</span></label>
+              <div class="d-flex gap-2">
+                <div class="field-wrap" style="flex:1">
+                  <i class="bi bi-tag-fill field-icon"></i>
+                  <input type="text" id="promoCode" class="form-input" placeholder="e.g. LEARN50" />
+                </div>
+                <button onclick="applyPromo()"
+                  style="font-family:'Sora',sans-serif;font-size:.82rem;font-weight:700;padding:0 20px;border:1.5px solid var(--primary);border-radius:12px;color:var(--primary);background:#fff;cursor:pointer;transition:all var(--transition);white-space:nowrap"
+                  onmouseover="this.style.background='rgba(37,99,235,.07)'" onmouseout="this.style.background='#fff'">
+                  Apply
+                </button>
+              </div>
+              <div class="field-feedback" id="promo-fb"></div>
+            </div>
+
+            <!-- Newsletter -->
+            <div
+              style="background:rgba(37,99,235,.05);border:1px solid rgba(37,99,235,.15);border-radius:12px;padding:14px 16px;margin-bottom:16px;display:flex;align-items:flex-start;gap:10px">
+              <input type="checkbox" id="newsletter"
+                style="width:17px;height:17px;accent-color:var(--primary);flex-shrink:0;margin-top:2px;cursor:pointer"
+                checked />
+              <label for="newsletter"
+                style="font-size:.82rem;color:var(--text-secondary);cursor:pointer;line-height:1.5">
+                <strong style="color:var(--text-primary);font-family:'Sora',sans-serif">Send me learning tips &amp;
+                  course updates</strong><br>
+                Weekly digest of new courses, discounts, and career resources. Unsubscribe anytime.
+              </label>
+            </div>
+
+            <!-- Terms -->
+            <div class="terms-row">
+              <input type="checkbox" id="terms"
+                onchange="document.getElementById('submitBtn').disabled = !this.checked" />
+              <label for="terms">
+                I agree to TechLearn's <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+                I confirm I am at least 13 years old.
+              </label>
+            </div>
+
+            <!-- Submit -->
+            <button class="btn-submit-final" id="submitBtn" disabled onclick="submitForm()">
+              <div class="spinner" id="submitSpinner"></div>
+              <span class="btn-text"><i class="bi bi-rocket-takeoff-fill me-1"></i>Create My Free Account</span>
+            </button>
+
+            <div class="d-flex justify-content-start mt-3">
+              <button class="btn-prev" onclick="goStep(3)"><i class="bi bi-arrow-left"></i> Back</button>
+            </div>
+          </div>
+
+          <!-- switch + trust -->
+          <div class="switch-link">
+            Already have an account? <a href="techlearn-login.html">Sign in here</a>
+          </div>
+          <div class="trust-row">
+            <div class="trust-item"><i class="bi bi-shield-lock-fill"></i> SSL Encrypted</div>
+            <div class="trust-item"><i class="bi bi-check-circle-fill"></i> GDPR Compliant</div>
+            <div class="trust-item"><i class="bi bi-eye-slash-fill"></i> No Spam</div>
+            <div class="trust-item"><i class="bi bi-arrow-counterclockwise"></i> 30-day Refund</div>
+          </div>
+        </div><!-- /formWrap -->
+
+      </div><!-- /auth-form-box -->
+    </div><!-- /auth-right -->
+  </div><!-- /auth-wrapper -->
+
+  <!-- FOOTER -->
+  <!-- =============================================
+     10. FOOTER
+============================================= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">Tech<span>Learn</span></div>
+          <p class="footer-desc">
+            Empowering learners worldwide with expert-led courses, flexible
+            schedules, and industry-recognized certifications.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/bashir.hussain.9693" target="_blank" aria-label="Facebook"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/tech_learn1/" target="_blank" aria-label="Instagram"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/b-ebrahimi/" target="_blank" aria-label="LinkedIn"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/@Techlearn7" target="_blank" aria-label="Youtube"><i
+                class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="footer-heading">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Instructors</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Popular Courses -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-heading">Popular Courses</div>
+          <ul class="footer-links">
+            <li><a href="#">JavaScript Bootcamp</a></li>
+            <li><a href="#">Python & Data Science</a></li>
+            <li><a href="#">UI/UX Design Mastery</a></li>
+            <li><a href="#">AWS Certification</a></li>
+            <li><a href="#">React Native</a></li>
+            <li><a href="#">Ethical Hacking</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-heading">Contact Us</div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>Kabul Afghanistan, 411021</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>hello@techlearn.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+9379797545</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Mon–Fri, 9:00 AM – 6:00 PM IST</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
+        <p>&copy; 2024 <a href="#">TechLearn</a>. All rights reserved.</p>
+        <p>
+          <a href="#" class="me-3">Privacy Policy</a>
+          <a href="#" class="me-3">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast-wrap">
+    <div class="toast-msg" id="toastMsg">
+      <i class="bi bi-check-circle-fill toast-icon s" id="toastIcon"></i>
+      <span id="toastText"></span>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/register.js"></script>
+</body>
+
+</html>

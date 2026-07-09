@@ -1,0 +1,2619 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --secondary: #3b82f6;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --bg-main: #f8fafc;
+      --bg-section: #ffffff;
+      --text-primary: #1e293b;
+      --text-secondary: #64748b;
+      --text-light: #94a3b8;
+      --footer-bg: #0f172a;
+      --footer-text: #cbd5e1;
+      --footer-link: #60a5fa;
+      --border: #e2e8f0;
+      --shadow-sm:
+        0 1px 3px rgba(37, 99, 235, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+      --shadow-md:
+        0 4px 16px rgba(37, 99, 235, 0.12), 0 2px 6px rgba(0, 0, 0, 0.06);
+      --shadow-lg:
+        0 10px 40px rgba(37, 99, 235, 0.16), 0 4px 12px rgba(0, 0, 0, 0.08);
+      --radius: 14px;
+      --transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: var(--bg-main);
+      color: var(--text-primary);
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Sora", sans-serif;
+      font-weight: 700;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .section-pad {
+      padding: 90px 0;
+    }
+
+    /* TOP HEADER */
+    #top-header {
+      background: var(--primary);
+      padding: 10px 0;
+      font-size: 13px;
+      color: #fff;
+    }
+
+    #top-header a {
+      color: #fff;
+      opacity: 0.88;
+      transition: opacity var(--transition);
+    }
+
+    #top-header a:hover {
+      opacity: 1;
+    }
+
+    .top-social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.14);
+      font-size: 13px;
+      transition:
+        background var(--transition),
+        transform var(--transition);
+    }
+
+    .top-social a:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+    }
+
+    /* NAVBAR */
+    #mainNav {
+      background: var(--bg-section);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 0;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      transition: box-shadow var(--transition);
+    }
+
+    #mainNav.scrolled {
+      box-shadow: var(--shadow-md);
+    }
+
+    .navbar-brand {
+      font-family: "Sora", sans-serif;
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--primary) !important;
+      letter-spacing: -0.5px;
+    }
+
+    .navbar-brand span {
+      color: var(--text-primary);
+    }
+
+    .nav-link {
+      font-family: "Sora", sans-serif;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text-secondary) !important;
+      padding: 8px 14px !important;
+      border-radius: 8px;
+      transition:
+        color var(--transition),
+        background var(--transition);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--primary) !important;
+      background: rgba(37, 99, 235, 0.07);
+    }
+
+    .btn-nav-login {
+      font-family: "Sora", sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+      border: 1.5px solid var(--primary);
+      border-radius: 9px;
+      padding: 8px 22px;
+      transition: all var(--transition);
+    }
+
+    .btn-nav-login:hover {
+      background: var(--primary);
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    }
+
+    .btn-nav-register {
+      font-family: "Sora", sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #fff;
+      background: var(--primary);
+      border: 1.5px solid var(--primary);
+      border-radius: 9px;
+      padding: 8px 22px;
+      transition: all var(--transition);
+    }
+
+    .btn-nav-register:hover {
+      background: var(--primary-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+    }
+
+    .offcanvas-header {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .offcanvas-title {
+      font-family: "Sora", sans-serif;
+      font-weight: 800;
+    }
+
+    /* SHARED */
+    .section-tag {
+      display: inline-block;
+      background: rgba(37, 99, 235, 0.08);
+      color: var(--primary);
+      font-family: "Sora", sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 14px;
+      border: 1px solid rgba(37, 99, 235, 0.15);
+    }
+
+    .section-title {
+      font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 14px;
+    }
+
+    .section-sub {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      max-width: 560px;
+    }
+
+    .divider {
+      width: 52px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      border-radius: 99px;
+      margin-bottom: 18px;
+    }
+
+    /* ══ HERO ══ */
+    #about-hero {
+      background: linear-gradient(135deg,
+          #0f172a 0%,
+          #1a2d4a 50%,
+          #1e293b 100%);
+      padding: 100px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #about-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232563EB' fill-opacity='0.07'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-orb1 {
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle,
+          rgba(37, 99, 235, 0.2) 0%,
+          transparent 70%);
+      top: -200px;
+      right: -100px;
+    }
+
+    .hero-orb2 {
+      width: 350px;
+      height: 350px;
+      background: radial-gradient(circle,
+          rgba(124, 58, 237, 0.15) 0%,
+          transparent 70%);
+      bottom: -100px;
+      left: -80px;
+    }
+
+    .about-hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(37, 99, 235, 0.25);
+      color: #93c5fd;
+      font-family: "Sora", sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(37, 99, 235, 0.35);
+    }
+
+    #about-hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+    }
+
+    #about-hero h1 .accent {
+      color: var(--secondary);
+    }
+
+    #about-hero p {
+      color: #94a3b8;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      max-width: 580px;
+      margin-bottom: 36px;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn-hero-p {
+      font-family: "Sora", sans-serif;
+      font-weight: 700;
+      font-size: 0.92rem;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all var(--transition);
+      box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .teacher-image {
+      border-radius: 50%;
+      box-shadow: 0 8px 24px rgba(37, 99, 235, 0.5);
+    }
+
+    .btn-hero-p:hover {
+      background: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(37, 99, 235, 0.5);
+      color: #fff;
+    }
+
+    .btn-hero-o {
+      font-family: "Sora", sans-serif;
+      font-weight: 700;
+      font-size: 0.92rem;
+      background: transparent;
+      color: #cbd5e1;
+      border: 1.5px solid rgba(255, 255, 255, 0.2);
+      padding: 13px 28px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-hero-o:hover {
+      border-color: rgba(255, 255, 255, 0.5);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    /* floating stat cards in hero */
+    .hero-stat-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 56px;
+    }
+
+    .hero-stat-card {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 18px 22px;
+      backdrop-filter: blur(10px);
+      transition: all var(--transition);
+    }
+
+    .hero-stat-card:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(37, 99, 235, 0.4);
+      transform: translateY(-3px);
+    }
+
+    .hsc-num {
+      font-family: "Sora", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .hsc-label {
+      font-size: 0.75rem;
+      color: #64748b;
+    }
+
+    /* ══ MISSION & VISION ══ */
+    #mission {
+      background: var(--bg-section);
+    }
+
+    .mv-card {
+      background: var(--bg-main);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      height: 100%;
+      transition: all var(--transition);
+    }
+
+    .mv-card:hover {
+      border-color: rgba(37, 99, 235, 0.3);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-5px);
+    }
+
+    .mv-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      transition: transform var(--transition);
+    }
+
+    .mv-card:hover .mv-icon {
+      transform: scale(1.1) rotate(-5deg);
+    }
+
+    .mvi-blue {
+      background: rgba(37, 99, 235, 0.1);
+      color: var(--primary);
+    }
+
+    .mvi-green {
+      background: rgba(16, 185, 129, 0.1);
+      color: var(--success);
+    }
+
+    .mvi-yellow {
+      background: rgba(245, 158, 11, 0.1);
+      color: #d97706;
+    }
+
+    .mvi-purple {
+      background: rgba(124, 58, 237, 0.1);
+      color: #7c3aed;
+    }
+
+    .mv-card h4 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .mv-card p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    /* ══ OUR STORY ══ */
+    #story {
+      background: var(--bg-main);
+    }
+
+    .story-img {
+      border-radius: 24px;
+      background: linear-gradient(145deg, #dbeafe, #ede9fe);
+      min-height: 440px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .story-img::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232563EB' fill-opacity='0.04'%3E%3Ccircle cx='40' cy='40' r='30'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .story-img-inner {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .story-img-inner i {
+      font-size: 5rem;
+      color: var(--primary);
+      opacity: 0.4;
+    }
+
+    .story-text h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 14px;
+    }
+
+    .story-text p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.85;
+      margin-bottom: 14px;
+    }
+
+    .story-highlight {
+      background: rgba(37, 99, 235, 0.06);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 10px 10px 0;
+      padding: 14px 18px;
+      font-size: 0.9rem;
+      color: var(--text-primary);
+      line-height: 1.7;
+      margin: 20px 0;
+    }
+
+    /* ══ STATS COUNTER ══ */
+    #stats-section {
+      background: linear-gradient(135deg, var(--primary) 0%, #1d4ed8 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #stats-section::before {
+      content: "";
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      top: -300px;
+      right: -200px;
+    }
+
+    #stats-section::after {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.03);
+      bottom: -200px;
+      left: -100px;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 28px 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .stat-item .snum {
+      font-family: "Sora", sans-serif;
+      font-size: 2.6rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-item .slbl {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.88rem;
+    }
+
+    .stat-item .sico {
+      font-size: 2rem;
+      color: rgba(255, 255, 255, 0.3);
+      margin-bottom: 10px;
+    }
+
+    /* ══ TIMELINE ══ */
+    #timeline {
+      background: var(--bg-section);
+    }
+
+    .timeline-wrap {
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .timeline-wrap::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--border);
+      transform: translateX(-50%);
+    }
+
+    .tl-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0;
+      margin-bottom: 48px;
+      position: relative;
+    }
+
+    .tl-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .tl-item.left {
+      flex-direction: row;
+    }
+
+    .tl-item.right {
+      flex-direction: row-reverse;
+    }
+
+    .tl-content {
+      width: calc(50% - 32px);
+      background: var(--bg-section);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      transition: all var(--transition);
+    }
+
+    .tl-content:hover {
+      box-shadow: var(--shadow-md);
+      border-color: rgba(37, 99, 235, 0.25);
+      transform: translateY(-3px);
+    }
+
+    .tl-item.left .tl-content {
+      margin-right: auto;
+    }
+
+    .tl-item.right .tl-content {
+      margin-left: auto;
+    }
+
+    .tl-dot {
+      position: absolute;
+      left: 50%;
+      top: 20px;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 4px solid #fff;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 0.9rem;
+      z-index: 1;
+      transition: transform var(--transition);
+    }
+
+    .tl-item:hover .tl-dot {
+      transform: translateX(-50%) scale(1.15);
+    }
+
+    .tl-year {
+      font-family: "Sora", sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: rgba(37, 99, 235, 0.1);
+      padding: 4px 10px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 8px;
+      letter-spacing: 0.05em;
+    }
+
+    .tl-title {
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .tl-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .timeline-wrap::before {
+        left: 20px;
+      }
+
+      .tl-item.left,
+      .tl-item.right {
+        flex-direction: row;
+      }
+
+      .tl-content {
+        width: calc(100% - 56px);
+        margin-left: auto !important;
+        margin-right: 0 !important;
+      }
+
+      .tl-dot {
+        left: 20px;
+      }
+    }
+
+    /* ══ TEAM ══ */
+    #team {
+      background: var(--bg-main);
+    }
+
+    .team-card {
+      background: var(--bg-section);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: all var(--transition);
+      height: 100%;
+    }
+
+    .team-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-6px);
+      border-color: rgba(37, 99, 235, 0.25);
+    }
+
+    .team-avatar {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .team-avatar::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232563EB' fill-opacity='0.05'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .avatar-initials {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Sora", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #fff;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .team-body {
+      padding: 20px;
+    }
+
+    .team-name {
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: 3px;
+    }
+
+    .team-role {
+      font-size: 0.8rem;
+      color: var(--primary);
+      font-weight: 600;
+      font-family: "Sora", sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .team-bio {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 14px;
+    }
+
+    .team-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+
+    .skill-tag {
+      font-family: "Sora", sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 6px;
+      background: rgba(37, 99, 235, 0.08);
+      color: var(--primary);
+      border: 1px solid rgba(37, 99, 235, 0.15);
+    }
+
+    .team-stats {
+      display: flex;
+      gap: 14px;
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .team-stats span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .team-stats i {
+      color: var(--primary);
+      font-size: 0.8rem;
+    }
+
+    .team-social {
+      display: flex;
+      gap: 8px;
+    }
+
+    .team-social a {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      border: 1.5px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      transition: all var(--transition);
+    }
+
+    .team-social a:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    /* ══ VALUES ══ */
+    #values {
+      background: var(--bg-section);
+    }
+
+    .value-card {
+      background: var(--bg-main);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      transition: all var(--transition);
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .value-card::before {
+      content: "";
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      opacity: 0.05;
+      transition: opacity var(--transition);
+    }
+
+    .value-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-5px);
+      border-color: rgba(37, 99, 235, 0.25);
+    }
+
+    .value-card:hover::before {
+      opacity: 0.1;
+    }
+
+    .vc-blue::before {
+      background: var(--primary);
+    }
+
+    .vc-green::before {
+      background: var(--success);
+    }
+
+    .vc-yellow::before {
+      background: var(--warning);
+    }
+
+    .vc-purple::before {
+      background: #7c3aed;
+    }
+
+    .vc-teal::before {
+      background: #0d9488;
+    }
+
+    .vc-red::before {
+      background: var(--danger);
+    }
+
+    .value-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 18px;
+      transition: transform var(--transition);
+    }
+
+    .value-card:hover .value-icon {
+      transform: scale(1.1) rotate(-6deg);
+    }
+
+    .vi-blue {
+      background: rgba(37, 99, 235, 0.1);
+      color: var(--primary);
+    }
+
+    .vi-green {
+      background: rgba(16, 185, 129, 0.1);
+      color: var(--success);
+    }
+
+    .vi-yellow {
+      background: rgba(245, 158, 11, 0.1);
+      color: #d97706;
+    }
+
+    .vi-purple {
+      background: rgba(124, 58, 237, 0.1);
+      color: #7c3aed;
+    }
+
+    .vi-teal {
+      background: rgba(20, 184, 166, 0.1);
+      color: #0d9488;
+    }
+
+    .vi-red {
+      background: rgba(239, 68, 68, 0.1);
+      color: var(--danger);
+    }
+
+    .value-card h5 {
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .value-card p {
+      color: var(--text-secondary);
+      font-size: 0.87rem;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ══ AWARDS ══ */
+    #awards {
+      background: var(--bg-main);
+    }
+
+    .award-card {
+      background: var(--bg-section);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      text-align: center;
+      transition: all var(--transition);
+    }
+
+    .award-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+      border-color: rgba(37, 99, 235, 0.25);
+    }
+
+    .award-icon {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .award-year {
+      font-family: "Sora", sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: rgba(37, 99, 235, 0.1);
+      padding: 4px 10px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    .award-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .award-org {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+    }
+
+    /* ══ PARTNERS ══ */
+    #partners {
+      background: var(--bg-section);
+    }
+
+    .partner-logo {
+      background: var(--bg-main);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition);
+    }
+
+    .partner-logo:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-sm);
+      transform: translateY(-2px);
+    }
+
+    .partner-name {
+      font-family: "Sora", sans-serif;
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--text-light);
+      letter-spacing: -0.02em;
+    }
+
+    /* ══ PRESS ══ */
+    #press {
+      background: var(--bg-main);
+    }
+
+    .press-card {
+      background: var(--bg-section);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      transition: all var(--transition);
+      height: 100%;
+    }
+
+    .press-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: rgba(37, 99, 235, 0.2);
+      transform: translateY(-3px);
+    }
+
+    .press-outlet {
+      font-family: "Sora", sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: rgba(37, 99, 235, 0.08);
+      padding: 4px 10px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .press-quote {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+
+    .press-date {
+      font-size: 0.75rem;
+      color: var(--text-light);
+    }
+
+    /* ══ JOIN US CTA ══ */
+    #join-cta {
+      background: linear-gradient(135deg,
+          #1e40af 0%,
+          var(--primary) 50%,
+          #7c3aed 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #join-cta::before {
+      content: "";
+      position: absolute;
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      top: -350px;
+      right: -200px;
+    }
+
+    #join-cta::after {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.03);
+      bottom: -250px;
+      left: -150px;
+    }
+
+    #join-cta h2 {
+      color: #fff;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    #join-cta p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1rem;
+      margin-bottom: 32px;
+    }
+
+    .btn-cta-white {
+      font-family: "Sora", sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      background: #fff;
+      color: var(--primary);
+      border: none;
+      padding: 15px 36px;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: all var(--transition);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-cta-white:hover {
+      background: #f0f9ff;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      color: var(--primary);
+    }
+
+    .btn-cta-outline-w {
+      font-family: "Sora", sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      padding: 14px 34px;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: all var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-cta-outline-w:hover {
+      border-color: rgba(255, 255, 255, 0.7);
+      transform: translateY(-2px);
+      color: #fff;
+    }
+
+    /* FOOTER */
+    #footer {
+      background: var(--footer-bg);
+      color: var(--footer-text);
+      padding: 60px 0 0;
+    }
+
+    .footer-brand {
+      font-family: "Sora", sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand span {
+      color: var(--secondary);
+    }
+
+    .footer-desc {
+      font-size: 0.85rem;
+      opacity: 0.8;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .footer-social a {
+      display: inline-flex;
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      align-items: center;
+      justify-content: center;
+      color: var(--footer-text);
+      font-size: 0.95rem;
+      margin-right: 7px;
+      transition: all var(--transition);
+    }
+
+    .footer-social a:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .footer-heading {
+      font-family: "Sora", sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 9px;
+    }
+
+    .footer-links a {
+      font-size: 0.85rem;
+      color: var(--footer-text);
+      opacity: 0.72;
+      transition: all var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .footer-links a::before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--footer-link);
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--footer-link);
+      opacity: 1;
+      transform: translateX(4px);
+    }
+
+    .footer-links a:hover::before {
+      opacity: 1;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      margin-bottom: 12px;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    .footer-contact-item i {
+      color: var(--footer-link);
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      padding: 18px 0;
+      margin-top: 50px;
+    }
+
+    .footer-bottom p {
+      font-size: 0.8rem;
+      opacity: 0.55;
+      margin: 0;
+    }
+
+    .footer-bottom a {
+      color: var(--footer-link);
+    }
+
+    #scrollTop {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 44px;
+      height: 44px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: all var(--transition);
+      z-index: 999;
+      box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
+    }
+
+    #scrollTop.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #scrollTop:hover {
+      background: var(--primary-hover);
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+      .section-pad {
+        padding: 60px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- top header -->
+  <div id="top-header">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+        <!-- contact -->
+        <div class="d-flex flex-wrap align-items-center gap-3">
+          <a href="mailto:techlearn@gmail.com">
+            <i class="bi bi-envelope-fill me-1"></i>
+            info@techlearn.com
+          </a>
+
+          <a href="tel:+174894854">
+            <i class="bi bi-telephone-fill me-1"></i>
+            Call ME
+          </a>
+        </div>
+
+        <!-- social Icon -->
+
+        <div class="top-social d-flex gap-2">
+          <a href="https://www.facebook.com/bashir.hussain.9693" target="_blank" aria-label="Facebook"><i
+              class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/tech_learn1/" target="_blank" aria-label="Instagram"><i
+              class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/b-ebrahimi/" target="_blank" aria-label="LinkedIn"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://www.youtube.com/@Techlearn7" target="_blank" aria-label="Youtube"><i
+              class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start Navbar -->
+
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Tech<span>Learn</span></a>
+
+      <!-- Mobile Toggle -->
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navOffcanvas"
+        aria-controls="navOffcanvas">
+        <i class="bi bi-list" style="font-size: 1.6rem; color: var(--primary)"></i>
+      </button>
+
+      <!-- disktop nav -->
+
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav align-itmes-center gap-1 me-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="courses.html" class="nav-link">Course</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link active">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#footer" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-flex gap-2">
+          <a href="login.html" class="btn btn-nav-login">Login</a>
+          <a href="register.html" class="btn btn-nav-register">Register</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">TechLearn</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <ul class="navbar-nav gap-1 mb-4">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="course.html" class="nav-link">Course</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="about.html" class="nav-link active">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#footer" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <div class="d-flex gap-2">
+        <a href="login.html" class="btn btn-nav-login">Login</a>
+        <a href="register.html" class="btn btn-nav-register">Register</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ HERO ══ -->
+  <section id="about-hero">
+    <div class="hero-orb hero-orb1"></div>
+    <div class="hero-orb hero-orb2"></div>
+    <div class="container" style="position: relative; z-index: 1">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <div class="about-hero-tag">
+            <i class="bi bi-building-fill"></i> Our Story
+          </div>
+          <h1>
+            We're on a Mission to Make
+            <span class="accent">World-Class Learning</span> Accessible to
+            Everyone
+          </h1>
+          <p>
+            TechLearn was founded in 2019 with one belief: great education
+            shouldn't be gated by geography, wealth, or circumstance. Today
+            we're a global community of 10,000+ learners, 50+ expert
+            instructors, and 100+ career-transforming courses.
+          </p>
+          <div class="hero-cta-row">
+            <a href="courses.html" class="btn btn-hero-p"><i class="bi bi-grid-fill me-1"></i>Explore Courses</a>
+            <a href="#team" class="btn btn-hero-o"><i class="bi bi-people me-1"></i>Meet the Team</a>
+          </div>
+          <div class="hero-stat-strip">
+            <div class="hero-stat-card">
+              <div class="hsc-num">2019</div>
+              <div class="hsc-label">Founded</div>
+            </div>
+            <div class="hero-stat-card">
+              <div class="hsc-num">10K+</div>
+              <div class="hsc-label">Students</div>
+            </div>
+            <div class="hero-stat-card">
+              <div class="hsc-num">50+</div>
+              <div class="hsc-label">Countries</div>
+            </div>
+            <div class="hero-stat-card">
+              <div class="hsc-num">4.9★</div>
+              <div class="hsc-label">Avg. Rating</div>
+            </div>
+            <div class="hero-stat-card">
+              <div class="hsc-num">$0</div>
+              <div class="hsc-label">To Start</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+          <div style="
+                width: 320px;
+                height: 320px;
+                border-radius: 50%;
+                background: rgba(37, 99, 235, 0.15);
+                border: 2px solid rgba(37, 99, 235, 0.3);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+              ">
+            <div style="
+                  width: 220px;
+                  height: 220px;
+                  border-radius: 50%;
+                  background: rgba(37, 99, 235, 0.2);
+                  border: 2px solid rgba(37, 99, 235, 0.4);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                ">
+              <div style="
+                    width: 130px;
+                    height: 130px;
+                    border-radius: 50%;
+                    background: rgba(37, 99, 235, 0.35);
+                    border: 2px solid rgba(37, 99, 235, 0.5);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  ">
+                <i class="bi bi-mortarboard-fill" style="font-size: 3.5rem; color: #fff; opacity: 0.8"></i>
+              </div>
+            </div>
+            <!-- orbit dots -->
+            <div style="
+                  position: absolute;
+                  width: 14px;
+                  height: 14px;
+                  border-radius: 50%;
+                  background: var(--secondary);
+                  top: 20px;
+                  right: 30px;
+                  box-shadow: 0 0 12px var(--secondary);
+                "></div>
+            <div style="
+                  position: absolute;
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 50%;
+                  background: var(--success);
+                  bottom: 40px;
+                  left: 20px;
+                  box-shadow: 0 0 10px var(--success);
+                "></div>
+            <div style="
+                  position: absolute;
+                  width: 12px;
+                  height: 12px;
+                  border-radius: 50%;
+                  background: var(--warning);
+                  top: 50%;
+                  right: -6px;
+                  box-shadow: 0 0 10px var(--warning);
+                "></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ MISSION VISION VALUES CARDS ══ -->
+  <section id="mission" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag">What Drives Us</div>
+        <h2 class="section-title">Our Mission, Vision &amp; Purpose</h2>
+        <div class="divider mx-auto"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="mv-card">
+            <div class="mv-icon mvi-blue"><i class="bi bi-bullseye"></i></div>
+            <h4>Our Mission</h4>
+            <p>
+              To democratize world-class technical education and make
+              high-quality, career-transforming learning accessible to every
+              motivated individual on the planet — regardless of where they
+              live or how much they earn.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="mv-card">
+            <div class="mv-icon mvi-green">
+              <i class="bi bi-eye-fill"></i>
+            </div>
+            <h4>Our Vision</h4>
+            <p>
+              A world where anyone with the will to learn can acquire
+              in-demand skills, build meaningful careers, and contribute to
+              shaping the future of technology — without financial or
+              geographical barriers.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="mv-card">
+            <div class="mv-icon mvi-yellow">
+              <i class="bi bi-heart-fill"></i>
+            </div>
+            <h4>Our Purpose</h4>
+            <p>
+              We exist to close the global skills gap. Every course we
+              publish, every mentor we recruit, and every community we build
+              is driven by one purpose: empowering people to change their
+              lives through learning.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="mv-card">
+            <div class="mv-icon mvi-purple"><i class="bi bi-stars"></i></div>
+            <h4>Our Promise</h4>
+            <p>
+              We promise to always put learner outcomes first. Every decision
+              we make — from hiring instructors to building features — is
+              measured against one question: does this help students succeed
+              faster?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ OUR STORY ══ -->
+  <section id="story" class="section-pad">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <div class="story-img">
+            <div class="story-img-inner">
+              <i class="bi bi-building"></i>
+              <p style="
+                    color: var(--text-secondary);
+                    font-size: 0.85rem;
+                    margin-top: 12px;
+                  ">
+                TechLearn HQ — Gurugram, India
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="story-text">
+            <div class="section-tag">How We Started</div>
+            <h2>
+              From a Laptop in a Shared Flat to a Global Learning Platform
+            </h2>
+            <div class="divider"></div>
+            <p>
+              In 2019, our founders, Bashir Hussain Ebrahimi and Zubaida Alizada, were working as senior engineers at a
+              startup in Pune. During their time there, they noticed a recurring problem: many talented and highly
+              motivated individuals were failing job interviews—not because they lacked intelligence, skills, or
+              determination, but because they did not have access to the right learning resources. This realization
+              inspired them to create TechLearn, with the mission of making high-quality education accessible to
+              everyone
+            </p>
+
+            <div class="story-highlight">
+              <i class="bi bi-quote" style="
+                    color: var(--primary);
+                    font-size: 1.3rem;
+                    margin-right: 8px;
+                  "></i>
+              <em>"We didn't build TechLearn to make money. We built it because
+                we'd seen what happens when the right education reaches the
+                right person at the right time. It changes everything."</em>
+              <div style="
+                    margin-top: 8px;
+                    font-family: &quot;Sora&quot;, sans-serif;
+                    font-size: 0.78rem;
+                    font-weight: 700;
+                    color: var(--text-primary);
+                  ">
+                — Bashir Hussain Ebrahimi, Co-Founder &amp; CEO
+              </div>
+            </div>
+            <p>
+              Today TechLearn operates from offices in Gurugram, Bangalore,
+              and London, employs 60+ full-time team members, and has helped
+              students in 50+ countries build careers in tech.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ STATISTICS ══ -->
+  <section id="stats-section" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5" style="position: relative; z-index: 1">
+        <div class="section-tag" style="
+              background: rgba(255, 255, 255, 0.15);
+              color: #93c5fd;
+              border-color: rgba(255, 255, 255, 0.2);
+            ">
+          By The Numbers
+        </div>
+        <h2 style="
+              color: #fff;
+              font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+              font-weight: 800;
+              letter-spacing: -0.03em;
+            ">
+          TechLearn Impact at a Glance
+        </h2>
+      </div>
+      <div class="row g-0 justify-content-center" style="position: relative; z-index: 1">
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="sico"><i class="bi bi-people-fill"></i></div>
+            <div class="snum">10,000+</div>
+            <div class="slbl">Active Students</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="sico"><i class="bi bi-journal-richtext"></i></div>
+            <div class="snum">100+</div>
+            <div class="slbl">Expert Courses</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="sico"><i class="bi bi-person-badge-fill"></i></div>
+            <div class="snum">50+</div>
+            <div class="slbl">Top Instructors</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="sico"><i class="bi bi-award-fill"></i></div>
+            <div class="snum">8,500+</div>
+            <div class="slbl">Certificates Issued</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="sico"><i class="bi bi-globe2"></i></div>
+            <div class="snum">50+</div>
+            <div class="slbl">Countries Reached</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="sico"><i class="bi bi-star-fill"></i></div>
+            <div class="snum">4.9 ★</div>
+            <div class="slbl">Average Rating</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="sico"><i class="bi bi-camera-video-fill"></i></div>
+            <div class="snum">3,000+</div>
+            <div class="slbl">Hours of Content</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item">
+            <div class="sico"><i class="bi bi-briefcase-fill"></i></div>
+            <div class="snum">92%</div>
+            <div class="slbl">Job Placement Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ COMPANY TIMELINE ══ -->
+  <section id="timeline" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag">Our Journey</div>
+        <h2 class="section-title">How We've Grown Over the Years</h2>
+        <div class="divider mx-auto"></div>
+      </div>
+      <div class="timeline-wrap">
+        <div class="tl-item left">
+          <div class="tl-content">
+            <span class="tl-year">2019 — Q1</span>
+            <h5 class="tl-title">TechLearn is Born</h5>
+            <p class="tl-desc">
+              Bashir Hussain Ebrahimi record the first 12 courses from a
+              Pune apartment. The platform launches with 50 beta users
+              and a dream.
+            </p>
+          </div>
+          <div class="tl-dot"><i class="bi bi-rocket-takeoff-fill"></i></div>
+        </div>
+
+        <div class="tl-item right">
+          <div class="tl-content">
+            <span class="tl-year">2019 — Q4</span>
+            <h5 class="tl-title">First 1,000 Students</h5>
+            <p class="tl-desc">
+              Organic word-of-mouth drives enrollment past 1,000. First
+              revenue milestone hit. The team grows to 5 people including two
+              dedicated instructors.
+            </p>
+          </div>
+          <div class="tl-dot"><i class="bi bi-people-fill"></i></div>
+        </div>
+
+        <div class="tl-item left">
+          <div class="tl-content">
+            <span class="tl-year">2020 — Q2</span>
+            <h5 class="tl-title">Seed Funding &amp; Expansion</h5>
+            <p class="tl-desc">
+              Raised ₹2.5 Crore seed round from AngelList India investors.
+              Moved to a proper office in Gurugram. Course catalog expands to
+              30 courses.
+            </p>
+          </div>
+          <div class="tl-dot"><i class="bi bi-cash-coin"></i></div>
+        </div>
+
+        <div class="tl-item right">
+          <div class="tl-content">
+            <span class="tl-year">2021 — Q1</span>
+            <h5 class="tl-title">5,000 Students &amp; Series A</h5>
+            <p class="tl-desc">
+              Crossed 5,000 enrolled students. Secured $1.2M Series A led by
+              Blume Ventures. Launched mobile apps on iOS and Android.
+            </p>
+          </div>
+          <div class="tl-dot"><i class="bi bi-graph-up-arrow"></i></div>
+        </div>
+
+        <div class="tl-item left">
+          <div class="tl-content">
+            <span class="tl-year">2022 — Q3</span>
+            <h5 class="tl-title">Global Launch &amp; London Office</h5>
+            <p class="tl-desc">
+              Opened London office, launched multilingual subtitles (EN, HI,
+              ES, FR, DE). Students now in 35+ countries. Team grows to 40
+              employees.
+            </p>
+          </div>
+          <div class="tl-dot"><i class="bi bi-globe2"></i></div>
+        </div>
+
+        <div class="tl-item right">
+          <div class="tl-content">
+            <span class="tl-year">2023 — Q2</span>
+            <h5 class="tl-title">AI-Powered Learning Features</h5>
+            <p class="tl-desc">
+              Launched AI learning assistant, personalized course
+              recommendations, and adaptive quizzes. Courses surpass 80.
+              Instructor network grows to 40+.
+            </p>
+          </div>
+          <div class="tl-dot"><i class="bi bi-robot"></i></div>
+        </div>
+
+        <div class="tl-item left">
+          <div class="tl-content">
+            <span class="tl-year">2024 — Present</span>
+            <h5 class="tl-title">10,000 Students &amp; Beyond</h5>
+            <p class="tl-desc">
+              Celebrating 10,000+ students, 100+ courses, and 8,500+
+              certificates issued. Planning Series B and expansion into
+              Southeast Asia and Africa.
+            </p>
+          </div>
+          <div class="tl-dot" style="background: var(--success)">
+            <i class="bi bi-award-fill"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TEAM ══ -->
+  <section id="team" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag">The People Behind TechLearn</div>
+        <h2 class="section-title">Meet Our Leadership Team</h2>
+        <div class="divider mx-auto mb-3"></div>
+        <p class="section-sub mx-auto">
+          Passionate educators, engineers, and designers united by a shared
+          mission.
+        </p>
+      </div>
+      <div class="row g-4">
+        <!-- Member 1 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="team-card">
+            <div class="team-avatar" style="background: linear-gradient(135deg, #dbeafe, #ede9fe)">
+              <div class="avatar-initials" style="
+                    background: linear-gradient(
+                      135deg,
+                      var(--primary),
+                      #7c3aed
+                    );">
+                <img src="images/Bashir.jpg" class="teacher-image" alt="" width="100" style="border-radius:50%;">
+              </div>
+            </div>
+            <div class="team-body">
+              <div class="team-name">Bashir Hussain</div>
+              <div class="team-role">Co-Founder &amp; CEO</div>
+              <div class="team-bio">
+                12 years in software engineering. Former tech lead at Flipkart
+                and OYO. IIT Delhi alumnus. Passionate about democratizing
+                education.
+              </div>
+              <div class="team-skills">
+                <span class="skill-tag">Leadership</span><span class="skill-tag">Product</span><span
+                  class="skill-tag">Full Stack</span>
+              </div>
+              <div class="team-stats">
+                <span><i class="bi bi-journal-text"></i>8 courses</span>
+                <span><i class="bi bi-people-fill"></i>24K students</span>
+                <span><i class="bi bi-star-fill" style="color: var(--warning)"></i>4.9</span>
+              </div>
+              <div class="team-social">
+                <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Member 2 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="team-card">
+            <div class="team-avatar" style="background: linear-gradient(135deg, #d1fae5, #a7f3d0)">
+              <div class="avatar-initials" style="
+                    background: linear-gradient(
+                      135deg,
+                      var(--success),
+                      #059669
+                    );
+                  ">
+                AS
+              </div>
+            </div>
+            <div class="team-body">
+              <div class="team-name">Arif Shams</div>
+              <div class="team-role">Co-Founder &amp; CTO</div>
+              <div class="team-bio">
+                Data scientist and ML engineer with 10 years experience.
+                Ex-Google. Stanford CS grad. Leads platform engineering and AI
+                features.
+              </div>
+              <div class="team-skills">
+                <span class="skill-tag">AI/ML</span><span class="skill-tag">Python</span><span
+                  class="skill-tag">Cloud</span>
+              </div>
+              <div class="team-stats">
+                <span><i class="bi bi-journal-text"></i>6 courses</span>
+                <span><i class="bi bi-people-fill"></i>18K students</span>
+                <span><i class="bi bi-star-fill" style="color: var(--warning)"></i>5.0</span>
+              </div>
+              <div class="team-social">
+                <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Member 3 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="team-card">
+            <div class="team-avatar" style="background: linear-gradient(135deg, #fef3c7, #fde68a)">
+              <div class="avatar-initials" style="background: linear-gradient(135deg, #d97706, #f59e0b)">
+                LQ
+              </div>
+            </div>
+            <div class="team-body">
+              <div class="team-name">Lufullah Qasimi</div>
+              <div class="team-role">Head of Design</div>
+              <div class="team-bio">
+                Award-winning UX designer with a background in cognitive
+                psychology. Previously at Airbnb and Figma. Leads product
+                design and UX research.
+              </div>
+              <div class="team-skills">
+                <span class="skill-tag">UI/UX</span><span class="skill-tag">Figma</span><span
+                  class="skill-tag">Research</span>
+              </div>
+              <div class="team-stats">
+                <span><i class="bi bi-journal-text"></i>4 courses</span>
+                <span><i class="bi bi-people-fill"></i>9K students</span>
+                <span><i class="bi bi-star-fill" style="color: var(--warning)"></i>4.8</span>
+              </div>
+              <div class="team-social">
+                <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" title="Dribbble"><i class="bi bi-dribbble"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Member 4 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="team-card">
+            <div class="team-avatar" style="background: linear-gradient(135deg, #ede9fe, #ddd6fe)">
+              <div class="avatar-initials" style="background: linear-gradient(135deg, #7c3aed, #6d28d9)">
+                FD
+              </div>
+            </div>
+            <div class="team-body">
+              <div class="team-name">Fahim Danish</div>
+              <div class="team-role">Head of Curriculum</div>
+              <div class="team-bio">
+                AWS Solutions Architect and cloud expert with 14 years
+                experience. Former lead at Microsoft Azure. Oversees course
+                quality and instructor success.
+              </div>
+              <div class="team-skills">
+                <span class="skill-tag">AWS</span><span class="skill-tag">DevOps</span><span
+                  class="skill-tag">Cloud</span>
+              </div>
+              <div class="team-stats">
+                <span><i class="bi bi-journal-text"></i>5 courses</span>
+                <span><i class="bi bi-people-fill"></i>12K students</span>
+                <span><i class="bi bi-star-fill" style="color: var(--warning)"></i>4.7</span>
+              </div>
+              <div class="team-social">
+                <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Member 5 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="team-card">
+            <div class="team-avatar" style="background: linear-gradient(135deg, #ccfbf1, #99f6e4)">
+              <div class="avatar-initials" style="background: linear-gradient(135deg, #0d9488, #0f766e)">
+                BE
+              </div>
+            </div>
+            <div class="team-body">
+              <div class="team-name">Bashir Ebrahimi</div>
+              <div class="team-role">Head of Community</div>
+              <div class="team-bio">
+                Cybersecurity expert and community builder. Grew TechLearn's
+                Discord from 0 to 15,000 members. Former security researcher
+                at Palo Alto Networks.
+              </div>
+              <div class="team-skills">
+                <span class="skill-tag">Community</span><span class="skill-tag">Security</span><span
+                  class="skill-tag">Growth</span>
+              </div>
+              <div class="team-stats">
+                <span><i class="bi bi-journal-text"></i>3 courses</span>
+                <span><i class="bi bi-people-fill"></i>8K students</span>
+                <span><i class="bi bi-star-fill" style="color: var(--warning)"></i>4.9</span>
+              </div>
+              <div class="team-social">
+                <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Member 6 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="team-card">
+            <div class="team-avatar" style="background: linear-gradient(135deg, #fee2e2, #fecaca)">
+              <div class="avatar-initials" style="background: linear-gradient(135deg, #dc2626, #ef4444)">
+                AF
+              </div>
+            </div>
+            <div class="team-body">
+              <div class="team-name">Ali Farzam</div>
+              <div class="team-role">Head of Growth</div>
+              <div class="team-bio">
+                Growth marketing specialist with expertise in EdTech. Helped
+                scale three startups from seed to Series B. Ex-Byju's and
+                Coursera.
+              </div>
+              <div class="team-skills">
+                <span class="skill-tag">Growth</span><span class="skill-tag">SEO</span><span
+                  class="skill-tag">Analytics</span>
+              </div>
+              <div class="team-stats">
+                <span><i class="bi bi-people-fill"></i>Joins 2023</span>
+                <span><i class="bi bi-graph-up-arrow"></i>3x Growth</span>
+              </div>
+              <div class="team-social">
+                <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Member 7 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="team-card">
+            <div class="team-avatar" style="background: linear-gradient(135deg, #e0f2fe, #bae6fd)">
+              <div class="avatar-initials" style="background: linear-gradient(135deg, #0ea5e9, #0284c7)">
+                FA
+              </div>
+            </div>
+            <div class="team-body">
+              <div class="team-name">Dr. Fatima Alizada</div>
+              <div class="team-role">AI Research Lead</div>
+              <div class="team-bio">
+                PhD in Machine Learning from CMU. Led AI research at DeepMind
+                for 4 years. Builds TechLearn's adaptive learning engine and
+                personalization systems.
+              </div>
+              <div class="team-skills">
+                <span class="skill-tag">Deep Learning</span><span class="skill-tag">NLP</span><span
+                  class="skill-tag">Research</span>
+              </div>
+              <div class="team-stats">
+                <span><i class="bi bi-journal-text"></i>2 courses</span>
+                <span><i class="bi bi-people-fill"></i>6K students</span>
+                <span><i class="bi bi-star-fill" style="color: var(--warning)"></i>5.0</span>
+              </div>
+              <div class="team-social">
+                <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Member 8 -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="team-card">
+            <div class="team-avatar" style="background: linear-gradient(135deg, #fce7f3, #fbcfe8)">
+              <div class="avatar-initials" style="background: linear-gradient(135deg, #db2777, #be185d)">
+                ZA
+              </div>
+            </div>
+            <div class="team-body">
+              <div class="team-name">Zara Ahmed</div>
+              <div class="team-role">Head of Instructor Success</div>
+              <div class="team-bio">
+                Edtech veteran with 8 years onboarding instructors at scale.
+                Ex-Udemy and LinkedIn Learning. Manages TechLearn's instructor
+                network of 50+ experts.
+              </div>
+              <div class="team-skills">
+                <span class="skill-tag">Pedagogy</span><span class="skill-tag">Instructional Design</span>
+              </div>
+              <div class="team-stats">
+                <span><i class="bi bi-person-check-fill"></i>50+
+                  instructors</span>
+              </div>
+              <div class="team-social">
+                <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CORE VALUES ══ -->
+  <section id="values" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag">What We Stand For</div>
+        <h2 class="section-title">Our Core Values</h2>
+        <div class="divider mx-auto mb-3"></div>
+        <p class="section-sub mx-auto">
+          These aren't posters on a wall. They're the principles every
+          TechLearn team member is hired for and held to.
+        </p>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-4">
+          <div class="value-card vc-blue">
+            <div class="value-icon vi-blue">
+              <i class="bi bi-unlock-fill"></i>
+            </div>
+            <h5>Radical Accessibility</h5>
+            <p>
+              Great education belongs to everyone. We price fairly, offer free
+              tiers, provide scholarships, and build features that work on
+              low-bandwidth connections.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="value-card vc-green">
+            <div class="value-icon vi-green">
+              <i class="bi bi-patch-check-fill"></i>
+            </div>
+            <h5>Outcomes Over Vanity</h5>
+            <p>
+              We measure success by student job placements, salary increases,
+              and career pivots — not monthly active users or vanity metrics.
+              Outcomes first, always.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="value-card vc-yellow">
+            <div class="value-icon vi-yellow">
+              <i class="bi bi-lightbulb-fill"></i>
+            </div>
+            <h5>Relentless Curiosity</h5>
+            <p>
+              We're learners ourselves. The tech landscape changes daily. We
+              stay at the cutting edge so our students are always learning
+              what the industry actually needs.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="value-card vc-purple">
+            <div class="value-icon vi-purple">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <h5>Community First</h5>
+            <p>
+              Learning is social. We build tools and spaces for students to
+              support each other, collaborate, celebrate wins, and find
+              mentors — because no one succeeds alone.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="value-card vc-teal">
+            <div class="value-icon vi-teal">
+              <i class="bi bi-shield-check-fill"></i>
+            </div>
+            <h5>Integrity in Everything</h5>
+            <p>
+              We never oversell. Course descriptions are honest, ratings are
+              unfiltered, and our refund policy is zero-friction. We earn
+              trust by deserving it.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="value-card vc-red">
+            <div class="value-icon vi-red">
+              <i class="bi bi-arrow-repeat"></i>
+            </div>
+            <h5>Continuous Improvement</h5>
+            <p>
+              Every course is updated. Every feature is iterated. Every
+              complaint is a gift. We ship fast, learn faster, and never
+              declare anything "done."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ AWARDS & RECOGNITION ══ -->
+  <section id="awards" class="section-pad" style="background: var(--bg-section)">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag">Recognition</div>
+        <h2 class="section-title">Awards &amp; Recognition</h2>
+        <div class="divider mx-auto"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="award-card">
+            <span class="award-icon">🏆</span>
+            <div class="award-year">2024</div>
+            <div class="award-title">Best EdTech Startup</div>
+            <div class="award-org">TechCrunch India</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="award-card">
+            <span class="award-icon">⭐</span>
+            <div class="award-year">2023</div>
+            <div class="award-title">Top 10 Learning Platforms</div>
+            <div class="award-org">Product Hunt</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="award-card">
+            <span class="award-icon">🎖️</span>
+            <div class="award-year">2023</div>
+            <div class="award-title">Fastest Growing EdTech</div>
+            <div class="award-org">Inc. India 500</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="award-card">
+            <span class="award-icon">💡</span>
+            <div class="award-year">2022</div>
+            <div class="award-title">EdTech Innovation Award</div>
+            <div class="award-org">NASSCOM</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="award-card">
+            <span class="award-icon">🌟</span>
+            <div class="award-year">2022</div>
+            <div class="award-title">Best App of the Year</div>
+            <div class="award-org">Google Play Store</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="award-card">
+            <span class="award-icon">🚀</span>
+            <div class="award-year">2021</div>
+            <div class="award-title">Startup of the Year</div>
+            <div class="award-org">YourStory</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PARTNERS ══ -->
+  <section id="partners" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag">Trusted By</div>
+        <h2 class="section-title">Our Partners &amp; Backers</h2>
+        <div class="divider mx-auto mb-3"></div>
+        <p class="section-sub mx-auto">
+          We're proud to be backed by world-class investors and work alongside
+          leading technology companies.
+        </p>
+      </div>
+      <div class="row g-3 justify-content-center">
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="partner-logo">
+            <span class="partner-name">Google</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="partner-logo">
+            <span class="partner-name">Microsoft</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="partner-logo">
+            <span class="partner-name">AWS</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="partner-logo">
+            <span class="partner-name">GitHub</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="partner-logo">
+            <span class="partner-name">Blume VC</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="partner-logo">
+            <span class="partner-name">Sequoia</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="partner-logo">
+            <span class="partner-name">Razorpay</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="partner-logo">
+            <span class="partner-name">Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PRESS ══ -->
+  <section id="press" class="section-pad" style="background: var(--bg-section)">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag">In The News</div>
+        <h2 class="section-title">TechLearn in the Press</h2>
+        <div class="divider mx-auto"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="press-card">
+            <span class="press-outlet">TechCrunch India</span>
+            <p class="press-quote">
+              "TechLearn is doing what Coursera tried to do for India — but
+              with a product quality that actually matches the ambition. Their
+              instructor NPS scores are the highest we've seen in the space."
+            </p>
+            <div class="press-date">
+              <i class="bi bi-calendar3 me-1"></i>March 2024
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="press-card">
+            <span class="press-outlet">YourStory</span>
+            <p class="press-quote">
+              "In a crowded EdTech market, TechLearn stands out by obsessing
+              over one metric: did the student actually get a job? Their 92%
+              placement rate is extraordinary by any measure."
+            </p>
+            <div class="press-date">
+              <i class="bi bi-calendar3 me-1"></i>January 2024
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="press-card">
+            <span class="press-outlet">Economic Times</span>
+            <p class="press-quote">
+              "Founded by two engineers who experienced the skills gap
+              firsthand, TechLearn is building the EdTech platform India needs
+              — affordable, practical, and deeply community-driven."
+            </p>
+            <div class="press-date">
+              <i class="bi bi-calendar3 me-1"></i>November 2023
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ JOIN US CTA ══ -->
+  <section id="join-cta" class="section-pad text-center">
+    <div class="container" style="position: relative; z-index: 1">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <div class="section-tag" style="
+                background: rgba(255, 255, 255, 0.15);
+                color: #93c5fd;
+                border-color: rgba(255, 255, 255, 0.2);
+              ">
+            Join the Movement
+          </div>
+          <h2>Be Part of Something<br />Bigger Than a Course</h2>
+          <p>
+            Whether you're here to learn, teach, invest, or partner — there's
+            a place for you in the TechLearn community. Let's build a more
+            skilled world together.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="techlearn-register.html" class="btn-cta-white"><i class="bi bi-rocket-takeoff-fill"></i>Start
+              Learning Free</a>
+            <a href="#" class="btn-cta-outline-w"><i class="bi bi-person-video3"></i>Become an Instructor</a>
+          </div>
+          <div class="mt-4 d-flex flex-wrap justify-content-center gap-4"
+            style="color: rgba(255, 255, 255, 0.65); font-size: 0.82rem">
+            <span><i class="bi bi-check-circle-fill me-1" style="color: #10b981"></i>Free to get started</span>
+            <span><i class="bi bi-check-circle-fill me-1" style="color: #10b981"></i>No credit card required</span>
+            <span><i class="bi bi-check-circle-fill me-1" style="color: #10b981"></i>Cancel anytime</span>
+            <span><i class="bi bi-check-circle-fill me-1" style="color: #10b981"></i>30-day refund</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <!-- =============================================
+     10. FOOTER
+============================================= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">Tech<span>Learn</span></div>
+          <p class="footer-desc">
+            Empowering learners worldwide with expert-led courses, flexible
+            schedules, and industry-recognized certifications.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/bashir.hussain.9693" target="_blank" aria-label="Facebook"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/tech_learn1/" target="_blank" aria-label="Instagram"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/b-ebrahimi/" target="_blank" aria-label="LinkedIn"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/@Techlearn7" target="_blank" aria-label="Youtube"><i
+                class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="footer-heading">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Instructors</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Popular Courses -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-heading">Popular Courses</div>
+          <ul class="footer-links">
+            <li><a href="#">JavaScript Bootcamp</a></li>
+            <li><a href="#">Python & Data Science</a></li>
+            <li><a href="#">UI/UX Design Mastery</a></li>
+            <li><a href="#">AWS Certification</a></li>
+            <li><a href="#">React Native</a></li>
+            <li><a href="#">Ethical Hacking</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-heading">Contact Us</div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>Kabul Afghanistan, 411021</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>hello@techlearn.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+9379797545</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Mon–Fri, 9:00 AM – 6:00 PM IST</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
+        <p>&copy; 2024 <a href="#">TechLearn</a>. All rights reserved.</p>
+        <p>
+          <a href="#" class="me-3">Privacy Policy</a>
+          <a href="#" class="me-3">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTop" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const nav = document.getElementById("mainNav");
+    window.addEventListener("scroll", () => {
+      nav.classList.toggle("scrolled", scrollY > 20);
+      document
+        .getElementById("scrollTop")
+        .classList.toggle("visible", scrollY > 300);
+    });
+    document
+      .getElementById("scrollTop")
+      .addEventListener("click", () =>
+        window.scrollTo({ top: 0, behavior: "smooth" }),
+      );
+  </script>
+</body>
+
+</html>

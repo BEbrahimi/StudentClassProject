@@ -1,903 +1,799 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Page</title>
 
-    <!-- css file -->
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/index.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main Page</title>
 
-    <!-- Bootstrap 5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- css file -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
 
-  <body>
-    <div id="top-header">
-      <div class="container">
-        <div
-          class="d-flex flex-wrap align-items-center justify-content-between gap-2"
-        >
-          <!-- contact -->
-          <div class="d-flex flex-wrap align-items-center gap-3">
-            <a href="mailto:techlearn@gmail.com">
-              <i class="bi bi-envelope-fill me-1"></i>
-              info@techlearn.com
-            </a>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+</head>
 
-            <a href="tel:+174894854">
-              <i class="bi bi-telephone-fill me-1"></i>
-              Call ME
-            </a>
-          </div>
+<body>
+  <!-- top header -->
+  <div id="top-header">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+        <!-- contact -->
+        <div class="d-flex flex-wrap align-items-center gap-3">
+          <a href="mailto:techlearn@gmail.com">
+            <i class="bi bi-envelope-fill me-1"></i>
+            info@techlearn.com
+          </a>
 
-          <!-- social Icon -->
+          <a href="tel:+174894854">
+            <i class="bi bi-telephone-fill me-1"></i>
+            Call ME
+          </a>
+        </div>
 
-          <div class="top-social d-flex gap-2">
-            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" aria-label="Instagram"
-              ><i class="bi bi-instagram"></i
-            ></a>
-            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="#" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
-          </div>
+        <!-- social Icon -->
+
+        <div class="top-social d-flex gap-2">
+          <a href="https://www.facebook.com/bashir.hussain.9693" target="_blank" aria-label="Facebook"><i
+              class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/tech_learn1/" target="_blank" aria-label="Instagram"><i
+              class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/b-ebrahimi/" target="_blank" aria-label="LinkedIn"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://www.youtube.com/@Techlearn7" target="_blank" aria-label="Youtube"><i
+              class="bi bi-youtube"></i></a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Start Navbar -->
+  <!-- Start Navbar -->
 
-    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-      <div class="container">
-        <a href="#" class="navbar-brand">Tech<span>Learn</span></a>
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Tech<span>Learn</span></a>
 
-        <!-- Mobile Toggle -->
+      <!-- Mobile Toggle -->
 
-        <button
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#navOffcanvas"
-          aria-controls="navOffcanvas"
-        >
-          <i
-            class="bi bi-list"
-            style="font-size: 1.6rem; color: var(--primary)"
-          ></i>
-        </button>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navOffcanvas"
+        aria-controls="navOffcanvas">
+        <i class="bi bi-list" style="font-size: 1.6rem; color: var(--primary)"></i>
+      </button>
 
-        <!-- disktop nav -->
+      <!-- disktop nav -->
 
-        <div class="collapse navbar-collapse justify-content-end">
-          <ul class="navbar-nav align-itmes-center gap-1 me-3">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link active">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="courses.html" class="nav-link">Course</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="" class="nav-link">About</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="" class="nav-link">Contact</a>
-            </li>
-          </ul>
-
-          <div class="d-flex gap-2">
-            <a href="#" class="btn btn-nav-login">Login</a>
-            <a href="#" class="btn btn-nav-register">Register</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title">TechLearn</h5>
-        <button
-          type="button"
-          class="btn-close btn-close-white"
-          data-bs-dismiss="offcanvas"
-        ></button>
-      </div>
-
-      <div class="offcanvas-body">
-        <ul class="navbar-nav gap-1 mb-4">
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav align-itmes-center gap-1 me-3">
           <li class="nav-item">
-            <a href="" class="nav-link active">Home</a>
+            <a href="index.html" class="nav-link active">Home</a>
           </li>
 
           <li class="nav-item">
-            <a href="course.html" class="nav-link">Course</a>
+            <a href="courses.html" class="nav-link">Course</a>
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link">About</a>
+            <a href="about.html" class="nav-link">About</a>
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link">Contact</a>
+            <a href="#footer" class="nav-link">Contact</a>
           </li>
         </ul>
 
         <div class="d-flex gap-2">
-          <a href="#" class="btn btn-nav-login">Login</a>
-          <a href="#" class="btn btn-nav-register">Register</a>
+          <a href="login.html" class="btn btn-nav-login">Login</a>
+          <a href="register.html" class="btn btn-nav-register">Register</a>
         </div>
       </div>
     </div>
+  </nav>
 
-    <!-- Hero Section -->
+  <!-- Mobile Menu -->
 
-    <section id="hero">
-      <div class="container">
-        <div class="row align-item-center g-5">
-          <!-- Left Content -->
-          <div class="col-lg-6">
-            <div class="hero-badge">
-              <i class="bi bi-stars"></i> #1 Online Learning Platform
-            </div>
-            <h1 class="hero-heading">
-              Master Skills &amp; <br />
-              <span class="accent">Accelerate</span> Your<br />
-              Career Growth
-            </h1>
-            <p class="hero-desc">
-              Join over 10,000 learners worldwide. Access expert-led courses in
-              technology, design, and business — learn at your own pace,
-              anytime, anywhere.
-            </p>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">TechLearn</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
 
-            <div class="d-flex flex-wrap gap-3">
-              <a href="#" class="btn btn-hero-primary">
-                <i class="bi bi-grid-fill me-2"></i> Explore Courses
-              </a>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav gap-1 mb-4">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">Home</a>
+        </li>
 
-              <a href="#" class="btn btn-hero-outline">
-                <span class="play-icon"
-                  ><i class="bi bi-play-fill me-2"></i
-                ></span>
-                Watch Demo
-              </a>
-            </div>
+        <li class="nav-item">
+          <a href="course.html" class="nav-link">Course</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#footer" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <div class="d-flex gap-2">
+        <a href="login.html" class="btn btn-nav-login">Login</a>
+        <a href="register.html" class="btn btn-nav-register">Register</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+
+  <section id="hero">
+    <div class="container">
+      <div class="row align-item-center g-5">
+        <!-- Left Content -->
+        <div class="col-lg-6">
+          <div class="hero-badge">
+            <i class="bi bi-stars"></i> #1 Online Learning Platform
           </div>
+          <h1 class="hero-heading">
+            Master Skills &amp; <br />
+            <span class="accent">Accelerate</span> Your<br />
+            Career Growth
+          </h1>
+          <p class="hero-desc">
+            Join over 10,000 learners worldwide. Access expert-led courses in
+            technology, design, and business — learn at your own pace,
+            anytime, anywhere.
+          </p>
 
-          <!-- Right Illustration -->
-          <div class="col-lg-6">
-            <div class="hero-illustration">
-              <div class="hero-float-card card1">
-                <div class="fc-icon green"><i class="bi bi-check-lg"></i></div>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#" class="btn btn-hero-primary">
+              <i class="bi bi-grid-fill me-2"></i> Explore Courses
+            </a>
 
-                <div>
-                  <div style="color: var(--text-primary)">
-                    Lesson Completed!
-                  </div>
-
-                  <div
-                    style="
-                      color: var(--text-secndary);
-                      font-size: 0.7rem;
-                      font-weight: 400;
-                    "
-                  >
-                    JavaScript Basic
-                  </div>
-                </div>
-              </div>
-
-              <div class="hero-float-card card2">
-                <div class="fc-icon blue">
-                  <i class="bi bi-trophy-fill"></i>
-                </div>
-
-                <div>
-                  <div style="color: var(--text-primary)">
-                    Certificate Earned!
-                  </div>
-
-                  <div
-                    style="
-                      color: var(--text-secndary);
-                      font-size: 0.7rem;
-                      font-weight: 400;
-                    "
-                  >
-                    Web Development
-                  </div>
-                </div>
-              </div>
-
-              <div class="hero-illo-inner">
-                <i class="bi bi-mortarboard-fill"></i>
-                <p>Interactive Learning Experience</p>
-              </div>
-            </div>
+            <a href="#" class="btn btn-hero-outline">
+              <span class="play-icon"><i class="bi bi-play-fill me-2"></i></span>
+              Watch Demo
+            </a>
           </div>
         </div>
 
-        <div class="hero-stats">
-          <div class="row g-3">
-            <div class="col-sm-4">
-              <div class="stat-card">
-                <div class="stat-num">10K+</div>
-                <div class="stat-label">
-                  <i class="bi bi-people-fill text-primary me-1"></i> Active
-                  Students
+        <!-- Right Illustration -->
+        <div class="col-lg-6">
+          <div class="hero-illustration">
+            <div class="hero-float-card card1">
+              <div class="fc-icon green"><i class="bi bi-check-lg"></i></div>
+
+              <div>
+                <div style="color: var(--text-primary)">
+                  Lesson Completed!
+                </div>
+
+                <div style="
+                      color: var(--text-secndary);
+                      font-size: 0.7rem;
+                      font-weight: 400;
+                    ">
+                  JavaScript Basic
                 </div>
               </div>
             </div>
 
-            <div class="col-sm-4">
-              <div class="stat-card">
-                <div class="stat-num">100+</div>
-                <div class="stat-label">
-                  <i class="bi bi-journal-bookmark-fill text-primary me-1"></i
-                  >Expert Courses
+            <div class="hero-float-card card2">
+              <div class="fc-icon blue">
+                <i class="bi bi-trophy-fill"></i>
+              </div>
+
+              <div>
+                <div style="color: var(--text-primary)">
+                  Certificate Earned!
+                </div>
+
+                <div style="
+                      color: var(--text-secndary);
+                      font-size: 0.7rem;
+                      font-weight: 400;
+                    ">
+                  Web Development
                 </div>
               </div>
             </div>
 
-            <div class="col-sm-4">
-              <div class="stat-card">
-                <div class="stat-num">50+</div>
-                <div class="stat-label">
-                  <i class="bi bi-person-badge-fill text-primary me-1"></i>Top
-                  Instructors
-                </div>
+            <div class="hero-illo-inner">
+              <i class="bi bi-mortarboard-fill"></i>
+              <p>Interactive Learning Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="row g-3">
+          <div class="col-sm-4">
+            <div class="stat-card">
+              <div class="stat-num">10K+</div>
+              <div class="stat-label">
+                <i class="bi bi-people-fill text-primary me-1"></i> Active
+                Students
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="stat-card">
+              <div class="stat-num">100+</div>
+              <div class="stat-label">
+                <i class="bi bi-journal-bookmark-fill text-primary me-1"></i>Expert Courses
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="stat-card">
+              <div class="stat-num">50+</div>
+              <div class="stat-label">
+                <i class="bi bi-person-badge-fill text-primary me-1"></i>Top
+                Instructors
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- =============================================
+  <!-- =============================================
      4. FEATURES SECTION
 ============================================= -->
-    <section id="features" class="section-pad">
-      <div class="container">
-        <div class="text-center mb-5">
-          <div class="section-tag">Why TechLearn</div>
+  <section id="features" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag">Why TechLearn</div>
+        <h2 class="section-title">
+          Everything You Need to <br class="d-none d-md-block" />Succeed in
+          Learning
+        </h2>
+        <div class="divider mx-auto mb-3"></div>
+        <p class="section-sub mx-auto">
+          Our platform is built with learners first. Access world-class tools,
+          mentorship, and content.
+        </p>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon fi-blue">
+              <i class="bi bi-person-video3"></i>
+            </div>
+            <h5>Expert Instructors</h5>
+            <p>
+              Learn from industry professionals with real-world experience in
+              their fields.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon fi-green">
+              <i class="bi bi-clock-history"></i>
+            </div>
+            <h5>Flexible Learning</h5>
+            <p>
+              Study on your schedule. Access content on any device, 24/7, at
+              your own pace.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon fi-yellow">
+              <i class="bi bi-patch-check-fill"></i>
+            </div>
+            <h5>Certification</h5>
+            <p>
+              Earn industry-recognized certificates to boost your resume and
+              career prospects.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon fi-red">
+              <i class="bi bi-infinity"></i>
+            </div>
+            <h5>Lifetime Access</h5>
+            <p>
+              Purchase once, access forever. All future updates included at no
+              extra cost.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- courses -->
+  <section id="courses" class="section-pad">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-end justify-content-between mb-5 gap-3">
+        <div>
+          <div class="section-tag">Top Picks</div>
+          <h2 class="section-title mb-1">Popular Courses</h2>
+          <div class="divider left"></div>
+          <p class="section-sub">
+            Hand-picked by our experts to kickstart your journey.
+          </p>
+        </div>
+        <a href="courses.html" class="btn btn-nav-login">View All Courses <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="course-card">
+            <div class="course-thumb">
+              <i class="bi bi-code-slash" style="color: #2563eb; position: relative; z-index: 1"></i>
+            </div>
+            <div class="course-body">
+              <span class="course-cat cat-blue">Web Development</span>
+              <h6 class="course-title">
+                The Complete JavaScript Developer Bootcamp
+              </h6>
+              <p class="course-instructor">
+                <i class="bi bi-person-fill me-1"></i>Alex Johnson
+              </p>
+              <div class="course-meta">
+                <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>
+                <span>4.8</span>
+                <span><i class="bi bi-people-fill me-1"></i>3,240 students</span>
+              </div>
+            </div>
+            <div class="course-footer">
+              <span class="course-price">$49.99</span>
+              <a href="#" class="btn btn-enroll">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="course-card">
+            <div class="course-thumb course-thumb-green">
+              <i class="bi bi-graph-up-arrow" style="color: #059669; position: relative; z-index: 1"></i>
+            </div>
+            <div class="course-body">
+              <span class="course-cat cat-green">Data Science</span>
+              <h6 class="course-title">
+                Python for Data Science &amp; Machine Learning
+              </h6>
+              <p class="course-instructor">
+                <i class="bi bi-person-fill me-1"></i>Sarah Williams
+              </p>
+              <div class="course-meta">
+                <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                <span>5.0</span>
+                <span><i class="bi bi-people-fill me-1"></i>5,120 students</span>
+              </div>
+            </div>
+            <div class="course-footer">
+              <span class="course-price">$69.99</span>
+              <a href="#" class="btn btn-enroll">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="course-card">
+            <div class="course-thumb course-thumb-yellow">
+              <i class="bi bi-palette-fill" style="color: #d97706; position: relative; z-index: 1"></i>
+            </div>
+            <div class="course-body">
+              <span class="course-cat cat-yellow">UI/UX Design</span>
+              <h6 class="course-title">
+                UI/UX Design Mastery with Figma 2024
+              </h6>
+              <p class="course-instructor">
+                <i class="bi bi-person-fill me-1"></i>Maya Chen
+              </p>
+              <div class="course-meta">
+                <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>
+                <span>4.7</span>
+                <span><i class="bi bi-people-fill me-1"></i>2,860 students</span>
+              </div>
+            </div>
+            <div class="course-footer">
+              <span class="course-price">$44.99</span>
+              <a href="#" class="btn btn-enroll">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="course-card">
+            <div class="course-thumb course-thumb-red">
+              <i class="bi bi-cloud-fill" style="color: #dc2626; position: relative; z-index: 1"></i>
+            </div>
+            <div class="course-body">
+              <span class="course-cat cat-red">Cloud Computing</span>
+              <h6 class="course-title">
+                AWS Cloud Solutions Architect Certification
+              </h6>
+              <p class="course-instructor">
+                <i class="bi bi-person-fill me-1"></i>David Kumar
+              </p>
+              <div class="course-meta">
+                <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></span>
+                <span>4.5</span>
+                <span><i class="bi bi-people-fill me-1"></i>1,990 students</span>
+              </div>
+            </div>
+            <div class="course-footer">
+              <span class="course-price">$79.99</span>
+              <a href="#" class="btn btn-enroll">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="course-card">
+            <div class="course-thumb course-thumb-purple">
+              <i class="bi bi-phone-fill" style="color: #7c3aed; position: relative; z-index: 1"></i>
+            </div>
+            <div class="course-body">
+              <span class="course-cat cat-purple">Mobile Dev</span>
+              <h6 class="course-title">
+                React Native: Build iOS &amp; Android Apps
+              </h6>
+              <p class="course-instructor">
+                <i class="bi bi-person-fill me-1"></i>James Lee
+              </p>
+              <div class="course-meta">
+                <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>
+                <span>4.6</span>
+                <span><i class="bi bi-people-fill me-1"></i>2,100 students</span>
+              </div>
+            </div>
+            <div class="course-footer">
+              <span class="course-price">$59.99</span>
+              <a href="#" class="btn btn-enroll">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="course-card">
+            <div class="course-thumb course-thumb-teal">
+              <i class="bi bi-shield-check" style="color: #0d9488; position: relative; z-index: 1"></i>
+            </div>
+            <div class="course-body">
+              <span class="course-cat cat-teal">Cybersecurity</span>
+              <h6 class="course-title">
+                Ethical Hacking &amp; Cybersecurity Fundamentals
+              </h6>
+              <p class="course-instructor">
+                <i class="bi bi-person-fill me-1"></i>Nina Rodriguez
+              </p>
+              <div class="course-meta">
+                <span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                <span>4.9</span>
+                <span><i class="bi bi-people-fill me-1"></i>4,450 students</span>
+              </div>
+            </div>
+            <div class="course-footer">
+              <span class="course-price">$54.99</span>
+              <a href="#" class="btn btn-enroll">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section id="why-us" class="section-pad">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <!-- Image -->
+        <div class="col-lg-5">
+          <div class="why-image">
+            <div class="why-image-inner">
+              <img src="images/whyUs.png" alt="image" />
+            </div>
+          </div>
+        </div>
+        <!-- Content -->
+        <div class="col-lg-7">
+          <div class="section-tag">Our Advantage</div>
           <h2 class="section-title">
-            Everything You Need to <br class="d-none d-md-block" />Succeed in
-            Learning
+            Why Thousands Choose
+            <span style="color: var(--primary)">TechLearn</span>
           </h2>
-          <div class="divider mx-auto mb-3"></div>
-          <p class="section-sub mx-auto">
-            Our platform is built with learners first. Access world-class tools,
-            mentorship, and content.
+          <div class="divider left mb-4"></div>
+          <p class="section-sub mb-5">
+            We combine world-class content with cutting-edge technology to
+            deliver a learning experience that's truly transformative.
           </p>
-        </div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-3">
-            <div class="feature-card">
-              <div class="feature-icon fi-blue">
-                <i class="bi bi-person-video3"></i>
-              </div>
-              <h5>Expert Instructors</h5>
+
+          <div class="why-feature">
+            <div class="why-icon"><i class="bi bi-trophy"></i></div>
+            <div>
+              <h6>Industry-Recognized Certificates</h6>
               <p>
-                Learn from industry professionals with real-world experience in
-                their fields.
+                Earn certificates valued by top companies globally. Stand out
+                in any job market with verified credentials.
               </p>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="feature-card">
-              <div class="feature-icon fi-green">
-                <i class="bi bi-clock-history"></i>
-              </div>
-              <h5>Flexible Learning</h5>
+
+          <div class="why-feature">
+            <div class="why-icon"><i class="bi bi-people"></i></div>
+            <div>
+              <h6>Vibrant Learning Community</h6>
               <p>
-                Study on your schedule. Access content on any device, 24/7, at
-                your own pace.
+                Connect with thousands of learners, join study groups, and
+                collaborate on real projects worldwide.
               </p>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="feature-card">
-              <div class="feature-icon fi-yellow">
-                <i class="bi bi-patch-check-fill"></i>
-              </div>
-              <h5>Certification</h5>
+
+          <div class="why-feature">
+            <div class="why-icon"><i class="bi bi-headset"></i></div>
+            <div>
+              <h6>24/7 Mentor Support</h6>
               <p>
-                Earn industry-recognized certificates to boost your resume and
-                career prospects.
+                Get instant help from expert mentors anytime. Never get stuck
+                — our team is always available to guide you.
               </p>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="feature-card">
-              <div class="feature-icon fi-red">
-                <i class="bi bi-infinity"></i>
-              </div>
-              <h5>Lifetime Access</h5>
+
+          <div class="why-feature">
+            <div class="why-icon"><i class="bi bi-arrow-repeat"></i></div>
+            <div>
+              <h6>Regularly Updated Content</h6>
               <p>
-                Purchase once, access forever. All future updates included at no
-                extra cost.
+                Courses are continuously updated to reflect the latest
+                industry trends, tools, and technologies.
               </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- courses -->
-    <section id="courses" class="section-pad">
-      <div class="container">
-        <div
-          class="d-flex flex-wrap align-items-end justify-content-between mb-5 gap-3"
-        >
-          <div>
-            <div class="section-tag">Top Picks</div>
-            <h2 class="section-title mb-1">Popular Courses</h2>
-            <div class="divider left"></div>
-            <p class="section-sub">
-              Hand-picked by our experts to kickstart your journey.
-            </p>
+    </div>
+  </section>
+
+  <!-- STATISTICS Section -->
+
+  <section id="statistics" class="section-pad">
+    <div class="container">
+      <div class="row justify-content-center text-center g-0">
+        <div class="col-6 col-md-3">
+          <div class="stats-counter">
+            <div class="stats-icon"><i class="bi bi-people-fill"></i></div>
+            <span class="num">10,000+</span>
+            <span class="lbl">Active Students</span>
           </div>
-          <a href="courses.html" class="btn btn-nav-login"
-            >View All Courses <i class="bi bi-arrow-right ms-1"></i
-          ></a>
         </div>
-
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="course-card">
-              <div class="course-thumb">
-                <i
-                  class="bi bi-code-slash"
-                  style="color: #2563eb; position: relative; z-index: 1"
-                ></i>
-              </div>
-              <div class="course-body">
-                <span class="course-cat cat-blue">Web Development</span>
-                <h6 class="course-title">
-                  The Complete JavaScript Developer Bootcamp
-                </h6>
-                <p class="course-instructor">
-                  <i class="bi bi-person-fill me-1"></i>Alex Johnson
-                </p>
-                <div class="course-meta">
-                  <span class="stars"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-half"></i
-                  ></span>
-                  <span>4.8</span>
-                  <span
-                    ><i class="bi bi-people-fill me-1"></i>3,240 students</span
-                  >
-                </div>
-              </div>
-              <div class="course-footer">
-                <span class="course-price">$49.99</span>
-                <a href="#" class="btn btn-enroll">Enroll Now</a>
-              </div>
+        <div class="col-6 col-md-3">
+          <div class="stats-counter">
+            <div class="stats-icon">
+              <i class="bi bi-journal-richtext"></i>
             </div>
+            <span class="num">100+</span>
+            <span class="lbl">Expert Courses</span>
           </div>
-
-          <!-- Course 2 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="course-card">
-              <div class="course-thumb course-thumb-green">
-                <i
-                  class="bi bi-graph-up-arrow"
-                  style="color: #059669; position: relative; z-index: 1"
-                ></i>
-              </div>
-              <div class="course-body">
-                <span class="course-cat cat-green">Data Science</span>
-                <h6 class="course-title">
-                  Python for Data Science &amp; Machine Learning
-                </h6>
-                <p class="course-instructor">
-                  <i class="bi bi-person-fill me-1"></i>Sarah Williams
-                </p>
-                <div class="course-meta">
-                  <span class="stars"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                  <span>5.0</span>
-                  <span
-                    ><i class="bi bi-people-fill me-1"></i>5,120 students</span
-                  >
-                </div>
-              </div>
-              <div class="course-footer">
-                <span class="course-price">$69.99</span>
-                <a href="#" class="btn btn-enroll">Enroll Now</a>
-              </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stats-counter">
+            <div class="stats-icon">
+              <i class="bi bi-person-badge-fill"></i>
             </div>
+            <span class="num">50+</span>
+            <span class="lbl">Top Instructors</span>
           </div>
-
-          <!-- Course 3 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="course-card">
-              <div class="course-thumb course-thumb-yellow">
-                <i
-                  class="bi bi-palette-fill"
-                  style="color: #d97706; position: relative; z-index: 1"
-                ></i>
-              </div>
-              <div class="course-body">
-                <span class="course-cat cat-yellow">UI/UX Design</span>
-                <h6 class="course-title">
-                  UI/UX Design Mastery with Figma 2024
-                </h6>
-                <p class="course-instructor">
-                  <i class="bi bi-person-fill me-1"></i>Maya Chen
-                </p>
-                <div class="course-meta">
-                  <span class="stars"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-half"></i
-                  ></span>
-                  <span>4.7</span>
-                  <span
-                    ><i class="bi bi-people-fill me-1"></i>2,860 students</span
-                  >
-                </div>
-              </div>
-              <div class="course-footer">
-                <span class="course-price">$44.99</span>
-                <a href="#" class="btn btn-enroll">Enroll Now</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Course 4 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="course-card">
-              <div class="course-thumb course-thumb-red">
-                <i
-                  class="bi bi-cloud-fill"
-                  style="color: #dc2626; position: relative; z-index: 1"
-                ></i>
-              </div>
-              <div class="course-body">
-                <span class="course-cat cat-red">Cloud Computing</span>
-                <h6 class="course-title">
-                  AWS Cloud Solutions Architect Certification
-                </h6>
-                <p class="course-instructor">
-                  <i class="bi bi-person-fill me-1"></i>David Kumar
-                </p>
-                <div class="course-meta">
-                  <span class="stars"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i><i class="bi bi-star"></i
-                  ></span>
-                  <span>4.5</span>
-                  <span
-                    ><i class="bi bi-people-fill me-1"></i>1,990 students</span
-                  >
-                </div>
-              </div>
-              <div class="course-footer">
-                <span class="course-price">$79.99</span>
-                <a href="#" class="btn btn-enroll">Enroll Now</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Course 5 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="course-card">
-              <div class="course-thumb course-thumb-purple">
-                <i
-                  class="bi bi-phone-fill"
-                  style="color: #7c3aed; position: relative; z-index: 1"
-                ></i>
-              </div>
-              <div class="course-body">
-                <span class="course-cat cat-purple">Mobile Dev</span>
-                <h6 class="course-title">
-                  React Native: Build iOS &amp; Android Apps
-                </h6>
-                <p class="course-instructor">
-                  <i class="bi bi-person-fill me-1"></i>James Lee
-                </p>
-                <div class="course-meta">
-                  <span class="stars"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-half"></i
-                  ></span>
-                  <span>4.6</span>
-                  <span
-                    ><i class="bi bi-people-fill me-1"></i>2,100 students</span
-                  >
-                </div>
-              </div>
-              <div class="course-footer">
-                <span class="course-price">$59.99</span>
-                <a href="#" class="btn btn-enroll">Enroll Now</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Course 6 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="course-card">
-              <div class="course-thumb course-thumb-teal">
-                <i
-                  class="bi bi-shield-check"
-                  style="color: #0d9488; position: relative; z-index: 1"
-                ></i>
-              </div>
-              <div class="course-body">
-                <span class="course-cat cat-teal">Cybersecurity</span>
-                <h6 class="course-title">
-                  Ethical Hacking &amp; Cybersecurity Fundamentals
-                </h6>
-                <p class="course-instructor">
-                  <i class="bi bi-person-fill me-1"></i>Nina Rodriguez
-                </p>
-                <div class="course-meta">
-                  <span class="stars"
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"></i
-                  ></span>
-                  <span>4.9</span>
-                  <span
-                    ><i class="bi bi-people-fill me-1"></i>4,450 students</span
-                  >
-                </div>
-              </div>
-              <div class="course-footer">
-                <span class="course-price">$54.99</span>
-                <a href="#" class="btn btn-enroll">Enroll Now</a>
-              </div>
-            </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stats-counter">
+            <div class="stats-icon"><i class="bi bi-award-fill"></i></div>
+            <span class="num">8,500+</span>
+            <span class="lbl">Certificates Issued</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Why choose us -->
-    <section id="why-us" class="section-pad">
-      <div class="container">
-        <div class="row g-5 align-items-center">
-          <!-- Image -->
-          <div class="col-lg-5">
-            <div class="why-image">
-              <div class="why-image-inner">
-                <img src="images/whyUs.png" alt="image" />
-              </div>
-            </div>
-          </div>
-          <!-- Content -->
-          <div class="col-lg-7">
-            <div class="section-tag">Our Advantage</div>
-            <h2 class="section-title">
-              Why Thousands Choose
-              <span style="color: var(--primary)">TechLearn</span>
-            </h2>
-            <div class="divider left mb-4"></div>
-            <p class="section-sub mb-5">
-              We combine world-class content with cutting-edge technology to
-              deliver a learning experience that's truly transformative.
-            </p>
-
-            <div class="why-feature">
-              <div class="why-icon"><i class="bi bi-trophy"></i></div>
-              <div>
-                <h6>Industry-Recognized Certificates</h6>
-                <p>
-                  Earn certificates valued by top companies globally. Stand out
-                  in any job market with verified credentials.
-                </p>
-              </div>
-            </div>
-
-            <div class="why-feature">
-              <div class="why-icon"><i class="bi bi-people"></i></div>
-              <div>
-                <h6>Vibrant Learning Community</h6>
-                <p>
-                  Connect with thousands of learners, join study groups, and
-                  collaborate on real projects worldwide.
-                </p>
-              </div>
-            </div>
-
-            <div class="why-feature">
-              <div class="why-icon"><i class="bi bi-headset"></i></div>
-              <div>
-                <h6>24/7 Mentor Support</h6>
-                <p>
-                  Get instant help from expert mentors anytime. Never get stuck
-                  — our team is always available to guide you.
-                </p>
-              </div>
-            </div>
-
-            <div class="why-feature">
-              <div class="why-icon"><i class="bi bi-arrow-repeat"></i></div>
-              <div>
-                <h6>Regularly Updated Content</h6>
-                <p>
-                  Courses are continuously updated to reflect the latest
-                  industry trends, tools, and technologies.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- STATISTICS Section -->
-
-    <section id="statistics" class="section-pad">
-      <div class="container">
-        <div class="row justify-content-center text-center g-0">
-          <div class="col-6 col-md-3">
-            <div class="stats-counter">
-              <div class="stats-icon"><i class="bi bi-people-fill"></i></div>
-              <span class="num">10,000+</span>
-              <span class="lbl">Active Students</span>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="stats-counter">
-              <div class="stats-icon">
-                <i class="bi bi-journal-richtext"></i>
-              </div>
-              <span class="num">100+</span>
-              <span class="lbl">Expert Courses</span>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="stats-counter">
-              <div class="stats-icon">
-                <i class="bi bi-person-badge-fill"></i>
-              </div>
-              <span class="num">50+</span>
-              <span class="lbl">Top Instructors</span>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="stats-counter">
-              <div class="stats-icon"><i class="bi bi-award-fill"></i></div>
-              <span class="num">8,500+</span>
-              <span class="lbl">Certificates Issued</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--8. TESTIMONIALS
+  <!--8. TESTIMONIALS
 ============================================= -->
-    <section id="testimonials" class="section-pad">
-      <div class="container">
-        <div class="text-center mb-5">
-          <div class="section-tag">Student Reviews</div>
-          <h2 class="section-title">What Our Learners Say</h2>
-          <div class="divider mx-auto mb-3"></div>
-          <p class="section-sub mx-auto">
-            Real stories from real students who transformed their careers with
-            TechLearn.
-          </p>
+  <section id="testimonials" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag">Student Reviews</div>
+        <h2 class="section-title">What Our Learners Say</h2>
+        <div class="divider mx-auto mb-3"></div>
+        <p class="section-sub mx-auto">
+          Real stories from real students who transformed their careers with
+          TechLearn.
+        </p>
+      </div>
+      <div class="row g-4">
+        <!-- T1 -->
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="t-stars mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="t-review">
+              "TechLearn completely changed my career path. The JavaScript
+              Bootcamp was incredibly thorough, and the instructor's
+              real-world examples made everything click instantly."
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="t-avatar" style="background: linear-gradient(135deg, #2563eb, #7c3aed)">
+                MH
+              </div>
+              <div>
+                <div class="t-name">Mahtaba Heravi</div>
+                <div class="t-role">Frontend Developer at Flipkart</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row g-4">
-          <!-- T1 -->
-          <div class="col-md-4">
-            <div class="testimonial-card">
-              <div class="t-stars mb-3">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i>
+        <!-- T2 -->
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="t-stars mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="t-review">
+              "The Data Science course exceeded my expectations. Sarah's
+              teaching style is clear and engaging. I landed a data analyst
+              job within 3 months of completing it!"
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="t-avatar" style="background: linear-gradient(135deg, #10b981, #2563eb)">
+                HA
               </div>
-              <p class="t-review">
-                "TechLearn completely changed my career path. The JavaScript
-                Bootcamp was incredibly thorough, and the instructor's
-                real-world examples made everything click instantly."
-              </p>
-              <div class="d-flex align-items-center gap-3">
-                <div
-                  class="t-avatar"
-                  style="background: linear-gradient(135deg, #2563eb, #7c3aed)"
-                >
-                  MH
-                </div>
-                <div>
-                  <div class="t-name">Mahtaba Heravi</div>
-                  <div class="t-role">Frontend Developer at Flipkart</div>
-                </div>
+              <div>
+                <div class="t-name">Hajar Alizada</div>
+                <div class="t-role">Data Analyst at Tata Consultancy</div>
               </div>
             </div>
           </div>
-          <!-- T2 -->
-          <div class="col-md-4">
-            <div class="testimonial-card">
-              <div class="t-stars mb-3">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i>
-              </div>
-              <p class="t-review">
-                "The Data Science course exceeded my expectations. Sarah's
-                teaching style is clear and engaging. I landed a data analyst
-                job within 3 months of completing it!"
-              </p>
-              <div class="d-flex align-items-center gap-3">
-                <div
-                  class="t-avatar"
-                  style="background: linear-gradient(135deg, #10b981, #2563eb)"
-                >
-                  HA
-                </div>
-                <div>
-                  <div class="t-name">Hajar Alizada</div>
-                  <div class="t-role">Data Analyst at Tata Consultancy</div>
-                </div>
-              </div>
+        </div>
+        <!-- T3 -->
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="t-stars mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
             </div>
-          </div>
-          <!-- T3 -->
-          <div class="col-md-4">
-            <div class="testimonial-card">
-              <div class="t-stars mb-3">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-                ><i class="bi bi-star-half"></i>
+            <p class="t-review">
+              "The UI/UX course with Figma is simply outstanding. I went from
+              zero design knowledge to building full prototypes for clients in
+              just 8 weeks. Worth every penny!"
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="t-avatar" style="background: linear-gradient(135deg, #f59e0b, #ef4444)">
+                BE
               </div>
-              <p class="t-review">
-                "The UI/UX course with Figma is simply outstanding. I went from
-                zero design knowledge to building full prototypes for clients in
-                just 8 weeks. Worth every penny!"
-              </p>
-              <div class="d-flex align-items-center gap-3">
-                <div
-                  class="t-avatar"
-                  style="background: linear-gradient(135deg, #f59e0b, #ef4444)"
-                >
-                  BE
-                </div>
-                <div>
-                  <div class="t-name">Bashir Ebrahimi</div>
-                  <div class="t-role">UX Designer at Infosys</div>
-                </div>
+              <div>
+                <div class="t-name">Bashir Ebrahimi</div>
+                <div class="t-role">UX Designer at Infosys</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- =============================================
+  <!-- =============================================
      10. FOOTER
 ============================================= -->
-    <footer id="footer">
-      <div class="container">
-        <div class="row g-5">
-          <!-- Col 1: Brand -->
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-brand">Tech<span>Learn</span></div>
-            <p class="footer-desc">
-              Empowering learners worldwide with expert-led courses, flexible
-              schedules, and industry-recognized certifications.
-            </p>
-            <div class="footer-social">
-              <a href="#" aria-label="Facebook"
-                ><i class="bi bi-facebook"></i
-              ></a>
-              <a href="#" aria-label="Instagram"
-                ><i class="bi bi-instagram"></i
-              ></a>
-              <a href="#" aria-label="LinkedIn"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-            </div>
-          </div>
-
-          <!-- Col 2: Quick Links -->
-          <div class="col-lg-2 col-md-6 col-sm-6">
-            <div class="footer-heading">Quick Links</div>
-            <ul class="footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Courses</a></li>
-              <li><a href="#">Instructors</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-
-          <!-- Col 3: Popular Courses -->
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="footer-heading">Popular Courses</div>
-            <ul class="footer-links">
-              <li><a href="#">JavaScript Bootcamp</a></li>
-              <li><a href="#">Python & Data Science</a></li>
-              <li><a href="#">UI/UX Design Mastery</a></li>
-              <li><a href="#">AWS Certification</a></li>
-              <li><a href="#">React Native</a></li>
-              <li><a href="#">Ethical Hacking</a></li>
-            </ul>
-          </div>
-
-          <!-- Col 4: Contact -->
-          <div class="col-lg-4 col-md-6">
-            <div class="footer-heading">Contact Us</div>
-            <div class="footer-contact-item">
-              <i class="bi bi-geo-alt-fill"></i>
-              <span
-                >Kabul Afghanistan, 411021</span
-              >
-            </div>
-            <div class="footer-contact-item">
-              <i class="bi bi-envelope-fill"></i>
-              <span>hello@techlearn.com</span>
-            </div>
-            <div class="footer-contact-item">
-              <i class="bi bi-telephone-fill"></i>
-              <span>+9379797545</span>
-            </div>
-            <div class="footer-contact-item">
-              <i class="bi bi-clock-fill"></i>
-              <span>Mon–Fri, 9:00 AM – 6:00 PM IST</span>
-            </div>
+  <footer id="footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">Tech<span>Learn</span></div>
+          <p class="footer-desc">
+            Empowering learners worldwide with expert-led courses, flexible
+            schedules, and industry-recognized certifications.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/bashir.hussain.9693" target="_blank" aria-label="Facebook"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/tech_learn1/" target="_blank" aria-label="Instagram"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/b-ebrahimi/" target="_blank" aria-label="LinkedIn"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/@Techlearn7" target="_blank" aria-label="Youtube"><i
+                class="bi bi-youtube"></i></a>
           </div>
         </div>
 
-        <!-- Bottom Footer -->
-        <div
-          class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2"
-        >
-          <p>&copy; 2024 <a href="#">TechLearn</a>. All rights reserved.</p>
-          <p>
-            <a href="#" class="me-3">Privacy Policy</a>
-            <a href="#" class="me-3">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
-          </p>
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="footer-heading">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Instructors</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Popular Courses -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-heading">Popular Courses</div>
+          <ul class="footer-links">
+            <li><a href="#">JavaScript Bootcamp</a></li>
+            <li><a href="#">Python & Data Science</a></li>
+            <li><a href="#">UI/UX Design Mastery</a></li>
+            <li><a href="#">AWS Certification</a></li>
+            <li><a href="#">React Native</a></li>
+            <li><a href="#">Ethical Hacking</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-heading">Contact Us</div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>Kabul Afghanistan, 411021</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>hello@techlearn.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+9379797545</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Mon–Fri, 9:00 AM – 6:00 PM IST</span>
+          </div>
         </div>
       </div>
-    </footer>
 
-    <!-- Scroll To Top -->
-    <button id="scrollTop" aria-label="Scroll to top">
-      <i class="bi bi-arrow-up"></i>
-    </button>
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Bottom Footer -->
+      <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
+        <p>&copy; 2024 <a href="#">TechLearn</a>. All rights reserved.</p>
+        <p>
+          <a href="#" class="me-3">Privacy Policy</a>
+          <a href="#" class="me-3">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top -->
+  <button id="scrollTop" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>

@@ -1,449 +1,390 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login – TechLearn</title>
 
-    <link rel="stylesheet" href="css/varibales.css" />
-    <link rel="stylesheet" href="css/login.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/variables.css">
-  </head>
-  <body>
-    <!-- TOP HEADER -->
-    <div id="top-header">
-      <div class="container">
-        <div
-          class="d-flex flex-wrap align-items-center justify-content-between gap-2"
-        >
-          <div class="d-flex flex-wrap align-items-center gap-3">
-            <a href="mailto:hello@techlearn.io"
-              ><i class="bi bi-envelope-fill me-1"></i>hello@techlearn.io</a
-            >
-            <a href="tel:+11234567890"
-              ><i class="bi bi-telephone-fill me-1"></i>+1 (234) 567-890</a
-            >
-          </div>
-          <div class="top-social d-flex gap-2">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-            <a href="#"><i class="bi bi-youtube"></i></a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login – TechLearn</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/variables.css">
+</head>
+
+<body>
+  <!-- top header -->
+  <div id="top-header">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+        <!-- contact -->
+        <div class="d-flex flex-wrap align-items-center gap-3">
+          <a href="mailto:techlearn@gmail.com">
+            <i class="bi bi-envelope-fill me-1"></i>
+            info@techlearn.com
+          </a>
+
+          <a href="tel:+174894854">
+            <i class="bi bi-telephone-fill me-1"></i>
+            Call ME
+          </a>
+        </div>
+
+        <!-- social Icon -->
+
+        <div class="top-social d-flex gap-2">
+          <a href="https://www.facebook.com/bashir.hussain.9693" target="_blank" aria-label="Facebook"><i
+              class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/tech_learn1/" target="_blank" aria-label="Instagram"><i
+              class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/b-ebrahimi/" target="_blank" aria-label="LinkedIn"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://www.youtube.com/@Techlearn7" target="_blank" aria-label="Youtube"><i
+              class="bi bi-youtube"></i></a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- NAVBAR -->
-    <nav id="mainNav" class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Tech<span>Learn</span></a>
-        <button
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#navOffcanvas"
-        >
-          <i
-            class="bi bi-list"
-            style="font-size: 1.6rem; color: var(--primary)"
-          ></i>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end">
-          <ul class="navbar-nav align-items-center gap-1 me-3">
-            <li><a class="nav-link" href="index.html">Home</a></li>
-            <li>
-              <a class="nav-link" href="courses.html">Courses</a>
-            </li>
-            <li><a class="nav-link" href="#">Instructors</a></li>
-            <li><a class="nav-link" href="#">About</a></li>
-            <li><a class="nav-link" href="#">Contact</a></li>
-          </ul>
+  <!-- Start Navbar -->
+
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Tech<span>Learn</span></a>
+
+      <!-- Mobile Toggle -->
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navOffcanvas"
+        aria-controls="navOffcanvas">
+        <i class="bi bi-list" style="font-size: 1.6rem; color: var(--primary)"></i>
+      </button>
+
+      <!-- disktop nav -->
+
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav align-itmes-center gap-1 me-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="courses.html" class="nav-link">Course</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#footer" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-flex gap-2">
           <a href="register.html" class="btn btn-nav-register">Register</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title">TechLearn</h5>
-        <button
-          type="button"
-          class="btn-close btn-close-white"
-          data-bs-dismiss="offcanvas"
-        ></button>
+  <!-- Mobile Menu -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">TechLearn</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <ul class="navbar-nav gap-1 mb-4">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="course.html" class="nav-link">Course</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="about.html" class="nav-link ">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#footer" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <div class="d-flex gap-2">
+        <a href="login.html" class="btn btn-nav-login">Login</a>
+        <a href="register.html" class="btn btn-nav-register">Register</a>
       </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav gap-1 mb-4">
-          <li><a class="nav-link" href="index.html">Home</a></li>
-          <li><a class="nav-link" href="courses.html">Courses</a></li>
-          <li><a class="nav-link" href="#">Instructors</a></li>
-          <li><a class="nav-link" href="#">About</a></li>
-          <li><a class="nav-link" href="#">Contact</a></li>
+    </div>
+  </div>
+
+  <!-- ── MAIN AUTH WRAPPER ── -->
+  <div class="auth-wrapper">
+    <!-- LEFT PANEL -->
+    <div class="auth-left">
+      <div class="orb2"></div>
+      <div class="auth-left-content">
+        <div class="left-logo">Tech<span>Learn</span></div>
+
+        <h2 class="left-heading">
+          Welcome Back to Your<br />
+          <span class="accent">Learning Journey</span>
+        </h2>
+        <p class="left-desc">
+          Sign in and pick up right where you left off. Your courses,
+          certificates, and progress are all waiting for you.
+        </p>
+
+        <ul class="left-features">
+          <li>
+            <div class="lf-icon lfi-blue">
+              <i class="bi bi-play-circle-fill"></i>
+            </div>
+            <div>
+              <strong style="
+                    color: #fff;
+                    font-family: &quot;Sora&quot;, sans-serif;
+                    font-size: 0.88rem;
+                  ">Resume Any Course Instantly</strong>
+              <div style="margin-top: 2px">
+                Jump back into your last lesson with one click
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="lf-icon lfi-green">
+              <i class="bi bi-bar-chart-fill"></i>
+            </div>
+            <div>
+              <strong style="
+                    color: #fff;
+                    font-family: &quot;Sora&quot;, sans-serif;
+                    font-size: 0.88rem;
+                  ">Track Your Progress</strong>
+              <div style="margin-top: 2px">
+                Visual dashboards showing your learning streaks
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="lf-icon lfi-yellow">
+              <i class="bi bi-award-fill"></i>
+            </div>
+            <div>
+              <strong style="
+                    color: #fff;
+                    font-family: &quot;Sora&quot;, sans-serif;
+                    font-size: 0.88rem;
+                  ">Download Certificates</strong>
+              <div style="margin-top: 2px">
+                Access all earned certificates from your profile
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="lf-icon lfi-purple">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <div>
+              <strong style="
+                    color: #fff;
+                    font-family: &quot;Sora&quot;, sans-serif;
+                    font-size: 0.88rem;
+                  ">Community Access</strong>
+              <div style="margin-top: 2px">
+                Connect with 10,000+ learners in our Discord
+              </div>
+            </div>
+          </li>
         </ul>
-        <a href="register.html" class="btn btn-nav-register w-100 text-center"
-          >Register</a
-        >
-      </div>
-    </div>
 
-    <!-- ── MAIN AUTH WRAPPER ── -->
-    <div class="auth-wrapper">
-      <!-- LEFT PANEL -->
-      <div class="auth-left">
-        <div class="orb2"></div>
-        <div class="auth-left-content">
-          <div class="left-logo">Tech<span>Learn</span></div>
-
-          <h2 class="left-heading">
-            Welcome Back to Your<br />
-            <span class="accent">Learning Journey</span>
-          </h2>
-          <p class="left-desc">
-            Sign in and pick up right where you left off. Your courses,
-            certificates, and progress are all waiting for you.
-          </p>
-
-          <ul class="left-features">
-            <li>
-              <div class="lf-icon lfi-blue">
-                <i class="bi bi-play-circle-fill"></i>
-              </div>
-              <div>
-                <strong
-                  style="
-                    color: #fff;
-                    font-family: &quot;Sora&quot;, sans-serif;
-                    font-size: 0.88rem;
-                  "
-                  >Resume Any Course Instantly</strong
-                >
-                <div style="margin-top: 2px">
-                  Jump back into your last lesson with one click
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="lf-icon lfi-green">
-                <i class="bi bi-bar-chart-fill"></i>
-              </div>
-              <div>
-                <strong
-                  style="
-                    color: #fff;
-                    font-family: &quot;Sora&quot;, sans-serif;
-                    font-size: 0.88rem;
-                  "
-                  >Track Your Progress</strong
-                >
-                <div style="margin-top: 2px">
-                  Visual dashboards showing your learning streaks
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="lf-icon lfi-yellow">
-                <i class="bi bi-award-fill"></i>
-              </div>
-              <div>
-                <strong
-                  style="
-                    color: #fff;
-                    font-family: &quot;Sora&quot;, sans-serif;
-                    font-size: 0.88rem;
-                  "
-                  >Download Certificates</strong
-                >
-                <div style="margin-top: 2px">
-                  Access all earned certificates from your profile
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="lf-icon lfi-purple">
-                <i class="bi bi-people-fill"></i>
-              </div>
-              <div>
-                <strong
-                  style="
-                    color: #fff;
-                    font-family: &quot;Sora&quot;, sans-serif;
-                    font-size: 0.88rem;
-                  "
-                  >Community Access</strong
-                >
-                <div style="margin-top: 2px">
-                  Connect with 10,000+ learners in our Discord
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <div class="left-stats">
-            <div>
-              <div class="left-stat-num">10K+</div>
-              <div class="left-stat-label">Active Learners</div>
-            </div>
-            <div>
-              <div class="left-stat-num">100+</div>
-              <div class="left-stat-label">Expert Courses</div>
-            </div>
-            <div>
-              <div class="left-stat-num">4.9★</div>
-              <div class="left-stat-label">Avg. Rating</div>
-            </div>
+        <div class="left-stats">
+          <div>
+            <div class="left-stat-num">10K+</div>
+            <div class="left-stat-label">Active Learners</div>
+          </div>
+          <div>
+            <div class="left-stat-num">100+</div>
+            <div class="left-stat-label">Expert Courses</div>
+          </div>
+          <div>
+            <div class="left-stat-num">4.9★</div>
+            <div class="left-stat-label">Avg. Rating</div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- RIGHT PANEL -->
-      <div class="auth-right">
-        <div class="auth-form-box">
-          <div class="form-tag">
-            <i class="bi bi-box-arrow-in-right"></i> Secure Sign In
-          </div>
-          <h1 class="form-title">Sign In</h1>
-          <p class="form-subtitle">
-            Don't have an account?
-            <a
-              href="techlearn-register.html"
-              style="color: var(--primary); font-weight: 700"
-              >Create one free →</a
-            >
-          </p>
+    <!-- RIGHT PANEL -->
+    <div class="auth-right">
+      <div class="auth-form-box">
+        <div class="form-tag">
+          <i class="bi bi-box-arrow-in-right"></i> Secure Sign In
+        </div>
+        <h1 class="form-title">Sign In</h1>
+        <p class="form-subtitle">
+          Don't have an account?
+          <a href="techlearn-register.html" style="color: var(--primary); font-weight: 700">Create one free →</a>
+        </p>
 
-          <!-- Social Login -->
-          <div class="row g-3 social-row mb-2">
-            <div class="col-6">
-              <button class="social-btn" onclick="socialLogin('Google')">
-                <svg width="20" height="20" viewBox="0 0 48 48">
-                  <path
-                    fill="#4285F4"
-                    d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"
-                  />
-                  <path
-                    fill="#34A853"
-                    d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.16C6.51 42.62 14.62 48 24 48z"
-                  />
-                  <path
-                    fill="#FBBC05"
-                    d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.16C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"
-                  />
-                  <path
-                    fill="#EA4335"
-                    d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.16C12.43 13.72 17.74 9.5 24 9.5z"
-                  />
-                </svg>
-                Continue with Google
-              </button>
-            </div>
-            <div class="col-6">
-              <button class="social-btn" onclick="socialLogin('GitHub')">
-                <i
-                  class="bi bi-github"
-                  style="font-size: 1.1rem; color: #24292f"
-                ></i>
-                Continue with GitHub
-              </button>
-            </div>
-          </div>
-          <div class="row g-3 social-row">
-            <div class="col-6">
-              <button class="social-btn" onclick="socialLogin('LinkedIn')">
-                <i
-                  class="bi bi-linkedin"
-                  style="font-size: 1.1rem; color: #0a66c2"
-                ></i>
-                Continue with LinkedIn
-              </button>
-            </div>
-            <div class="col-6">
-              <button class="social-btn" onclick="socialLogin('Microsoft')">
-                <svg width="20" height="20" viewBox="0 0 21 21">
-                  <rect x="1" y="1" width="9" height="9" fill="#f25022" />
-                  <rect x="11" y="1" width="9" height="9" fill="#7fba00" />
-                  <rect x="1" y="11" width="9" height="9" fill="#00a4ef" />
-                  <rect x="11" y="11" width="9" height="9" fill="#ffb900" />
-                </svg>
-                Continue with Microsoft
-              </button>
-            </div>
-          </div>
-
-          <div class="or-divider">or sign in with email</div>
-
-          <!-- LOGIN FORM -->
-          <form id="loginForm" novalidate>
-            <!-- Email -->
-            <div class="field-group">
-              <label class="field-label" for="email">Email Address</label>
-              <div class="field-wrap">
-                <i class="bi bi-envelope-fill field-icon"></i>
-                <input
-                  type="email"
-                  id="email"
-                  class="form-input"
-                  placeholder="you@example.com"
-                  oninput="validateEmail(this)"
-                  autocomplete="email"
-                />
-                <div class="field-feedback" id="email-fb"></div>
-              </div>
-            </div>
-
-            <!-- Password -->
-            <div class="field-group">
-              <label class="field-label" for="password">Password</label>
-              <div class="field-wrap">
-                <i class="bi bi-lock-fill field-icon"></i>
-                <input
-                  type="password"
-                  id="password"
-                  class="form-input"
-                  placeholder="Enter your password"
-                  oninput="validatePassword(this)"
-                  autocomplete="current-password"
-                />
-                <button
-                  type="button"
-                  class="btn-pwd-toggle"
-                  onclick="togglePwd('password', 'pwdEye')"
-                  tabindex="-1"
-                >
-                  <i class="bi bi-eye-fill" id="pwdEye"></i>
-                </button>
-              </div>
-              <div class="field-feedback" id="pwd-fb"></div>
-            </div>
-
-            <!-- Remember + Forgot -->
-            <div class="form-check-row">
-              <label class="form-check-label">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="remember"
-                  checked
-                />
-                Remember me for 30 days
-              </label>
-              <a href="#" class="forgot-link" onclick="showForgot(event)"
-                >Forgot password?</a
-              >
-            </div>
-
-            <!-- Submit -->
-            <button type="submit" class="btn-submit" id="loginBtn">
-              <div class="spinner" id="loginSpinner"></div>
-              <span class="btn-text"
-                ><i class="bi bi-box-arrow-in-right me-1"></i>Sign In to
-                TechLearn</span
-              >
+        <!-- Social Login -->
+        <div class="row g-3 social-row mb-2">
+          <div class="col-6">
+            <button class="social-btn" onclick="socialLogin('Google')">
+              <svg width="20" height="20" viewBox="0 0 48 48">
+                <path fill="#4285F4"
+                  d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z" />
+                <path fill="#34A853"
+                  d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.16C6.51 42.62 14.62 48 24 48z" />
+                <path fill="#FBBC05"
+                  d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.16C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z" />
+                <path fill="#EA4335"
+                  d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.16C12.43 13.72 17.74 9.5 24 9.5z" />
+              </svg>
+              Continue with Google
             </button>
-          </form>
+          </div>
+          <div class="col-6">
+            <button class="social-btn" onclick="socialLogin('GitHub')">
+              <i class="bi bi-github" style="font-size: 1.1rem; color: #24292f"></i>
+              Continue with GitHub
+            </button>
+          </div>
+        </div>
+        <div class="row g-3 social-row">
+          <div class="col-6">
+            <button class="social-btn" onclick="socialLogin('LinkedIn')">
+              <i class="bi bi-linkedin" style="font-size: 1.1rem; color: #0a66c2"></i>
+              Continue with LinkedIn
+            </button>
+          </div>
+          <div class="col-6">
+            <button class="social-btn" onclick="socialLogin('Microsoft')">
+              <svg width="20" height="20" viewBox="0 0 21 21">
+                <rect x="1" y="1" width="9" height="9" fill="#f25022" />
+                <rect x="11" y="1" width="9" height="9" fill="#7fba00" />
+                <rect x="1" y="11" width="9" height="9" fill="#00a4ef" />
+                <rect x="11" y="11" width="9" height="9" fill="#ffb900" />
+              </svg>
+              Continue with Microsoft
+            </button>
+          </div>
+        </div>
 
-          <!-- Switch to Register -->
-          <div class="switch-link">
-            New to TechLearn?
-            <a href="techlearn-register.html">Create a free account</a>
+        <div class="or-divider">or sign in with email</div>
+
+        <!-- LOGIN FORM -->
+        <form id="loginForm" novalidate>
+          <!-- Email -->
+          <div class="field-group">
+            <label class="field-label" for="email">Email Address</label>
+            <div class="field-wrap">
+              <i class="bi bi-envelope-fill field-icon"></i>
+              <input type="email" id="email" class="form-input" placeholder="you@example.com"
+                oninput="validateEmail(this)" autocomplete="email" />
+              <div class="field-feedback" id="email-fb"></div>
+            </div>
           </div>
 
-          <!-- Trust Badges -->
-          <div class="trust-row">
-            <div class="trust-item">
-              <i class="bi bi-shield-lock-fill"></i> SSL Encrypted
+          <!-- Password -->
+          <div class="field-group">
+            <label class="field-label" for="password">Password</label>
+            <div class="field-wrap">
+              <i class="bi bi-lock-fill field-icon"></i>
+              <input type="password" id="password" class="form-input" placeholder="Enter your password"
+                oninput="validatePassword(this)" autocomplete="current-password" />
+              <button type="button" class="btn-pwd-toggle" onclick="togglePwd('password', 'pwdEye')" tabindex="-1">
+                <i class="bi bi-eye-fill" id="pwdEye"></i>
+              </button>
             </div>
-            <div class="trust-item">
-              <i class="bi bi-check-circle-fill"></i> GDPR Compliant
-            </div>
-            <div class="trust-item">
-              <i class="bi bi-eye-slash-fill"></i> No Spam, Ever
-            </div>
+            <div class="field-feedback" id="pwd-fb"></div>
+          </div>
+
+          <!-- Remember + Forgot -->
+          <div class="form-check-row">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" id="remember" checked />
+              Remember me for 30 days
+            </label>
+            <a href="#" class="forgot-link" onclick="showForgot(event)">Forgot password?</a>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn-submit" id="loginBtn">
+            <div class="spinner" id="loginSpinner"></div>
+            <span class="btn-text"><i class="bi bi-box-arrow-in-right me-1"></i>Sign In to
+              TechLearn</span>
+          </button>
+        </form>
+
+        <!-- Switch to Register -->
+        <div class="switch-link">
+          New to TechLearn?
+          <a href="techlearn-register.html">Create a free account</a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="trust-row">
+          <div class="trust-item">
+            <i class="bi bi-shield-lock-fill"></i> SSL Encrypted
+          </div>
+          <div class="trust-item">
+            <i class="bi bi-check-circle-fill"></i> GDPR Compliant
+          </div>
+          <div class="trust-item">
+            <i class="bi bi-eye-slash-fill"></i> No Spam, Ever
           </div>
         </div>
       </div>
     </div>
-    <!-- /auth-wrapper -->
+  </div>
+  <!-- /auth-wrapper -->
 
-    <!-- Forgot Password Modal -->
-    <div class="modal fade" id="forgotModal" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered" style="max-width: 420px">
-        <div
-          class="modal-content"
-          style="
+  <!-- Forgot Password Modal -->
+  <div class="modal fade" id="forgotModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 420px">
+      <div class="modal-content" style="
             border-radius: 20px;
             border: 1.5px solid var(--border);
             box-shadow: var(--shadow-lg);
-          "
-        >
-          <div
-            class="modal-header"
-            style="border-bottom: 1px solid var(--border); padding: 22px 24px"
-          >
-            <h5
-              class="modal-title"
-              style="
+          ">
+        <div class="modal-header" style="border-bottom: 1px solid var(--border); padding: 22px 24px">
+          <h5 class="modal-title" style="
                 font-family: &quot;Sora&quot;, sans-serif;
                 font-weight: 800;
-              "
-            >
-              Reset Your Password
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body" style="padding: 24px">
-            <p
-              style="
+              ">
+            Reset Your Password
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" style="padding: 24px">
+          <p style="
                 font-size: 0.88rem;
                 color: var(--text-secondary);
                 margin-bottom: 20px;
-              "
-            >
-              Enter your registered email address and we'll send you a secure
-              reset link within 2 minutes.
-            </p>
-            <div class="field-group">
-              <label class="field-label">Email Address</label>
-              <div class="field-wrap">
-                <i class="bi bi-envelope-fill field-icon"></i>
-                <input
-                  type="email"
-                  class="form-input"
-                  id="resetEmail"
-                  placeholder="you@example.com"
-                />
-              </div>
+              ">
+            Enter your registered email address and we'll send you a secure
+            reset link within 2 minutes.
+          </p>
+          <div class="field-group">
+            <label class="field-label">Email Address</label>
+            <div class="field-wrap">
+              <i class="bi bi-envelope-fill field-icon"></i>
+              <input type="email" class="form-input" id="resetEmail" placeholder="you@example.com" />
             </div>
           </div>
-          <div
-            class="modal-footer"
-            style="
+        </div>
+        <div class="modal-footer" style="
               border-top: 1px solid var(--border);
               padding: 16px 24px;
               gap: 10px;
-            "
-          >
-            <button
-              class="btn"
-              style="
+            ">
+          <button class="btn" style="
                 border: 1.5px solid var(--border);
                 border-radius: 10px;
                 font-family: &quot;Sora&quot;, sans-serif;
@@ -451,103 +392,91 @@
                 font-weight: 600;
                 padding: 10px 20px;
                 color: var(--text-secondary);
-              "
-              data-bs-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <button
-              class="btn-submit"
-              style="flex: 1; padding: 11px"
-              onclick="sendReset()"
-            >
-              <span><i class="bi bi-send-fill me-1"></i>Send Reset Link</span>
-            </button>
-          </div>
+              " data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button class="btn-submit" style="flex: 1; padding: 11px" onclick="sendReset()">
+            <span><i class="bi bi-send-fill me-1"></i>Send Reset Link</span>
+          </button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- FOOTER -->
-    <footer id="footer">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-brand">Tech<span>Learn</span></div>
-            <p class="footer-desc">
-              Empowering learners worldwide with expert-led courses and
-              industry-recognized certifications.
-            </p>
-            <div class="footer-social">
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-youtube"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 col-sm-6">
-            <div class="footer-heading">Quick Links</div>
-            <ul class="footer-links">
-              <li><a href="techlearn.html">Home</a></li>
-              <li><a href="courses.html">Courses</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="footer-heading">Popular Courses</div>
-            <ul class="footer-links">
-              <li><a href="#">JavaScript Bootcamp</a></li>
-              <li><a href="#">Python &amp; Data Science</a></li>
-              <li><a href="#">UI/UX Design Mastery</a></li>
-              <li><a href="#">AWS Certification</a></li>
-              <li><a href="#">React Native</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="footer-heading">Contact Us</div>
-            <div class="footer-contact-item">
-              <i class="bi bi-geo-alt-fill"></i
-              ><span
-                >Level 12, Tech Tower, Cyber City, Gurugram, India –
-                122002</span
-              >
-            </div>
-            <div class="footer-contact-item">
-              <i class="bi bi-envelope-fill"></i><span>hello@techlearn.io</span>
-            </div>
-            <div class="footer-contact-item">
-              <i class="bi bi-telephone-fill"></i><span>+1 (234) 567-890</span>
-            </div>
-            <div class="footer-contact-item">
-              <i class="bi bi-clock-fill"></i
-              ><span>Mon–Fri, 9:00 AM – 6:00 PM IST</span>
-            </div>
-          </div>
-        </div>
-        <div
-          class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2"
-        >
-          <p>&copy; 2024 <a href="#">TechLearn</a>. All rights reserved.</p>
-          <p>
-            <a href="#" class="me-3">Privacy Policy</a
-            ><a href="#" class="me-3">Terms of Service</a
-            ><a href="#">Cookie Policy</a>
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand">Tech<span>Learn</span></div>
+          <p class="footer-desc">
+            Empowering learners worldwide with expert-led courses and
+            industry-recognized certifications.
           </p>
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="footer-heading">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="techlearn.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-heading">Popular Courses</div>
+          <ul class="footer-links">
+            <li><a href="#">JavaScript Bootcamp</a></li>
+            <li><a href="#">Python &amp; Data Science</a></li>
+            <li><a href="#">UI/UX Design Mastery</a></li>
+            <li><a href="#">AWS Certification</a></li>
+            <li><a href="#">React Native</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-heading">Contact Us</div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i><span>Level 12, Tech Tower, Cyber City, Gurugram, India –
+              122002</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i><span>hello@techlearn.io</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i><span>+1 (234) 567-890</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i><span>Mon–Fri, 9:00 AM – 6:00 PM IST</span>
+          </div>
         </div>
       </div>
-    </footer>
-
-    <!-- Toast -->
-    <div class="toast-wrap">
-      <div class="toast-msg" id="toastMsg">
-        <i class="bi bi-check-circle-fill toast-icon s" id="toastIcon"></i>
-        <span id="toastText">Signed in successfully!</span>
+      <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
+        <p>&copy; 2024 <a href="#">TechLearn</a>. All rights reserved.</p>
+        <p>
+          <a href="#" class="me-3">Privacy Policy</a><a href="#" class="me-3">Terms of Service</a><a href="#">Cookie
+            Policy</a>
+        </p>
       </div>
     </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/login.js"></script>
-  </body>
+  <!-- Toast -->
+  <div class="toast-wrap">
+    <div class="toast-msg" id="toastMsg">
+      <i class="bi bi-check-circle-fill toast-icon s" id="toastIcon"></i>
+      <span id="toastText">Signed in successfully!</span>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/login.js"></script>
+</body>
+
 </html>
